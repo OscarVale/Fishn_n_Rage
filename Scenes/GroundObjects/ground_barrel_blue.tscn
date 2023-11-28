@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://i8n3vqmyqmmk"]
+
+[ext_resource type="PackedScene" uid="uid://cmv5pf77chiow" path="res://Scenes/GroundObjects/generic_ground_object.tscn" id="1_32e1d"]
+[ext_resource type="Texture2D" uid="uid://dc7kqmvts776x" path="res://Graphics/Stages/PropsNew/BP2.png" id="2_6bwa1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t3u61"]
+radius = 8.0
+height = 40.0
+
+[node name="Generic Ground Object" instance=ExtResource("1_32e1d")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_t3u61")
+
+[node name="ObjectSprite" parent="." index="2"]
+modulate = Color(0.0666667, 0.439216, 0.839216, 1)
+position = Vector2(0, -67)
+texture = ExtResource("2_6bwa1")

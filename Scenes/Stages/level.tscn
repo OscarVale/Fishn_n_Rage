@@ -1,68 +1,29 @@
-[gd_scene load_steps=13 format=3 uid="uid://dnos4idmp16j6"]
+[gd_scene load_steps=3 format=3 uid="uid://dnos4idmp16j6"]
 
 [ext_resource type="Script" path="res://Scenes/Stages/level.gd" id="1_wevjo"]
-[ext_resource type="Texture2D" uid="uid://bipec7dq7cshu" path="res://Graphics/Stages/Beach/Stage1Beach.png" id="2_i8grf"]
-[ext_resource type="PackedScene" uid="uid://bxc2hjw5d7al4" path="res://Scenes/Enemies/MallEnemies/mall_enemy_1.tscn" id="3_djw7q"]
 [ext_resource type="PackedScene" uid="uid://pac5p1e37y0o" path="res://Scenes/player.tscn" id="3_nsncn"]
-[ext_resource type="PackedScene" uid="uid://b2et6uy5cvpav" path="res://Scenes/Enemies/BeachEnemies/beach_enemy_1.tscn" id="4_k8oid"]
-[ext_resource type="PackedScene" uid="uid://dqewogdqaqrys" path="res://Scenes/Enemies/MallEnemies/mall_enemy_2.tscn" id="4_l82oy"]
-[ext_resource type="PackedScene" uid="uid://cpin76xtwgler" path="res://Scenes/ground_cooler.tscn" id="4_wlnjm"]
-[ext_resource type="PackedScene" uid="uid://b3wcoud3e8yoi" path="res://Scenes/Enemies/StreetEnemies/street_enemy_1.tscn" id="5_btfdd"]
-[ext_resource type="PackedScene" uid="uid://c8lqg8g2thdnl" path="res://Scenes/Enemies/BeachEnemies/beach_enemy_2.tscn" id="5_ek2qc"]
-[ext_resource type="PackedScene" uid="uid://vxih36kgepll" path="res://Scenes/Enemies/StreetEnemies/street_enemy_2.tscn" id="6_11o2t"]
-[ext_resource type="PackedScene" uid="uid://dwb14s25fmprs" path="res://Scenes/Enemies/BeachEnemies/beach_enemy_3.tscn" id="6_lvhc6"]
-[ext_resource type="PackedScene" uid="uid://b0uvww3nwlxor" path="res://Scenes/Enemies/StreetEnemies/street_enemy_3.tscn" id="7_mkd05"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_wevjo")
 
-[node name="Stage1Beach" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(1001, 180)
-texture = ExtResource("2_i8grf")
+[node name="Barriers" type="Node2D" parent="."]
 
 [node name="YSortingLayer" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="GenericEnemy4" parent="YSortingLayer" instance=ExtResource("3_djw7q")]
-position = Vector2(636, 134)
-
-[node name="GenericEnemy5" parent="YSortingLayer" instance=ExtResource("4_l82oy")]
-position = Vector2(642, 259)
-
-[node name="GenericEnemy6" parent="YSortingLayer" instance=ExtResource("5_btfdd")]
-position = Vector2(587, 280)
-
-[node name="GenericEnemy7" parent="YSortingLayer" instance=ExtResource("6_11o2t")]
-position = Vector2(712, 152)
-
-[node name="GenericEnemy8" parent="YSortingLayer" instance=ExtResource("7_mkd05")]
-position = Vector2(732, 281)
-
 [node name="Player" parent="YSortingLayer" instance=ExtResource("3_nsncn")]
-position = Vector2(330, 174)
+position = Vector2(327, 211)
 
 [node name="Camera2D" type="Camera2D" parent="YSortingLayer/Player"]
-position = Vector2(-10, 6)
+position = Vector2(-7, -31)
 limit_left = -50
 limit_top = 0
 limit_bottom = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 20.0
+drag_horizontal_enabled = true
 
 [node name="Projectiles" type="Node2D" parent="YSortingLayer"]
-
-[node name="GenericEnemy" parent="YSortingLayer" instance=ExtResource("4_k8oid")]
-position = Vector2(429, 302)
-
-[node name="GenericEnemy2" parent="YSortingLayer" instance=ExtResource("5_ek2qc")]
-position = Vector2(565, 190)
-
-[node name="GenericEnemy3" parent="YSortingLayer" instance=ExtResource("6_lvhc6")]
-position = Vector2(500, 152)
-
-[node name="Generic Ground Object" parent="YSortingLayer" instance=ExtResource("4_wlnjm")]
-position = Vector2(727, 196)
 
 [connection signal="send_sprite" from="." to="YSortingLayer/Player" method="_on_level_send_sprite"]
 [connection signal="toss_object" from="YSortingLayer/Player" to="." method="_on_player_toss_object"]

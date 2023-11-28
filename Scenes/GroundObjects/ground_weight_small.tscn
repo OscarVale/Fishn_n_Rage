@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://be7j8mh3xfmqd"]
+
+[ext_resource type="PackedScene" uid="uid://cmv5pf77chiow" path="res://Scenes/GroundObjects/generic_ground_object.tscn" id="1_274uy"]
+[ext_resource type="Texture2D" uid="uid://yk0a8uabaoat" path="res://Graphics/Stages/PropsNew/OG3.png" id="2_afdk3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jeby1"]
+size = Vector2(52, 10)
+
+[node name="Generic Ground Object" instance=ExtResource("1_274uy")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_jeby1")
+
+[node name="ObjectSprite" parent="." index="2"]
+position = Vector2(0, -69)
+texture = ExtResource("2_afdk3")

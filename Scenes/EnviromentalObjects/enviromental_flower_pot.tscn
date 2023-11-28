@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0sq77rt52c24"]
+
+[ext_resource type="Texture2D" uid="uid://d0l716b1nu4oi" path="res://Graphics/Stages/PropsNew/FlowerPot.png" id="1_vh5ot"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2oo62"]
+size = Vector2(76, 12)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2oo62")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2, -64)
+texture = ExtResource("1_vh5ot")

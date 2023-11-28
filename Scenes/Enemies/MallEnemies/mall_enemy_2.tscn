@@ -1,31 +1,32 @@
-[gd_scene load_steps=13 format=3 uid="uid://dqewogdqaqrys"]
+[gd_scene load_steps=14 format=3 uid="uid://dqewogdqaqrys"]
 
 [ext_resource type="PackedScene" uid="uid://cvku3gic4jkpm" path="res://Scenes/Enemies/generic_enemy.tscn" id="1_fjtwr"]
-[ext_resource type="Texture2D" uid="uid://br0e2wl2hm3gf" path="res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch1.png" id="2_f0t4t"]
-[ext_resource type="Texture2D" uid="uid://d2445n13gjk6h" path="res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch2.png" id="3_5cg5q"]
-[ext_resource type="Texture2D" uid="uid://btusbeyn5fsgh" path="res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch3.png" id="4_w8c88"]
-[ext_resource type="Texture2D" uid="uid://cvw1w52j8j8e2" path="res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch4.png" id="5_f7qo4"]
-[ext_resource type="Texture2D" uid="uid://c1vmscriqsi5d" path="res://Graphics/Characters/Mall_Enemy_2/Don Pepe DEAD.png" id="6_omocf"]
-[ext_resource type="Texture2D" uid="uid://6pg6lswpgfyw" path="res://Graphics/Characters/Mall_Enemy_2/Don Pepe DMG.png" id="7_7o4po"]
-[ext_resource type="Texture2D" uid="uid://7fmc0whuhlhl" path="res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk2.png" id="8_m3wr6"]
-[ext_resource type="Texture2D" uid="uid://dyw2q67nw2t44" path="res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk3.png" id="9_708cx"]
-[ext_resource type="Texture2D" uid="uid://bgnxaoanjyls1" path="res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk4.png" id="10_ig3xi"]
-[ext_resource type="Texture2D" uid="uid://c25adouloxmj1" path="res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk5.png" id="11_okx18"]
+[ext_resource type="Texture2D" uid="uid://66qr0b1trwmd" path="res://Graphics/Characters/Mall_Enemy_2_New/Punch/Don Pepe Punch1.png" id="2_4w8i0"]
+[ext_resource type="Texture2D" uid="uid://c1ye2lo6qeset" path="res://Graphics/Characters/Mall_Enemy_2_New/Punch/Don Pepe Punch2.png" id="3_ph21m"]
+[ext_resource type="Texture2D" uid="uid://cgtfqnaprwapt" path="res://Graphics/Characters/Mall_Enemy_2_New/Punch/Don Pepe Punch3.png" id="4_cr5a8"]
+[ext_resource type="Texture2D" uid="uid://dnxp27ang16np" path="res://Graphics/Characters/Mall_Enemy_2_New/Punch/Don Pepe Punch4.png" id="5_6gxp8"]
+[ext_resource type="Texture2D" uid="uid://d3e7ci8heeawf" path="res://Graphics/Characters/Mall_Enemy_2_New/Don Pepe DEAD.png" id="6_c6eof"]
+[ext_resource type="Texture2D" uid="uid://bmpclsry3mqff" path="res://Graphics/Characters/Mall_Enemy_2_New/Don Pepe DMG.png" id="7_qi8bx"]
+[ext_resource type="Texture2D" uid="uid://dcrllrm7fjiy7" path="res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk1.png" id="8_lcs5y"]
+[ext_resource type="Texture2D" uid="uid://0x2eygysei2o" path="res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk2.png" id="9_guqya"]
+[ext_resource type="Texture2D" uid="uid://dx7x1orjxtdej" path="res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk3.png" id="10_ygo3v"]
+[ext_resource type="Texture2D" uid="uid://cc642su4e127t" path="res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk4.png" id="11_nh65s"]
+[ext_resource type="Texture2D" uid="uid://dc0rkih670qrl" path="res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk5.png" id="12_wo7u6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_apa5i"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_f0t4t")
+"texture": ExtResource("2_4w8i0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_5cg5q")
+"texture": ExtResource("3_ph21m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_w8c88")
+"texture": ExtResource("4_cr5a8")
 }, {
 "duration": 4.0,
-"texture": ExtResource("5_f7qo4")
+"texture": ExtResource("5_6gxp8")
 }],
 "loop": true,
 "name": &"attacking",
@@ -33,7 +34,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 10.0,
-"texture": ExtResource("6_omocf")
+"texture": ExtResource("6_c6eof")
 }],
 "loop": true,
 "name": &"defeated",
@@ -41,7 +42,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 10.0,
-"texture": ExtResource("7_7o4po")
+"texture": ExtResource("7_qi8bx")
 }],
 "loop": true,
 "name": &"hit",
@@ -49,7 +50,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 10.0,
-"texture": ExtResource("2_f0t4t")
+"texture": ExtResource("8_lcs5y")
 }],
 "loop": true,
 "name": &"idle",
@@ -57,16 +58,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_m3wr6")
+"texture": ExtResource("9_guqya")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_708cx")
+"texture": ExtResource("10_ygo3v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_ig3xi")
+"texture": ExtResource("11_nh65s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_okx18")
+"texture": ExtResource("12_wo7u6")
 }],
 "loop": true,
 "name": &"walking",
@@ -74,16 +75,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_okx18")
+"texture": ExtResource("12_wo7u6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_ig3xi")
+"texture": ExtResource("11_nh65s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_708cx")
+"texture": ExtResource("10_ygo3v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_m3wr6")
+"texture": ExtResource("9_guqya")
 }],
 "loop": true,
 "name": &"walking_backwards",
@@ -94,3 +95,6 @@ animations = [{
 
 [node name="AnimatedSprite2D" parent="MidPoint" index="0"]
 sprite_frames = SubResource("SpriteFrames_apa5i")
+animation = &"attacking"
+frame = 3
+frame_progress = 0.468803

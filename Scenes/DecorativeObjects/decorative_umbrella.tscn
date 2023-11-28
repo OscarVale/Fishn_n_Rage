@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1qb77b0lwbgd"]
+
+[ext_resource type="Texture2D" uid="uid://b5tlnaxwwiu6i" path="res://Graphics/SHADOW GEN BIG.png" id="1_n28cd"]
+[ext_resource type="Texture2D" uid="uid://c1lcoqnj1uxfr" path="res://Graphics/Stages/PropsNew/BP6.png" id="2_cx5rf"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.392157)
+z_index = -1
+texture_filter = 1
+position = Vector2(-18, 0)
+texture = ExtResource("1_n28cd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -63)
+texture = ExtResource("2_cx5rf")

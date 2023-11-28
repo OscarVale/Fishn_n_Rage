@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Project Fishman"
-run/main_scene="res://Scenes/Stages/level.tscn"
+run/main_scene="res://Scenes/Stages/level_beach.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://Graphics/icon.svg"
 
 [autoload]
 
-Globals="*res://globals.gd"
+Globals="*res://Scenes/globals.gd"
 
 [display]
 
@@ -70,3 +70,5 @@ window/stretch/mode="viewport"
 2d_physics/layer_2="enemy"
 2d_physics/layer_3="object"
 2d_physics/layer_4="hurtboxes"
+2d_physics/layer_5="items"
+2d_physics/layer_6="barriers"

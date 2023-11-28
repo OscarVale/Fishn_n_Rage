@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://csu0ssfmfo4gy"]
+
+[ext_resource type="Texture2D" uid="uid://bekov5rmq3ixy" path="res://Graphics/Stages/PropsNew/OG4.png" id="1_nsx8d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2oo62"]
+size = Vector2(84, 8)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 32
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2oo62")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -69)
+texture = ExtResource("1_nsx8d")

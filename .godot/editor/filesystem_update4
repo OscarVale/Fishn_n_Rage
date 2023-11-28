@@ -1,0 +1,12 @@
+res://Scenes/Stages/level.tscn
+res://Scenes/player.tscn
+res://Scenes/Stages/level_beach.tscn
+res://Scenes/GroundObjects/ground_barrel_yellow.tscn
+res://Scenes/GroundObjects/ground_barrel_blue.tscn
+res://Scenes/GroundObjects/ground_gym_bench.tscn
+res://Scenes/EnviromentalObjects/enviromental_dumbell_rack.tscn
+res://Scenes/EnviromentalObjects/enviromental_pull_up_bar.tscn
+res://Scenes/EnviromentalObjects/enviromental_gym_bench.tscn
+res://Scenes/EnviromentalObjects/enviromental_flower_pot.tscn
+res://Scenes/DecorativeObjects/decorative_umbrella.tscn
+res://Scenes/Enemies/MallEnemies/mall_enemy_2.tscn

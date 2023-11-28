@@ -1,0 +1,310 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1701149832
+::res://Audio/::1700773473
+::res://Audio/Music/::1700773491
+Tema 1 (playa).wav::AudioStreamWAV::4026072845707520642::1700718341::1700773491::1::::<><>::
+::res://Graphics/::1701151500
+icon.svg::CompressedTexture2D::7494936576367291055::1700772032::1700875989::1::::<><>::
+SHADOW GEN BIG.png::CompressedTexture2D::4532000308962221974::1701151266::1701151500::1::::<><>::
+SHADOW GEN.png::CompressedTexture2D::5510272502302712686::1700773067::1700773490::1::::<><>::
+::res://Graphics/Characters/::1701152529
+::res://Graphics/Characters/Beach_Enemy_1/::1700986541
+HavidDasselhoff Dead.png::CompressedTexture2D::728243690524947264::1700898532::1700986541::1::::<><>::
+HavidDasselhoff DMG.png::CompressedTexture2D::7440281714761658873::1700898546::1700986541::1::::<><>::
+::res://Graphics/Characters/Beach_Enemy_1/Attack/::1700986541
+HavidDasselhoff Punch1.png::CompressedTexture2D::5687690527394891652::1700898598::1700986541::1::::<><>::
+HavidDasselhoff Punch2.png::CompressedTexture2D::6511135270041515122::1700898598::1700986541::1::::<><>::
+HavidDasselhoff Punch3.png::CompressedTexture2D::6240151984383119763::1700898598::1700986541::1::::<><>::
+HavidDasselhoff Punch4.png::CompressedTexture2D::3447631442199319064::1700898598::1700986541::1::::<><>::
+::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/::1700986541
+HavidDasselhoff Walk Cycle1.png::CompressedTexture2D::3200748741729998808::1700898640::1700986541::1::::<><>::
+HavidDasselhoff Walk Cycle2.png::CompressedTexture2D::6253792058005447157::1700898640::1700986541::1::::<><>::
+HavidDasselhoff Walk Cycle3.png::CompressedTexture2D::4656615526164021773::1700898640::1700986541::1::::<><>::
+HavidDasselhoff Walk Cycle4.png::CompressedTexture2D::5898359238539752129::1700898640::1700986541::1::::<><>::
+HavidDasselhoff Walk Cycle5.png::CompressedTexture2D::7876243913583786669::1700898640::1700986541::1::::<><>::
+::res://Graphics/Characters/Beach_Enemy_2/::1701077681
+RAVID Dead.png::CompressedTexture2D::3190626024295044941::1700971194::1701077681::1::::<><>::
+RAVID DMG.png::CompressedTexture2D::3364737076242298609::1700971206::1701077681::1::::<><>::
+::res://Graphics/Characters/Beach_Enemy_2/Punch/::1701077681
+RAVID punch1.png::CompressedTexture2D::8482900365004827781::1700971266::1701077681::1::::<><>::
+RAVID punch2.png::CompressedTexture2D::295345723642918782::1700971268::1701077681::1::::<><>::
+RAVID punch3.png::CompressedTexture2D::4663880501369272338::1700971268::1701077681::1::::<><>::
+RAVID punch4.png::CompressedTexture2D::6392569914359115297::1700971268::1701077681::1::::<><>::
+::res://Graphics/Characters/Beach_Enemy_2/Walk/::1701077681
+RAVID Walk1.png::CompressedTexture2D::1382172131214690091::1700971256::1701077681::1::::<><>::
+RAVID Walk2.png::CompressedTexture2D::7995122075847004309::1700971256::1701077681::1::::<><>::
+RAVID Walk3.png::CompressedTexture2D::4167198530540662247::1700971256::1701077681::1::::<><>::
+RAVID Walk4.png::CompressedTexture2D::4931999757074135012::1700971256::1701077681::1::::<><>::
+RAVID Walk5.png::CompressedTexture2D::7269406507898135685::1700971256::1701077681::1::::<><>::
+::res://Graphics/Characters/Beach_Enemy_3/::1701077681
+Aavid Dead.png::CompressedTexture2D::4413969005968648298::1700961130::1701077681::1::::<><>::
+Aavid DMG.png::CompressedTexture2D::5663407075526805901::1700961142::1701077681::1::::<><>::
+::res://Graphics/Characters/Beach_Enemy_3/Punch/::1701077681
+Aavid Punch1.png::CompressedTexture2D::7462241454024620274::1700961162::1701077681::1::::<><>::
+Aavid Punch2.png::CompressedTexture2D::3247483729589175696::1700961162::1701077681::1::::<><>::
+Aavid Punch3.png::CompressedTexture2D::761981527652188911::1700961162::1701077681::1::::<><>::
+Aavid Punch4.png::CompressedTexture2D::763812406403813971::1700961162::1701077681::1::::<><>::
+::res://Graphics/Characters/Beach_Enemy_3/Walk/::1701077681
+Aavid Walk Cycle1.png::CompressedTexture2D::8474099863502964279::1700961178::1701077681::1::::<><>::
+Aavid Walk Cycle2.png::CompressedTexture2D::4975308636445090770::1700961178::1701077681::1::::<><>::
+Aavid Walk Cycle3.png::CompressedTexture2D::187976855014781714::1700961178::1701077681::1::::<><>::
+Aavid Walk Cycle4.png::CompressedTexture2D::3324982064582688851::1700961178::1701077681::1::::<><>::
+Aavid Walk Cycle5.png::CompressedTexture2D::7952500583880879200::1700961178::1701077681::1::::<><>::
+::res://Graphics/Characters/Enemy Generic Prototype/::1700772640
+::res://Graphics/Characters/Enemy Generic Prototype/Idle/::1700773490
+Person IDLE.png::CompressedTexture2D::8097924763652020752::1700464396::1700773490::1::::<><>::
+::res://Graphics/Characters/Enemy Generic Prototype/Walking Cycle/::1700773490
+Person Base1.png::CompressedTexture2D::7887555035334735431::1700464460::1700773490::1::::<><>::
+Person Base2.png::CompressedTexture2D::515045284861428145::1700464462::1700773490::1::::<><>::
+Person Base3.png::CompressedTexture2D::4693021859410494842::1700464462::1700773490::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_1/::1701077681
+MMM Dead.png::CompressedTexture2D::4171192980781075708::1701058056::1701077681::1::::<><>::
+MMM DMG.png::CompressedTexture2D::8151170567715014485::1701058068::1701077681::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_1/Punch/::1701077681
+MMM Punch1.png::CompressedTexture2D::8118832382955643188::1701058086::1701077681::1::::<><>::
+MMM Punch2.png::CompressedTexture2D::5046537522815528205::1701058086::1701077681::1::::<><>::
+MMM Punch3.png::CompressedTexture2D::5614293890769273::1701058086::1701077681::1::::<><>::
+MMM Punch4.png::CompressedTexture2D::7047981171178169048::1701058086::1701077681::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_1/Walk/::1701077681
+MMM Walk1.png::CompressedTexture2D::805737872763907752::1701058096::1701077681::1::::<><>::
+MMM Walk2.png::CompressedTexture2D::5043613538889571717::1701058096::1701077681::1::::<><>::
+MMM Walk3.png::CompressedTexture2D::4708677900395716834::1701058096::1701077681::1::::<><>::
+MMM Walk4.png::CompressedTexture2D::3688041453408572667::1701058096::1701077681::1::::<><>::
+MMM Walk5.png::CompressedTexture2D::8482213128376946192::1701058096::1701077681::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2/::1701077680
+Don Pepe DEAD.png::CompressedTexture2D::6641864114707742959::1701063130::1701077680::1::::<><>::
+Don Pepe DMG.png::CompressedTexture2D::2207240087240748986::1701063140::1701077680::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2/Punch/::1701077681
+Don Pepe Punch1.png::CompressedTexture2D::3631532727540810801::1701063154::1701077681::1::::<><>::
+Don Pepe Punch2.png::CompressedTexture2D::9116042875030328309::1701063154::1701077681::1::::<><>::
+Don Pepe Punch3.png::CompressedTexture2D::3762391207360287811::1701063154::1701077681::1::::<><>::
+Don Pepe Punch4.png::CompressedTexture2D::6293842941515666527::1701063154::1701077681::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2/Walk/::1701077681
+Don Pepe Walk1.png::CompressedTexture2D::3808220405252121221::1701063166::1701077681::1::::<><>::
+Don Pepe Walk2.png::CompressedTexture2D::2257098408102856061::1701063166::1701077681::1::::<><>::
+Don Pepe Walk3.png::CompressedTexture2D::8890880218767308187::1701063166::1701077680::1::::<><>::
+Don Pepe Walk4.png::CompressedTexture2D::2835787883088247322::1701063166::1701077680::1::::<><>::
+Don Pepe Walk5.png::CompressedTexture2D::6729877602358991348::1701063166::1701077680::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2_fixed/::1701151067
+Don Pepe DEAD.png::CompressedTexture2D::8287112579222004829::1701101570::1701151067::1::::<><>::
+Don Pepe DMG.png::CompressedTexture2D::8830128673257111122::1701101558::1701151067::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/::1701151067
+Don Pepe Punch1.png::CompressedTexture2D::2226196567157561977::1701101534::1701151067::1::::<><>::
+Don Pepe Punch2.png::CompressedTexture2D::2586328817207946586::1701101534::1701151067::1::::<><>::
+Don Pepe Punch3.png::CompressedTexture2D::5416900130263975617::1701101534::1701151067::1::::<><>::
+Don Pepe Punch4.png::CompressedTexture2D::3298784706270371846::1701101534::1701151067::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2_fixed/Walk/::1701151067
+Don Pepe Walk1.png::CompressedTexture2D::6269177250568584163::1701101546::1701151067::1::::<><>::
+Don Pepe Walk2.png::CompressedTexture2D::8256152015585463968::1701101548::1701151067::1::::<><>::
+Don Pepe Walk3.png::CompressedTexture2D::6960689130615198765::1701101548::1701151067::1::::<><>::
+Don Pepe Walk4.png::CompressedTexture2D::6444186788749422803::1701101548::1701151067::1::::<><>::
+Don Pepe Walk5.png::CompressedTexture2D::4538431541282006692::1701101548::1701151067::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2_New/::1701152485
+Don Pepe DEAD.png::CompressedTexture2D::9134754170805683825::1701151806::1701152532::1::::<><>::
+Don Pepe DMG.png::CompressedTexture2D::3259794524189208655::1701151806::1701152532::1::::<><>::
+Don Pepe Walk5.png::CompressedTexture2D::2329184966036735156::1701151698::1701152532::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2_New/Punch/::1701152485
+Don Pepe Punch1.png::CompressedTexture2D::2240853009371467051::1701151824::1701152532::1::::<><>::
+Don Pepe Punch2.png::CompressedTexture2D::6647588053293147875::1701151824::1701152532::1::::<><>::
+Don Pepe Punch3.png::CompressedTexture2D::5233530447716508977::1701151824::1701152532::1::::<><>::
+Don Pepe Punch4.png::CompressedTexture2D::8120158359390969493::1701151824::1701152532::1::::<><>::
+::res://Graphics/Characters/Mall_Enemy_2_New/Walk/::1701152485
+Don Pepe Walk1.png::CompressedTexture2D::7335422603723353608::1701152000::1701152532::1::::<><>::
+Don Pepe Walk2.png::CompressedTexture2D::1803849552218400132::1701152000::1701152532::1::::<><>::
+Don Pepe Walk3.png::CompressedTexture2D::8841109226388098821::1701152000::1701152532::1::::<><>::
+Don Pepe Walk4.png::CompressedTexture2D::4979024751904197359::1701152002::1701152532::1::::<><>::
+Don Pepe Walk5.png::CompressedTexture2D::7352299661475635829::1701151980::1701152532::1::::<><>::
+::res://Graphics/Characters/Player/::1701063355
+FishMan Dead.png::CompressedTexture2D::161130462343363323::1700886674::1701063355::1::::<><>::
+FishMan DMG.png::CompressedTexture2D::4393913834755048885::1700884314::1701063355::1::::<><>::
+::res://Graphics/Characters/Player/Attacks/::1700857573
+::res://Graphics/Characters/Player/Attacks/Heavy 1/::1700857598
+FishMan Heavy1.png::CompressedTexture2D::4579130078853777774::1700808450::1700857598::1::::<><>::
+FishMan Heavy2.png::CompressedTexture2D::2884539021052946388::1700808450::1700857598::1::::<><>::
+FishMan Heavy3.png::CompressedTexture2D::148631556788598744::1700808450::1700857598::1::::<><>::
+FishMan Heavy4.png::CompressedTexture2D::889066954884584414::1700808450::1700857598::1::::<><>::
+::res://Graphics/Characters/Player/Attacks/Heavy 2/::1700857598
+FishMan 2Heavy1.png::CompressedTexture2D::2934848203425270815::1700810826::1700857598::1::::<><>::
+FishMan 2Heavy2.png::CompressedTexture2D::5261193923475304630::1700810826::1700857598::1::::<><>::
+FishMan 2Heavy3.png::CompressedTexture2D::2722043074706519819::1700810826::1700857598::1::::<><>::
+FishMan 2Heavy4.png::CompressedTexture2D::6560262014303874098::1700810826::1700857598::1::::<><>::
+::res://Graphics/Characters/Player/Attacks/Heavy 3/::1700857598
+FishMan 3Heavy1.png::CompressedTexture2D::5696206228840117199::1700813886::1700857598::1::::<><>::
+FishMan 3Heavy2.png::CompressedTexture2D::5111779545723760415::1700813886::1700857598::1::::<><>::
+FishMan 3Heavy3.png::CompressedTexture2D::446178059795652014::1700813886::1700857598::1::::<><>::
+FishMan 3Heavy4.png::CompressedTexture2D::20156442266638417::1700813886::1700857598::1::::<><>::
+::res://Graphics/Characters/Player/Attacks/Punch 1/::1700773490
+FishMan 1PunchLight1.png::CompressedTexture2D::493765028407349719::1700713654::1700773490::1::::<><>::
+FishMan 1PunchLight2.png::CompressedTexture2D::1129290294852726632::1700713684::1700773490::1::::<><>::
+FishMan 1PunchLight3.png::CompressedTexture2D::8655983750553769217::1700713674::1700773490::1::::<><>::
+FishMan 1PunchLight4.png::CompressedTexture2D::2921529533783971013::1700713698::1700773490::1::::<><>::
+::res://Graphics/Characters/Player/Attacks/Punch 2/::1700773490
+FishMan 2PunchLight1.png::CompressedTexture2D::638196388927443142::1700717878::1700773490::1::::<><>::
+FishMan 2PunchLight2.png::CompressedTexture2D::5724594266281206792::1700717878::1700773490::1::::<><>::
+FishMan 2PunchLight3.png::CompressedTexture2D::2407767288739770781::1700717878::1700773490::1::::<><>::
+FishMan 2PunchLight4.png::CompressedTexture2D::5959540474064424465::1700717878::1700773490::1::::<><>::
+::res://Graphics/Characters/Player/Attacks/Punch 3/::1700773490
+FishMan 3PunchLight1.png::CompressedTexture2D::5978423060373797001::1700722432::1700773490::1::::<><>::
+FishMan 3PunchLight2.png::CompressedTexture2D::4189812616694894683::1700722432::1700773490::1::::<><>::
+FishMan 3PunchLight3.png::CompressedTexture2D::3570617855007597125::1700722432::1700773490::1::::<><>::
+FishMan 3PunchLight4.png::CompressedTexture2D::9158827635032387133::1700722432::1700773490::1::::<><>::
+::res://Graphics/Characters/Player/Attacks/Punch 4/::1700773490
+FishMan 4PunchLight1.png::CompressedTexture2D::4278546356733408202::1700723614::1700773490::1::::<><>::
+FishMan 4PunchLight2.png::CompressedTexture2D::8224388332928636351::1700723614::1700773490::1::::<><>::
+FishMan 4PunchLight3.png::CompressedTexture2D::1166547628197090284::1700723614::1700773490::1::::<><>::
+FishMan 4PunchLight4.png::CompressedTexture2D::3591649443802311592::1700723614::1700773490::1::::<><>::
+::res://Graphics/Characters/Player/Attacks/Punch 5/::1700801958
+FishMan 5PunchLight1.png::CompressedTexture2D::5872083463847077523::1700801774::1700801958::1::::<><>::
+FishMan 5PunchLight2.png::CompressedTexture2D::1955356739231839207::1700801774::1700801958::1::::<><>::
+FishMan 5PunchLight3.png::CompressedTexture2D::1337826854062537733::1700801774::1700801958::1::::<><>::
+FishMan 5PunchLight4.png::CompressedTexture2D::3272048618015579259::1700801774::1700801958::1::::<><>::
+::res://Graphics/Characters/Player/Idle/::1700773490
+FishMan Idle1.png::CompressedTexture2D::7397392255594983876::1700639504::1700773490::1::::<><>::
+FishMan Idle2.png::CompressedTexture2D::3587317593715289650::1700639506::1700773490::1::::<><>::
+FishMan Idle3.png::CompressedTexture2D::2432310642627493679::1700639506::1700773490::1::::<><>::
+FishMan Idle4.png::CompressedTexture2D::8191202957686986201::1700639506::1700773490::1::::<><>::
+FishMan Idle5.png::CompressedTexture2D::3637942382925690510::1700639506::1700773490::1::::<><>::
+FishMan Idle6.png::CompressedTexture2D::7644945379409502916::1700639506::1700773490::1::::<><>::
+::res://Graphics/Characters/Player/Walk Cycle/::1700773490
+FishMan WalkCycle1.png::CompressedTexture2D::6423217320843138842::1700639420::1700773490::1::::<><>::
+FishMan WalkCycle2.png::CompressedTexture2D::5063275840823387119::1700639420::1700773490::1::::<><>::
+FishMan WalkCycle3.png::CompressedTexture2D::4852504244699959766::1700639420::1700773490::1::::<><>::
+FishMan WalkCycle4.png::CompressedTexture2D::7925299484079142065::1700639420::1700773490::1::::<><>::
+FishMan WalkCycle5.png::CompressedTexture2D::1519927437232930850::1700639420::1700773490::1::::<><>::
+::res://Graphics/Characters/Player/Walk Cycle Object/::1700900418
+FishMan WalkHandsUp1.png::CompressedTexture2D::6947945358969788567::1700882206::1700900418::1::::<><>::
+FishMan WalkHandsUp2.png::CompressedTexture2D::3510567283495347936::1700882206::1700900418::1::::<><>::
+FishMan WalkHandsUp3.png::CompressedTexture2D::1463187030023122942::1700882206::1700900418::1::::<><>::
+FishMan WalkHandsUp4.png::CompressedTexture2D::7833031380239597872::1700882206::1700900418::1::::<><>::
+FishMan WalkHandsUp5.png::CompressedTexture2D::7339759259146527221::1700882206::1700900418::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_1/::1701077680
+Leviathan DEAD.png::CompressedTexture2D::8295983703080069144::1700980918::1701077680::1::::<><>::
+Leviathan DMG.png::CompressedTexture2D::8451788790508312465::1700980930::1701077680::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_1/Punch/::1701077680
+Leviathan Punch1.png::CompressedTexture2D::3109496215230566217::1700980944::1701077680::1::::<><>::
+Leviathan Punch2.png::CompressedTexture2D::5875632709458671605::1700980944::1701077680::1::::<><>::
+Leviathan Punch3.png::CompressedTexture2D::7636967015950463513::1700980944::1701077680::1::::<><>::
+Leviathan Punch4.png::CompressedTexture2D::2801383061158744743::1700980944::1701077680::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_1/Walk/::1701077680
+Leviathan Walk1.png::CompressedTexture2D::1771253651584427448::1700980956::1701077680::1::::<><>::
+Leviathan Walk2.png::CompressedTexture2D::1685901883271858846::1700980956::1701077680::1::::<><>::
+Leviathan Walk3.png::CompressedTexture2D::6456227500962881925::1700980956::1701077680::1::::<><>::
+Leviathan Walk4.png::CompressedTexture2D::5059500461041079061::1700980956::1701077680::1::::<><>::
+Leviathan Walk5.png::CompressedTexture2D::6131486282035019272::1700980956::1701077680::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_2/::1701077681
+Beelzebub DEAD1.png::CompressedTexture2D::2703524417862759044::1700985524::1701077681::1::::<><>::
+Beelzebub DMG1.png::CompressedTexture2D::2534357236851897042::1700985536::1701077681::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_2/Punch/::1701077681
+Beelzebub Punch1.png::CompressedTexture2D::3836821046391848381::1700985550::1701077680::1::::<><>::
+Beelzebub Punch2.png::CompressedTexture2D::6819952344521506838::1700985550::1701077680::1::::<><>::
+Beelzebub Punch3.png::CompressedTexture2D::6273648950215974642::1700985550::1701077680::1::::<><>::
+Beelzebub Punch4.png::CompressedTexture2D::2444174911559107763::1700985550::1701077681::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_2/Walk/::1701077681
+Beelzebub Walk1.png::CompressedTexture2D::2108218951939999280::1700985560::1701077681::1::::<><>::
+Beelzebub Walk2.png::CompressedTexture2D::1542895558975292221::1700985560::1701077681::1::::<><>::
+Beelzebub Walk3.png::CompressedTexture2D::3120376875956095593::1700985560::1701077681::1::::<><>::
+Beelzebub Walk4.png::CompressedTexture2D::7933487083484981289::1700985560::1701077681::1::::<><>::
+Beelzebub Walk5.png::CompressedTexture2D::5286771756350325671::1700985560::1701077681::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_3/::1701077681
+Asphodelos Dead.png::CompressedTexture2D::7874156842937835234::1700977594::1701077681::1::::<><>::
+Asphodelos DMG.png::CompressedTexture2D::4053167503708084661::1700977606::1701077680::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_3/Punch/::1701077681
+Asphodelos Punch1.png::CompressedTexture2D::1131390233305620110::1700977632::1701077681::1::::<><>::
+Asphodelos Punch2.png::CompressedTexture2D::6475488668713229743::1700977632::1701077681::1::::<><>::
+Asphodelos Punch3.png::CompressedTexture2D::7358311036299517208::1700977632::1701077681::1::::<><>::
+Asphodelos Punch4.png::CompressedTexture2D::5755875623629087412::1700977632::1701077681::1::::<><>::
+::res://Graphics/Characters/Street_Enemy_3/Walk/::1701077681
+Asphodelos Walkcycle1.png::CompressedTexture2D::2526897557445955104::1700977644::1701077681::1::::<><>::
+Asphodelos Walkcycle2.png::CompressedTexture2D::301829247115590305::1700977644::1701077681::1::::<><>::
+Asphodelos Walkcycle3.png::CompressedTexture2D::1721219392038929980::1700977644::1701077681::1::::<><>::
+Asphodelos Walkcycle4.png::CompressedTexture2D::7293399643547542213::1700977644::1701077681::1::::<><>::
+Asphodelos Walkcycle5.png::CompressedTexture2D::1208449510706219018::1700977644::1701077681::1::::<><>::
+::res://Graphics/Stages/::1701146674
+::res://Graphics/Stages/Beach/::1701146227
+Stage1Beach.png::CompressedTexture2D::2979145224818579482::1700438995::1700773490::1::::<><>::
+::res://Graphics/Stages/Beach/Background/::1700773490
+Beach NoSky.png::CompressedTexture2D::3012434034022066101::1700440136::1700773490::1::::<><>::
+Beach Sky.png::CompressedTexture2D::2115120628856210433::1700440080::1700773490::1::::<><>::
+Stage1Beach CityLine.png::CompressedTexture2D::137763603434968468::1700109968::1700773490::1::::<><>::
+Stage1Beach Clouds.png::CompressedTexture2D::4252390835854473588::1700109990::1700773490::1::::<><>::
+Stage1Beach MountainLine.png::CompressedTexture2D::763129796868278319::1700109928::1700773490::1::::<><>::
+Stage1Beach.png::CompressedTexture2D::4896656498174707179::1700124818::1700773490::1::::<><>::
+::res://Graphics/Stages/City/::1701146245
+Car.png::CompressedTexture2D::2741637612040095211::1700463216::1700773490::1::::<><>::
+Stage2 Street FULL.png::CompressedTexture2D::6110039158807944426::1700385580::1700773490::1::::<><>::
+::res://Graphics/Stages/City/Background/::1701146471
+2.png::CompressedTexture2D::5533374750282275532::1700462280::1700773490::1::::<><>::
+3.png::CompressedTexture2D::8384658424255769646::1700462320::1700773490::1::::<><>::
+5.png::CompressedTexture2D::6169101850214706052::1700462412::1700773490::1::::<><>::
+6.png::CompressedTexture2D::6349114545877812511::1700462484::1700773490::1::::<><>::
+7.png::CompressedTexture2D::7328597781060611001::1700462504::1700773490::1::::<><>::
+8.png::CompressedTexture2D::891655777101220345::1700462590::1700773490::1::::<><>::
+9.png::CompressedTexture2D::6275588689015639202::1700462610::1700773490::1::::<><>::
+10.png::CompressedTexture2D::1485461765977115719::1700462636::1700773490::1::::<><>::
+Pavement correted.png::CompressedTexture2D::2329225652374521623::1701146385::1701146471::1::::<><>::
+::res://Graphics/Stages/Mall/::1700773171
+::res://Graphics/Stages/Props/::1701149832
+BP1.png::CompressedTexture2D::3422402791258229654::1700285080::1701146218::1::::<><>::
+BP2-export.png::CompressedTexture2D::5464455591717582439::1700782805::1701146589::1::::<><>::
+BP3.png::CompressedTexture2D::3913589197016054183::1700285134::1701146218::1::::<><>::
+OG1.png::CompressedTexture2D::7462184481599765519::1700284800::1701146218::1::::<><>::
+OG2.png::CompressedTexture2D::6538304324467056821::1700284852::1701146218::1::::<><>::
+OG3.png::CompressedTexture2D::4846324496136616908::1700284902::1701146218::1::::<><>::
+OG4.png::CompressedTexture2D::1127768205165372850::1700284936::1701146218::1::::<><>::
+OG5.png::CompressedTexture2D::8117718015830875890::1700284988::1701146218::1::::<><>::
+::res://Graphics/Stages/PropsNew/::1701149832
+BP1.png::CompressedTexture2D::6861363408147476896::1700858308::1701146227::1::::<><>::
+BP2.png::CompressedTexture2D::7366336232725141109::1700858306::1701146227::1::::<><>::
+BP3.png::CompressedTexture2D::338427282439132511::1700858308::1701146227::1::::<><>::
+BP4.png::CompressedTexture2D::8181857081249939173::1700285160::1701149830::1::::<><>::
+BP5.png::CompressedTexture2D::5667270244995709790::1700449513::1701149824::1::::<><>::
+BP6.png::CompressedTexture2D::6620606753270439223::1700449517::1701149822::1::::<><>::
+Car.png::CompressedTexture2D::5874274048132915658::1701146385::1701149814::1::::<><>::
+FlowerPot.png::CompressedTexture2D::8938682302702996808::1701146385::1701149811::1::::<><>::
+OG1.png::CompressedTexture2D::8507038314880327126::1700858308::1701146227::1::::<><>::
+OG2.png::CompressedTexture2D::7597255932972410008::1700858308::1701146227::1::::<><>::
+OG3.png::CompressedTexture2D::1706695713840532187::1700858308::1701146227::1::::<><>::
+OG4.png::CompressedTexture2D::2688708977886458086::1700858308::1701146227::1::::<><>::
+OG5.png::CompressedTexture2D::7474758370064192527::1700858306::1701146227::1::::<><>::
+OG6.png::CompressedTexture2D::3522487098918184617::1700285018::1701149832::1::::<><>::
+::res://Scenes/::1701151806
+globals.gd::GDScript::-1::1700883078::0::1::::<>Node<>::
+object_projectile.gd::GDScript::-1::1701076436::0::1::::<>Area2D<>::
+object_projectile.tscn::PackedScene::233138405068299124::1701076825::0::1::::<><>::uid://ckrhna2qh0qfm
+player.gd::GDScript::-1::1701076817::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1053008490608777984::1701151806::0::1::::<><>::uid://ddnl777go4kem::::res://Graphics/Characters/Player/Idle/FishMan Idle1.png<>res://Scenes/player.gd<>uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>uid://brdyujy6lh5wg::::res://Graphics/Characters/Player/Idle/FishMan Idle2.png<>uid://b6ifurrhw5i75::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy1.png<>uid://ckb2bhq04fi6::::res://Graphics/Characters/Player/FishMan Dead.png<>uid://bawh2h4k7j1hr::::res://Graphics/Characters/Player/Idle/FishMan Idle3.png<>uid://bhdj63j8v011a::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy2.png<>uid://dox46e4a3k6th::::res://Graphics/Characters/Player/Idle/FishMan Idle4.png<>uid://cd867w0g5vxg::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy3.png<>uid://br3im50kviyp7::::res://Graphics/Characters/Player/Idle/FishMan Idle5.png<>uid://mww2kdk5f1wc::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy4.png<>uid://bh2wryoinokyh::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy1.png<>uid://hbgic8s2bsn4::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight1.png<>uid://cg7tdidxplj2u::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy2.png<>uid://qdbimti7hom7::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight2.png<>uid://be1twfogh7xwt::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy3.png<>uid://dvla11uoah75n::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight3.png<>uid://bhvhfuixabff6::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight4.png<>uid://c0p3s6107ulf3::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy4.png<>uid://jdfabqp28ipq::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight1.png<>uid://cnfjxjegyk7yp::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy1.png<>uid://ce3gi6gtf7up8::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy2.png<>uid://cntbh4i1e21ce::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight2.png<>uid://baklttiengis0::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight3.png<>uid://gmeqtra43mh7::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy3.png<>uid://cq5304uy4jxxp::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight4.png<>uid://j08dsx5li2d::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy4.png<>uid://crf80wa2p8yj6::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight1.png<>uid://b0xtuprs23byx::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight2.png<>uid://bq4vs35cijht2::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight3.png<>uid://d3qus2kgt3bv6::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight4.png<>uid://b17tbeuo4s8mo::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight1.png<>uid://dpf7qehy48jpf::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight2.png<>uid://qvc4stihc82s::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight3.png<>uid://brf27aqmpoqls::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight4.png<>uid://cxrpplfpar21s::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle1.png<>uid://cpwqmem2yb13l::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight1.png<>uid://cbeubhs85v7bm::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle3.png<>uid://24go7ophptj8::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight2.png<>uid://dk6cr3o7uarbl::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle4.png<>uid://tcb2vvmukl1v::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight3.png<>uid://vwi8ofbfw6u5::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle5.png<>uid://bmvafschy7r36::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight4.png<>uid://b3upebph1nh06::::res://Graphics/Characters/Player/FishMan DMG.png<>uid://c58vv6tkg1jyt::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp1.png<>uid://bqassa8kas633::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp2.png<>uid://u31qg7xlvlmc::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp3.png<>uid://djum5aclm1f6o::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp4.png<>uid://dcto06vbfurr6::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp5.png
+::res://Scenes/DecorativeObjects/::1701151806
+decorative_umbrella.tscn::PackedScene::9017321575574285075::1701151806::0::1::::<><>::uid://b5tlnaxwwiu6i::::res://Graphics/SHADOW GEN BIG.png<>uid://c1lcoqnj1uxfr::::res://Graphics/Stages/PropsNew/BP6.png
+::res://Scenes/Enemies/::1701116103
+generic_enemy.gd::GDScript::-1::1701076760::0::1::::<>CharacterBody2D<>::
+generic_enemy.tscn::PackedScene::6268715531038672906::1701116103::0::1::::<><>::res://Scenes/Enemies/generic_enemy.gd<>uid://ckrhna2qh0qfm
+::res://Scenes/Enemies/BeachEnemies/::1701078877
+beach_enemy_1.tscn::PackedScene::4290987044318716121::1701078529::0::1::::<><>::uid://cvku3gic4jkpm
+beach_enemy_2.tscn::PackedScene::7112765293175428249::1701078583::0::1::::<><>::uid://cvku3gic4jkpm
+beach_enemy_3.tscn::PackedScene::8707112407205501248::1701078877::0::1::::<><>::uid://cvku3gic4jkpm
+::res://Scenes/Enemies/MallEnemies/::1701151806
+mall_enemy_1.tscn::PackedScene::4006545210302172547::1701116103::0::1::::<><>::uid://cvku3gic4jkpm
+mall_enemy_2.tscn::PackedScene::8291902155761721414::1701151806::0::1::::<><>::uid://cvku3gic4jkpm::::res://Scenes/Enemies/generic_enemy.tscn<>uid://br0e2wl2hm3gf::::res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch1.png<>uid://6yneq3mtukwv::::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/Don Pepe Punch1.png<>uid://bc33ptfqsjuc5::::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/Don Pepe Punch2.png<>uid://cjf8s3dwtks1f::::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/Don Pepe Punch3.png<>uid://bm87rcqwgvfbi::::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/Don Pepe Punch4.png<>uid://c1vmscriqsi5d::::res://Graphics/Characters/Mall_Enemy_2/Don Pepe DEAD.png<>uid://6pg6lswpgfyw::::res://Graphics/Characters/Mall_Enemy_2/Don Pepe DMG.png<>uid://7fmc0whuhlhl::::res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk2.png<>uid://dyw2q67nw2t44::::res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk3.png<>uid://bgnxaoanjyls1::::res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk4.png<>uid://c25adouloxmj1::::res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk5.png
+::res://Scenes/Enemies/StreetEnemies/::1701079517
+street_enemy_1.tscn::PackedScene::4397272107627802956::1701079115::0::1::::<><>::uid://cvku3gic4jkpm
+street_enemy_2.tscn::PackedScene::1521946160246809021::1701079358::0::1::::<><>::uid://cvku3gic4jkpm
+street_enemy_3.tscn::PackedScene::4183744873427855777::1701079517::0::1::::<><>::uid://cvku3gic4jkpm
+::res://Scenes/EnviromentalObjects/::1701150239
+enviromental_dumbell_rack.tscn::PackedScene::7327919759152618025::1701150220::0::1::::<><>::uid://deq3gcdc1exdn::::res://Graphics/Stages/PropsNew/OG5.png
+enviromental_flower_pot.tscn::PackedScene::4179330899419514003::1701150219::0::1::::<><>::uid://d0l716b1nu4oi::::res://Graphics/Stages/PropsNew/FlowerPot.png
+enviromental_gym_bench.tscn::PackedScene::6079079130758245720::1701150229::0::1::::<><>::uid://bekov5rmq3ixy::::res://Graphics/Stages/PropsNew/OG4.png
+enviromental_pull_up_bar.tscn::PackedScene::3922817431537993872::1701150239::0::1::::<><>::uid://dtg4xb7dh7ad7::::res://Graphics/Stages/PropsNew/OG1.png
+::res://Scenes/GroundObjects/::1701147816
+generic_ground_object.gd::GDScript::-1::1701065668::0::1::::<>StaticBody2D<>::
+generic_ground_object.tscn::PackedScene::5660308034076796522::1701142774::0::1::::<><>::res://Scenes/GroundObjects/generic_ground_object.gd<>uid://ckrhna2qh0qfm
+ground_barrel_blue.tscn::PackedScene::630475666408696786::1701146999::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://dc7kqmvts776x::::res://Graphics/Stages/PropsNew/BP2.png
+ground_barrel_yellow.tscn::PackedScene::8681357600664756861::1701146972::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://dc7kqmvts776x::::res://Graphics/Stages/PropsNew/BP2.png
+ground_cooler.tscn::PackedScene::5843037174947363957::1701142774::0::1::::<><>::uid://cmv5pf77chiow
+ground_gym_bench.tscn::PackedScene::3096186322752341586::1701147636::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://bekov5rmq3ixy::::res://Graphics/Stages/PropsNew/OG4.png
+ground_trash_bin.tscn::PackedScene::2149922208842516687::1701147816::0::1::::<><>::uid://cmv5pf77chiow
+ground_weight_large.tscn::PackedScene::8579658651061414377::1701147366::0::1::::<><>::uid://cmv5pf77chiow
+ground_weight_small.tscn::PackedScene::2733842172905874347::1701147499::0::1::::<><>::uid://cmv5pf77chiow
+::res://Scenes/Stages/::1701151806
+level.gd::GDScript::-1::1700982509::0::1::::<>Node2D<>::
+level.tscn::PackedScene::8101763426211141965::1701151806::0::1::::<><>::res://Scenes/Stages/level.gd<>uid://pac5p1e37y0o::::res://Scenes/player.tscn
+level_beach.tscn::PackedScene::4832307969031537527::1701151806::0::1::::<><>::uid://dnos4idmp16j6::::res://Scenes/Stages/level.tscn<>uid://5ety0i4reyrp::::res://Graphics/Stages/Beach/Background/Beach Sky.png<>uid://b1t5ixxl713em::::res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png<>uid://k4wvvrs3b38v::::res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png<>uid://b7y7gcesehuq::::res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png<>uid://bi6il31h2xnm8::::res://Graphics/Stages/Beach/Background/Beach NoSky.png<>uid://cm0jd3s4fkwyw::::res://Graphics/Stages/PropsNew/BP5.png<>uid://d1qb77b0lwbgd::::res://Scenes/DecorativeObjects/decorative_umbrella.tscn

@@ -1,0 +1,115 @@
+[gd_scene load_steps=11 format=3 uid="uid://ca32n2u5mokvv"]
+
+[ext_resource type="PackedScene" uid="uid://dnos4idmp16j6" path="res://Scenes/Stages/level.tscn" id="1_ridh1"]
+[ext_resource type="Texture2D" uid="uid://5ety0i4reyrp" path="res://Graphics/Stages/Beach/Background/Beach Sky.png" id="2_j5unc"]
+[ext_resource type="Texture2D" uid="uid://b1t5ixxl713em" path="res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png" id="3_y22lw"]
+[ext_resource type="Texture2D" uid="uid://k4wvvrs3b38v" path="res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png" id="4_gp376"]
+[ext_resource type="Texture2D" uid="uid://b7y7gcesehuq" path="res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png" id="5_xxtcg"]
+[ext_resource type="Texture2D" uid="uid://bi6il31h2xnm8" path="res://Graphics/Stages/Beach/Background/Beach NoSky.png" id="6_uwxij"]
+[ext_resource type="Texture2D" uid="uid://cm0jd3s4fkwyw" path="res://Graphics/Stages/PropsNew/BP5.png" id="7_kgfgo"]
+[ext_resource type="PackedScene" uid="uid://d1qb77b0lwbgd" path="res://Scenes/DecorativeObjects/decorative_umbrella.tscn" id="8_yyj0w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oxgny"]
+size = Vector2(3396, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ds2h0"]
+size = Vector2(713, 91.5)
+
+[node name="Level" instance=ExtResource("1_ridh1")]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
+
+[node name="Skye" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="BGSkye" type="Sprite2D" parent="ParallaxBackground/Skye" index="0"]
+texture_filter = 1
+position = Vector2(1503, 180)
+texture = ExtResource("2_j5unc")
+
+[node name="CloudsFar" type="ParallaxLayer" parent="ParallaxBackground" index="1"]
+motion_scale = Vector2(0.04, 0.04)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/CloudsFar" index="0"]
+modulate = Color(0.9408, 0.96824, 0.98, 1)
+texture_filter = 1
+position = Vector2(1849, 190)
+texture = ExtResource("3_y22lw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/CloudsFar" index="1"]
+modulate = Color(0.9408, 0.96824, 0.98, 1)
+texture_filter = 1
+position = Vector2(1328, 190)
+texture = ExtResource("3_y22lw")
+
+[node name="Clouds" type="ParallaxLayer" parent="ParallaxBackground" index="2"]
+motion_scale = Vector2(0.05, 0.05)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Clouds" index="0"]
+texture_filter = 1
+position = Vector2(1649, 180)
+texture = ExtResource("3_y22lw")
+
+[node name="Mountains" type="ParallaxLayer" parent="ParallaxBackground" index="3"]
+motion_scale = Vector2(0.07, 0.07)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Mountains" index="0"]
+texture_filter = 1
+position = Vector2(1503, 180)
+texture = ExtResource("4_gp376")
+
+[node name="CitySkyLine" type="ParallaxLayer" parent="ParallaxBackground" index="4"]
+motion_scale = Vector2(0.15, 0.15)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/CitySkyLine" index="0"]
+texture_filter = 1
+position = Vector2(395, 180)
+texture = ExtResource("5_xxtcg")
+
+[node name="Ground" type="ParallaxLayer" parent="ParallaxBackground" index="5"]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="BGGround" type="Sprite2D" parent="ParallaxBackground/Ground" index="0"]
+texture_filter = 1
+position = Vector2(1503, 180)
+texture = ExtResource("6_uwxij")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Barriers" index="0"]
+collision_layer = 32
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D" index="0"]
+position = Vector2(1667, 111)
+shape = SubResource("RectangleShape2D_oxgny")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Barriers/StaticBody2D" index="1"]
+position = Vector2(1667, 336)
+shape = SubResource("RectangleShape2D_oxgny")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Barriers" index="1"]
+collision_layer = 32
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D2" index="0"]
+position = Vector2(771.5, 278.75)
+shape = SubResource("RectangleShape2D_ds2h0")
+
+[node name="GroundDecorations" type="Node2D" parent="." index="2"]
+
+[node name="Bp5" type="Sprite2D" parent="GroundDecorations" index="0"]
+texture_filter = 1
+position = Vector2(1391, 281)
+texture = ExtResource("7_kgfgo")
+
+[node name="Node2D" parent="YSortingLayer" index="2" instance=ExtResource("8_yyj0w")]
+position = Vector2(1450, 141)

@@ -276,7 +276,7 @@ animations = [{
 size = Vector2(24.5, 24)
 
 [node name="Player" type="CharacterBody2D"]
-collision_mask = 4
+collision_mask = 36
 wall_min_slide_angle = 0.174533
 script = ExtResource("1_n3pgc")
 
