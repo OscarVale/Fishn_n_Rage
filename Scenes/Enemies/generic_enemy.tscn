@@ -1,0 +1,162 @@
+[gd_scene load_steps=17 format=3 uid="uid://cvku3gic4jkpm"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/generic_enemy.gd" id="1_f26b8"]
+[ext_resource type="Texture2D" uid="uid://ckrhna2qh0qfm" path="res://Graphics/SHADOW GEN.png" id="2_jii27"]
+[ext_resource type="Texture2D" uid="uid://cnbfoxnq1mmem" path="res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch1.png" id="3_gygrt"]
+[ext_resource type="Texture2D" uid="uid://cy1bpgjro5jty" path="res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch2.png" id="4_xuxap"]
+[ext_resource type="Texture2D" uid="uid://cu51nks6y6nlr" path="res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch3.png" id="5_tgvkn"]
+[ext_resource type="Texture2D" uid="uid://bpeb8r8s03rv1" path="res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch4.png" id="6_x8ri6"]
+[ext_resource type="Texture2D" uid="uid://km1cjwwas3s3" path="res://Graphics/Characters/Beach_Enemy_1/HavidDasselhoff Dead.png" id="7_m80vh"]
+[ext_resource type="Texture2D" uid="uid://deael83t3lesn" path="res://Graphics/Characters/Beach_Enemy_1/HavidDasselhoff DMG.png" id="8_ocl5t"]
+[ext_resource type="Texture2D" uid="uid://blup4m7g18inw" path="res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle1.png" id="9_gigyy"]
+[ext_resource type="Texture2D" uid="uid://cvdnbn8kqrnjh" path="res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle2.png" id="10_pnepy"]
+[ext_resource type="Texture2D" uid="uid://b7lx1ov8mwfub" path="res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle3.png" id="11_kuvcg"]
+[ext_resource type="Texture2D" uid="uid://cqbhd52652qub" path="res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle4.png" id="12_o4ipj"]
+[ext_resource type="Texture2D" uid="uid://dkhkt7ax6gbx2" path="res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle5.png" id="13_mp5eg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8s40x"]
+radius = 7.0
+height = 38.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_osns2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_gygrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xuxap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tgvkn")
+}, {
+"duration": 4.0,
+"texture": ExtResource("6_x8ri6")
+}],
+"loop": true,
+"name": &"attacking",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("7_m80vh")
+}],
+"loop": true,
+"name": &"defeated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("8_ocl5t")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_gigyy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_pnepy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kuvcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_o4ipj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_mp5eg")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_mp5eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_o4ipj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kuvcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pnepy")
+}],
+"loop": true,
+"name": &"walking_backwards",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7fqte"]
+size = Vector2(16, 16)
+
+[node name="GenericEnemy" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 4
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_f26b8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_8s40x")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.392157)
+texture_filter = 1
+scale = Vector2(1.53846, 1.86667)
+texture = ExtResource("2_jii27")
+
+[node name="MidPoint" type="Marker2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MidPoint"]
+texture_filter = 1
+position = Vector2(0, -86)
+rotation = 3.14159
+scale = Vector2(1, -1)
+sprite_frames = SubResource("SpriteFrames_osns2")
+animation = &"hit"
+
+[node name="EnemyArea" type="Area2D" parent="MidPoint"]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MidPoint/EnemyArea"]
+position = Vector2(30, 0)
+shape = SubResource("RectangleShape2D_7fqte")
+debug_color = Color(0.788235, 0.419608, 0.262745, 0.4)
+
+[node name="CalculateTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="StunTimerShort" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true
+
+[node name="AttackCooldown" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true
+
+[node name="DefeatedTimer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[node name="AttackDelay" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[connection signal="body_entered" from="MidPoint/EnemyArea" to="." method="_on_enemy_area_body_entered"]
+[connection signal="timeout" from="CalculateTimer" to="." method="_on_calculate_timer_timeout"]
+[connection signal="timeout" from="StunTimerShort" to="." method="_on_stun_timer_short_timeout"]
+[connection signal="timeout" from="AttackCooldown" to="." method="_on_attack_cooldown_timeout"]
+[connection signal="timeout" from="DefeatedTimer" to="." method="_on_defeated_timer_timeout"]
+[connection signal="timeout" from="AttackDelay" to="." method="_on_attack_delay_timeout"]

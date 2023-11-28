@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfc2cnpuatcic"]
+
+[ext_resource type="PackedScene" uid="uid://cmv5pf77chiow" path="res://Scenes/generic_ground_object.tscn" id="1_xig7d"]
+[ext_resource type="Texture2D" uid="uid://c0fg6gaol5rl2" path="res://Graphics/Stages/Beach/Props/OG2.png" id="2_ci70d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mbtev"]
+size = Vector2(74, 12)
+
+[node name="Generic Ground Object" instance=ExtResource("1_xig7d")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_mbtev")
+
+[node name="ObjectSprite" parent="." index="2"]
+position = Vector2(0, -13)
+texture = ExtResource("2_ci70d")

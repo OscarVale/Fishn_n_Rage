@@ -1,0 +1,100 @@
+[gd_scene load_steps=14 format=3 uid="uid://bxc2hjw5d7al4"]
+
+[ext_resource type="PackedScene" uid="uid://cvku3gic4jkpm" path="res://Scenes/Enemies/generic_enemy.tscn" id="1_su6f1"]
+[ext_resource type="Texture2D" uid="uid://dnw28oss3kp2s" path="res://Graphics/Characters/Mall_Enemy_1/Punch/MMM Punch1.png" id="2_xmli4"]
+[ext_resource type="Texture2D" uid="uid://cd5t0apwixi26" path="res://Graphics/Characters/Mall_Enemy_1/Punch/MMM Punch2.png" id="3_ds7bn"]
+[ext_resource type="Texture2D" uid="uid://cyp4nisnskv" path="res://Graphics/Characters/Mall_Enemy_1/Punch/MMM Punch3.png" id="4_wdkbl"]
+[ext_resource type="Texture2D" uid="uid://c7odhqroikcwu" path="res://Graphics/Characters/Mall_Enemy_1/Punch/MMM Punch4.png" id="5_xenaw"]
+[ext_resource type="Texture2D" uid="uid://b0os66ppqqpmi" path="res://Graphics/Characters/Mall_Enemy_1/MMM Dead.png" id="6_ul5re"]
+[ext_resource type="Texture2D" uid="uid://doequaeqn3ae4" path="res://Graphics/Characters/Mall_Enemy_1/MMM DMG.png" id="7_0isoi"]
+[ext_resource type="Texture2D" uid="uid://lqkndd2ayc7a" path="res://Graphics/Characters/Mall_Enemy_1/Walk/MMM Walk1.png" id="8_5w54w"]
+[ext_resource type="Texture2D" uid="uid://cd4ftwj2wks4t" path="res://Graphics/Characters/Mall_Enemy_1/Walk/MMM Walk2.png" id="9_bt00r"]
+[ext_resource type="Texture2D" uid="uid://b8c6icb6jkeny" path="res://Graphics/Characters/Mall_Enemy_1/Walk/MMM Walk3.png" id="10_636bs"]
+[ext_resource type="Texture2D" uid="uid://bssrreruporp0" path="res://Graphics/Characters/Mall_Enemy_1/Walk/MMM Walk4.png" id="11_vxfa5"]
+[ext_resource type="Texture2D" uid="uid://ds332tp4y2l2w" path="res://Graphics/Characters/Mall_Enemy_1/Walk/MMM Walk5.png" id="12_mb2wo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ayh46"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xmli4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ds7bn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wdkbl")
+}, {
+"duration": 10.0,
+"texture": ExtResource("5_xenaw")
+}],
+"loop": true,
+"name": &"attacking",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("6_ul5re")
+}],
+"loop": true,
+"name": &"defeated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("7_0isoi")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("8_5w54w")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_bt00r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_636bs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vxfa5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mb2wo")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_mb2wo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vxfa5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_636bs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bt00r")
+}],
+"loop": true,
+"name": &"walking_backwards",
+"speed": 5.0
+}]
+
+[node name="GenericEnemy" instance=ExtResource("1_su6f1")]
+
+[node name="AnimatedSprite2D" parent="MidPoint" index="0"]
+sprite_frames = SubResource("SpriteFrames_ayh46")
+animation = &"walking"
+frame = 3
+frame_progress = 0.444131

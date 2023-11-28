@@ -1,0 +1,97 @@
+[gd_scene load_steps=13 format=3 uid="uid://b3wcoud3e8yoi"]
+
+[ext_resource type="PackedScene" uid="uid://cvku3gic4jkpm" path="res://Scenes/Enemies/generic_enemy.tscn" id="1_o6kkb"]
+[ext_resource type="Texture2D" uid="uid://bkki7ikn75gqb" path="res://Graphics/Characters/Street_Enemy_1/Punch/Leviathan Punch1.png" id="2_8j4wj"]
+[ext_resource type="Texture2D" uid="uid://cpyg2vaaqt678" path="res://Graphics/Characters/Street_Enemy_1/Punch/Leviathan Punch2.png" id="3_wvil8"]
+[ext_resource type="Texture2D" uid="uid://dg2ny4ama74bd" path="res://Graphics/Characters/Street_Enemy_1/Punch/Leviathan Punch3.png" id="4_h5k6r"]
+[ext_resource type="Texture2D" uid="uid://bf6amtn4vywvv" path="res://Graphics/Characters/Street_Enemy_1/Punch/Leviathan Punch4.png" id="5_k20vx"]
+[ext_resource type="Texture2D" uid="uid://dqgvv0ke0vpbc" path="res://Graphics/Characters/Street_Enemy_1/Leviathan DEAD.png" id="6_axedh"]
+[ext_resource type="Texture2D" uid="uid://dsodyx5vpfbgj" path="res://Graphics/Characters/Street_Enemy_1/Leviathan DMG.png" id="7_jkmxh"]
+[ext_resource type="Texture2D" uid="uid://0iaj26juyn2o" path="res://Graphics/Characters/Street_Enemy_1/Walk/Leviathan Walk1.png" id="8_tvyqc"]
+[ext_resource type="Texture2D" uid="uid://yaws7yaeb6go" path="res://Graphics/Characters/Street_Enemy_1/Walk/Leviathan Walk2.png" id="9_g28bk"]
+[ext_resource type="Texture2D" uid="uid://cx8peg75koxvp" path="res://Graphics/Characters/Street_Enemy_1/Walk/Leviathan Walk3.png" id="10_catlm"]
+[ext_resource type="Texture2D" uid="uid://cec4h62g5udh2" path="res://Graphics/Characters/Street_Enemy_1/Walk/Leviathan Walk4.png" id="11_dwiqu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tedxi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8j4wj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wvil8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h5k6r")
+}, {
+"duration": 4.0,
+"texture": ExtResource("5_k20vx")
+}],
+"loop": true,
+"name": &"attacking",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("6_axedh")
+}],
+"loop": true,
+"name": &"defeated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("7_jkmxh")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("2_8j4wj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_tvyqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_g28bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_catlm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dwiqu")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_dwiqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_catlm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_g28bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tvyqc")
+}],
+"loop": true,
+"name": &"walking_backwards",
+"speed": 5.0
+}]
+
+[node name="GenericEnemy" instance=ExtResource("1_o6kkb")]
+
+[node name="AnimatedSprite2D" parent="MidPoint" index="0"]
+sprite_frames = SubResource("SpriteFrames_tedxi")
+animation = &"walking_backwards"

@@ -1,0 +1,96 @@
+[gd_scene load_steps=13 format=3 uid="uid://dqewogdqaqrys"]
+
+[ext_resource type="PackedScene" uid="uid://cvku3gic4jkpm" path="res://Scenes/Enemies/generic_enemy.tscn" id="1_fjtwr"]
+[ext_resource type="Texture2D" uid="uid://br0e2wl2hm3gf" path="res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch1.png" id="2_f0t4t"]
+[ext_resource type="Texture2D" uid="uid://d2445n13gjk6h" path="res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch2.png" id="3_5cg5q"]
+[ext_resource type="Texture2D" uid="uid://btusbeyn5fsgh" path="res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch3.png" id="4_w8c88"]
+[ext_resource type="Texture2D" uid="uid://cvw1w52j8j8e2" path="res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch4.png" id="5_f7qo4"]
+[ext_resource type="Texture2D" uid="uid://c1vmscriqsi5d" path="res://Graphics/Characters/Mall_Enemy_2/Don Pepe DEAD.png" id="6_omocf"]
+[ext_resource type="Texture2D" uid="uid://6pg6lswpgfyw" path="res://Graphics/Characters/Mall_Enemy_2/Don Pepe DMG.png" id="7_7o4po"]
+[ext_resource type="Texture2D" uid="uid://7fmc0whuhlhl" path="res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk2.png" id="8_m3wr6"]
+[ext_resource type="Texture2D" uid="uid://dyw2q67nw2t44" path="res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk3.png" id="9_708cx"]
+[ext_resource type="Texture2D" uid="uid://bgnxaoanjyls1" path="res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk4.png" id="10_ig3xi"]
+[ext_resource type="Texture2D" uid="uid://c25adouloxmj1" path="res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk5.png" id="11_okx18"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_apa5i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f0t4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5cg5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w8c88")
+}, {
+"duration": 4.0,
+"texture": ExtResource("5_f7qo4")
+}],
+"loop": true,
+"name": &"attacking",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("6_omocf")
+}],
+"loop": true,
+"name": &"defeated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("7_7o4po")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("2_f0t4t")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_m3wr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_708cx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ig3xi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_okx18")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_okx18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ig3xi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_708cx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m3wr6")
+}],
+"loop": true,
+"name": &"walking_backwards",
+"speed": 5.0
+}]
+
+[node name="GenericEnemy" instance=ExtResource("1_fjtwr")]
+
+[node name="AnimatedSprite2D" parent="MidPoint" index="0"]
+sprite_frames = SubResource("SpriteFrames_apa5i")

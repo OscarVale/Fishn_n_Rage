@@ -1,0 +1,99 @@
+[gd_scene load_steps=13 format=3 uid="uid://b0uvww3nwlxor"]
+
+[ext_resource type="PackedScene" uid="uid://cvku3gic4jkpm" path="res://Scenes/Enemies/generic_enemy.tscn" id="1_4qbfp"]
+[ext_resource type="Texture2D" uid="uid://qeb3ju2tjqss" path="res://Graphics/Characters/Street_Enemy_3/Punch/Asphodelos Punch1.png" id="2_4j8pu"]
+[ext_resource type="Texture2D" uid="uid://cyi1l8ir1tfu2" path="res://Graphics/Characters/Street_Enemy_3/Punch/Asphodelos Punch2.png" id="3_glv0b"]
+[ext_resource type="Texture2D" uid="uid://dc3okpybqif2o" path="res://Graphics/Characters/Street_Enemy_3/Punch/Asphodelos Punch3.png" id="4_unog1"]
+[ext_resource type="Texture2D" uid="uid://coagov0n3p4e7" path="res://Graphics/Characters/Street_Enemy_3/Punch/Asphodelos Punch4.png" id="5_m4wjv"]
+[ext_resource type="Texture2D" uid="uid://dkgkhh75goxwk" path="res://Graphics/Characters/Street_Enemy_3/Asphodelos Dead.png" id="6_p64q1"]
+[ext_resource type="Texture2D" uid="uid://bx0ncutd5hkvl" path="res://Graphics/Characters/Street_Enemy_3/Asphodelos DMG.png" id="7_4df56"]
+[ext_resource type="Texture2D" uid="uid://ekhc3v5u5tt6" path="res://Graphics/Characters/Street_Enemy_3/Walk/Asphodelos Walkcycle2.png" id="8_h4h8b"]
+[ext_resource type="Texture2D" uid="uid://yr1h5dep41b1" path="res://Graphics/Characters/Street_Enemy_3/Walk/Asphodelos Walkcycle3.png" id="9_b3mqn"]
+[ext_resource type="Texture2D" uid="uid://db58hx5lgufnx" path="res://Graphics/Characters/Street_Enemy_3/Walk/Asphodelos Walkcycle4.png" id="10_otiak"]
+[ext_resource type="Texture2D" uid="uid://rhm8s3rqo1xe" path="res://Graphics/Characters/Street_Enemy_3/Walk/Asphodelos Walkcycle5.png" id="11_3oqsg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tf4d1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4j8pu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_glv0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_unog1")
+}, {
+"duration": 4.0,
+"texture": ExtResource("5_m4wjv")
+}],
+"loop": true,
+"name": &"attacking",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("6_p64q1")
+}],
+"loop": true,
+"name": &"defeated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("7_4df56")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("2_4j8pu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_h4h8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b3mqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_otiak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3oqsg")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_3oqsg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_otiak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b3mqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h4h8b")
+}],
+"loop": true,
+"name": &"walking_backwards",
+"speed": 5.0
+}]
+
+[node name="GenericEnemy" instance=ExtResource("1_4qbfp")]
+
+[node name="AnimatedSprite2D" parent="MidPoint" index="0"]
+sprite_frames = SubResource("SpriteFrames_tf4d1")
+animation = &"walking_backwards"
+frame = 1
+frame_progress = 0.691903

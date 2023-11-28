@@ -1,0 +1,339 @@
+[gd_scene load_steps=54 format=3 uid="uid://pac5p1e37y0o"]
+
+[ext_resource type="Texture2D" uid="uid://ddnl777go4kem" path="res://Graphics/Characters/Player/Idle/FishMan Idle1.png" id="1_ii475"]
+[ext_resource type="Script" path="res://Scenes/player.gd" id="1_n3pgc"]
+[ext_resource type="Texture2D" uid="uid://ckrhna2qh0qfm" path="res://Graphics/SHADOW GEN.png" id="1_qronr"]
+[ext_resource type="Texture2D" uid="uid://brdyujy6lh5wg" path="res://Graphics/Characters/Player/Idle/FishMan Idle2.png" id="2_qcqhg"]
+[ext_resource type="Texture2D" uid="uid://b6ifurrhw5i75" path="res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy1.png" id="3_ccvkx"]
+[ext_resource type="Texture2D" uid="uid://ckb2bhq04fi6" path="res://Graphics/Characters/Player/FishMan Dead.png" id="3_isr8c"]
+[ext_resource type="Texture2D" uid="uid://bawh2h4k7j1hr" path="res://Graphics/Characters/Player/Idle/FishMan Idle3.png" id="3_kdwa8"]
+[ext_resource type="Texture2D" uid="uid://bhdj63j8v011a" path="res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy2.png" id="4_c4chq"]
+[ext_resource type="Texture2D" uid="uid://dox46e4a3k6th" path="res://Graphics/Characters/Player/Idle/FishMan Idle4.png" id="4_i85cu"]
+[ext_resource type="Texture2D" uid="uid://cd867w0g5vxg" path="res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy3.png" id="5_8qgmg"]
+[ext_resource type="Texture2D" uid="uid://br3im50kviyp7" path="res://Graphics/Characters/Player/Idle/FishMan Idle5.png" id="5_30m2o"]
+[ext_resource type="Texture2D" uid="uid://mww2kdk5f1wc" path="res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy4.png" id="6_g16rj"]
+[ext_resource type="Texture2D" uid="uid://bh2wryoinokyh" path="res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy1.png" id="7_8fsnd"]
+[ext_resource type="Texture2D" uid="uid://hbgic8s2bsn4" path="res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight1.png" id="7_puyrq"]
+[ext_resource type="Texture2D" uid="uid://cg7tdidxplj2u" path="res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy2.png" id="8_32shf"]
+[ext_resource type="Texture2D" uid="uid://qdbimti7hom7" path="res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight2.png" id="8_k68bd"]
+[ext_resource type="Texture2D" uid="uid://be1twfogh7xwt" path="res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy3.png" id="9_avtl5"]
+[ext_resource type="Texture2D" uid="uid://dvla11uoah75n" path="res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight3.png" id="9_ghyxq"]
+[ext_resource type="Texture2D" uid="uid://bhvhfuixabff6" path="res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight4.png" id="10_3ait0"]
+[ext_resource type="Texture2D" uid="uid://c0p3s6107ulf3" path="res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy4.png" id="10_yye7h"]
+[ext_resource type="Texture2D" uid="uid://jdfabqp28ipq" path="res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight1.png" id="11_dpwdl"]
+[ext_resource type="Texture2D" uid="uid://cnfjxjegyk7yp" path="res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy1.png" id="11_vkulv"]
+[ext_resource type="Texture2D" uid="uid://ce3gi6gtf7up8" path="res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy2.png" id="12_5woqf"]
+[ext_resource type="Texture2D" uid="uid://cntbh4i1e21ce" path="res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight2.png" id="12_6wht6"]
+[ext_resource type="Texture2D" uid="uid://baklttiengis0" path="res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight3.png" id="13_4yda5"]
+[ext_resource type="Texture2D" uid="uid://gmeqtra43mh7" path="res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy3.png" id="13_gwwgo"]
+[ext_resource type="Texture2D" uid="uid://cq5304uy4jxxp" path="res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight4.png" id="14_65lvk"]
+[ext_resource type="Texture2D" uid="uid://j08dsx5li2d" path="res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy4.png" id="14_rxr37"]
+[ext_resource type="Texture2D" uid="uid://crf80wa2p8yj6" path="res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight1.png" id="15_5lreh"]
+[ext_resource type="Texture2D" uid="uid://b0xtuprs23byx" path="res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight2.png" id="16_k5n3t"]
+[ext_resource type="Texture2D" uid="uid://bq4vs35cijht2" path="res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight3.png" id="17_awxcl"]
+[ext_resource type="Texture2D" uid="uid://d3qus2kgt3bv6" path="res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight4.png" id="18_7gmsw"]
+[ext_resource type="Texture2D" uid="uid://b17tbeuo4s8mo" path="res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight1.png" id="19_kex16"]
+[ext_resource type="Texture2D" uid="uid://dpf7qehy48jpf" path="res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight2.png" id="20_6u67u"]
+[ext_resource type="Texture2D" uid="uid://qvc4stihc82s" path="res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight3.png" id="21_gn1pl"]
+[ext_resource type="Texture2D" uid="uid://brf27aqmpoqls" path="res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight4.png" id="22_ggan5"]
+[ext_resource type="Texture2D" uid="uid://cxrpplfpar21s" path="res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle1.png" id="23_4i7sx"]
+[ext_resource type="Texture2D" uid="uid://cpwqmem2yb13l" path="res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight1.png" id="24_mgsmj"]
+[ext_resource type="Texture2D" uid="uid://cbeubhs85v7bm" path="res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle3.png" id="25_5qbbw"]
+[ext_resource type="Texture2D" uid="uid://24go7ophptj8" path="res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight2.png" id="25_i4i1x"]
+[ext_resource type="Texture2D" uid="uid://dk6cr3o7uarbl" path="res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle4.png" id="26_635e0"]
+[ext_resource type="Texture2D" uid="uid://tcb2vvmukl1v" path="res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight3.png" id="26_rd8f8"]
+[ext_resource type="Texture2D" uid="uid://vwi8ofbfw6u5" path="res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle5.png" id="27_wb4ue"]
+[ext_resource type="Texture2D" uid="uid://bmvafschy7r36" path="res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight4.png" id="27_x8ams"]
+[ext_resource type="Texture2D" uid="uid://b3upebph1nh06" path="res://Graphics/Characters/Player/FishMan DMG.png" id="42_hby31"]
+[ext_resource type="Texture2D" uid="uid://c58vv6tkg1jyt" path="res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp1.png" id="45_mmms5"]
+[ext_resource type="Texture2D" uid="uid://bqassa8kas633" path="res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp2.png" id="46_hwx6m"]
+[ext_resource type="Texture2D" uid="uid://u31qg7xlvlmc" path="res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp3.png" id="47_skulk"]
+[ext_resource type="Texture2D" uid="uid://djum5aclm1f6o" path="res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp4.png" id="48_e2kdq"]
+[ext_resource type="Texture2D" uid="uid://dcto06vbfurr6" path="res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp5.png" id="49_5s1hm"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_demgx"]
+radius = 9.0
+height = 64.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_swo13"]
+animations = [{
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("3_isr8c")
+}],
+"loop": true,
+"name": &"defeated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ccvkx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c4chq")
+}, {
+"duration": 1.5,
+"texture": ExtResource("5_8qgmg")
+}, {
+"duration": 7.0,
+"texture": ExtResource("6_g16rj")
+}],
+"loop": true,
+"name": &"heavy_1",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_8fsnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_32shf")
+}, {
+"duration": 2.0,
+"texture": ExtResource("9_avtl5")
+}, {
+"duration": 7.0,
+"texture": ExtResource("10_yye7h")
+}],
+"loop": true,
+"name": &"heavy_2",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_vkulv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5woqf")
+}, {
+"duration": 1.5,
+"texture": ExtResource("13_gwwgo")
+}, {
+"duration": 7.0,
+"texture": ExtResource("14_rxr37")
+}],
+"loop": true,
+"name": &"heavy_3",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 6.0,
+"texture": ExtResource("1_ii475")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qcqhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kdwa8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i85cu")
+}, {
+"duration": 4.0,
+"texture": ExtResource("5_30m2o")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_mmms5")
+}],
+"loop": true,
+"name": &"idle_object",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_puyrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k68bd")
+}, {
+"duration": 1.5,
+"texture": ExtResource("9_ghyxq")
+}, {
+"duration": 7.0,
+"texture": ExtResource("10_3ait0")
+}],
+"loop": true,
+"name": &"punch_1",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_dpwdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6wht6")
+}, {
+"duration": 1.5,
+"texture": ExtResource("13_4yda5")
+}, {
+"duration": 7.0,
+"texture": ExtResource("14_65lvk")
+}],
+"loop": true,
+"name": &"punch_2",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_5lreh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_k5n3t")
+}, {
+"duration": 1.5,
+"texture": ExtResource("17_awxcl")
+}, {
+"duration": 7.0,
+"texture": ExtResource("18_7gmsw")
+}],
+"loop": true,
+"name": &"punch_3",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_kex16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6u67u")
+}, {
+"duration": 1.5,
+"texture": ExtResource("21_gn1pl")
+}, {
+"duration": 7.0,
+"texture": ExtResource("22_ggan5")
+}],
+"loop": true,
+"name": &"punch_4",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_mgsmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_i4i1x")
+}, {
+"duration": 1.5,
+"texture": ExtResource("26_rd8f8")
+}, {
+"duration": 7.0,
+"texture": ExtResource("27_x8ams")
+}],
+"loop": true,
+"name": &"punch_5",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("42_hby31")
+}],
+"loop": true,
+"name": &"stun",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_5qbbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_635e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_wb4ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_4i7sx")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_hwx6m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_skulk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_e2kdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_5s1hm")
+}],
+"loop": true,
+"name": &"walking_object",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c3r4x"]
+size = Vector2(24.5, 24)
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 4
+wall_min_slide_angle = 0.174533
+script = ExtResource("1_n3pgc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_demgx")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.392157)
+texture_filter = 1
+position = Vector2(7.62939e-06, 0)
+scale = Vector2(2.82051, 2)
+texture = ExtResource("1_qronr")
+
+[node name="MidPoint" type="Marker2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="CharacterSprite" type="AnimatedSprite2D" parent="MidPoint"]
+texture_filter = 1
+position = Vector2(-11, -86)
+sprite_frames = SubResource("SpriteFrames_swo13")
+animation = &"punch_3"
+metadata/_edit_lock_ = true
+
+[node name="PlayerArea" type="Area2D" parent="MidPoint"]
+collision_mask = 6
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MidPoint/PlayerArea"]
+position = Vector2(47.75, 0)
+shape = SubResource("RectangleShape2D_c3r4x")
+debug_color = Color(0.972549, 0.164706, 0, 0.419608)
+
+[node name="ObjectPositionInPlayer" type="Marker2D" parent="MidPoint"]
+position = Vector2(18, -97)
+
+[node name="Timers" type="Node" parent="."]
+
+[node name="RunTimer" type="Timer" parent="Timers"]
+wait_time = 0.2
+one_shot = true
+
+[node name="AttackCooldown" type="Timer" parent="Timers"]
+wait_time = 0.32
+one_shot = true
+
+[node name="AttackWindow" type="Timer" parent="Timers"]
+wait_time = 0.6
+one_shot = true
+
+[node name="StunTimer" type="Timer" parent="Timers"]
+wait_time = 0.6
+one_shot = true
+
+[node name="Timer" type="Timer" parent="Timers"]
+
+[connection signal="timeout" from="Timers/RunTimer" to="." method="_on_run_timer_timeout"]
+[connection signal="timeout" from="Timers/AttackCooldown" to="." method="_on_attack_cooldown_timeout"]
+[connection signal="timeout" from="Timers/AttackWindow" to="." method="_on_attack_window_timeout"]
+[connection signal="timeout" from="Timers/StunTimer" to="." method="_on_stun_timer_timeout"]

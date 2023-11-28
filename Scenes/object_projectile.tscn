@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk60xk8ekolw"]
+
+[ext_resource type="Texture2D" uid="uid://ckrhna2qh0qfm" path="res://Graphics/SHADOW GEN.png" id="1_frsjm"]
+[ext_resource type="Script" path="res://Scenes/object_projectile.gd" id="1_tk61d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q878p"]
+size = Vector2(92, 50)
+
+[node name="ObjectProjectile" type="Area2D"]
+collision_mask = 7
+script = ExtResource("1_tk61d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_q878p")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.396078)
+texture_filter = 1
+scale = Vector2(1.692, 1.867)
+texture = ExtResource("1_frsjm")
+
+[node name="Sprite_Position" type="Marker2D" parent="."]
+
+[node name="Lifetime" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Lifetime" to="." method="_on_lifetime_timeout"]
