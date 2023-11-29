@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://buq7don4716nx"]
+
+[ext_resource type="Texture2D" uid="uid://cm0jd3s4fkwyw" path="res://Graphics/PropsNew/BP5.png" id="1_crbwe"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.196078)
+z_index = -2
+texture_filter = 1
+position = Vector2(1, 1)
+texture = ExtResource("1_crbwe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -2
+texture_filter = 1
+texture = ExtResource("1_crbwe")

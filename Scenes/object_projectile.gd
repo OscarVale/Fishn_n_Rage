@@ -56,13 +56,16 @@ func toss(toss_direction : int, sprite : Sprite2D):
 	$Sprite_Position.position.y -= 85
 
 func explode():
-	print("explota")
+	var tween = get_tree().create_tween()
+	tween.tween_property($".", "visible", false, 0.6)
+	tween.tween_property($".", "visible", true, 0.2)
+	tween.tween_property($".", "visible", false, 0.6)
+	tween.tween_property($".", "visible", true, 0.2)
+	tween.tween_interval(0.3)
 	if $".".has_overlapping_bodies():
-		print("hay cuerpos")
 		var bodies = $".".get_overlapping_bodies()
 		for y in bodies.size():
 			if bodies[y].has_method("hit"):
-				print("pega")
 				bodies[y].hit(20, true)
 
 

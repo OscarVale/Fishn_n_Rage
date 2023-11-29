@@ -179,7 +179,7 @@ func attack():
 				attack_marker = attack_marker + 1
 				var pos
 				if $MidPoint.scale.x < 0 : pos = -10
-				else : pos = 10
+				else : pos = 5
 				var tween = get_tree().create_tween()
 				tween.tween_property($".", "position", $".".position + Vector2(pos ,0), 0.2)
 			else:
@@ -231,6 +231,10 @@ func hit(damage, _knockback):
 	player_is_stunned = true
 	$Timers/StunTimer.start()
 	reset_player_state()
+	var tween = get_tree().create_tween()
+	tween.tween_property($".", "modulate", Color.CRIMSON, 0)
+	tween.tween_interval(0.2)
+	tween.tween_property($".", "modulate", Color.WHITE, 0)
 	if is_player_carrying_object:
 			drop()
 	if health <= 0:

@@ -1,13 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701149832
+::res://::1701253734
+fight_area.gd::GDScript::-1::1701253590::0::1::::<>Node2D<>::
 ::res://Audio/::1700773473
 ::res://Audio/Music/::1700773491
 Tema 1 (playa).wav::AudioStreamWAV::4026072845707520642::1700718341::1700773491::1::::<><>::
-::res://Graphics/::1701151500
+::res://Graphics/::1701202781
 icon.svg::CompressedTexture2D::7494936576367291055::1700772032::1700875989::1::::<><>::
 SHADOW GEN BIG.png::CompressedTexture2D::4532000308962221974::1701151266::1701151500::1::::<><>::
 SHADOW GEN.png::CompressedTexture2D::5510272502302712686::1700773067::1700773490::1::::<><>::
-::res://Graphics/Characters/::1701152529
+::res://Graphics/Characters/::1701152853
 ::res://Graphics/Characters/Beach_Enemy_1/::1700986541
 HavidDasselhoff Dead.png::CompressedTexture2D::728243690524947264::1700898532::1700986541::1::::<><>::
 HavidDasselhoff DMG.png::CompressedTexture2D::7440281714761658873::1700898546::1700986541::1::::<><>::
@@ -71,44 +72,16 @@ MMM Walk2.png::CompressedTexture2D::5043613538889571717::1701058096::1701077681:
 MMM Walk3.png::CompressedTexture2D::4708677900395716834::1701058096::1701077681::1::::<><>::
 MMM Walk4.png::CompressedTexture2D::3688041453408572667::1701058096::1701077681::1::::<><>::
 MMM Walk5.png::CompressedTexture2D::8482213128376946192::1701058096::1701077681::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2/::1701077680
-Don Pepe DEAD.png::CompressedTexture2D::6641864114707742959::1701063130::1701077680::1::::<><>::
-Don Pepe DMG.png::CompressedTexture2D::2207240087240748986::1701063140::1701077680::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2/Punch/::1701077681
-Don Pepe Punch1.png::CompressedTexture2D::3631532727540810801::1701063154::1701077681::1::::<><>::
-Don Pepe Punch2.png::CompressedTexture2D::9116042875030328309::1701063154::1701077681::1::::<><>::
-Don Pepe Punch3.png::CompressedTexture2D::3762391207360287811::1701063154::1701077681::1::::<><>::
-Don Pepe Punch4.png::CompressedTexture2D::6293842941515666527::1701063154::1701077681::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2/Walk/::1701077681
-Don Pepe Walk1.png::CompressedTexture2D::3808220405252121221::1701063166::1701077681::1::::<><>::
-Don Pepe Walk2.png::CompressedTexture2D::2257098408102856061::1701063166::1701077681::1::::<><>::
-Don Pepe Walk3.png::CompressedTexture2D::8890880218767308187::1701063166::1701077680::1::::<><>::
-Don Pepe Walk4.png::CompressedTexture2D::2835787883088247322::1701063166::1701077680::1::::<><>::
-Don Pepe Walk5.png::CompressedTexture2D::6729877602358991348::1701063166::1701077680::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2_fixed/::1701151067
-Don Pepe DEAD.png::CompressedTexture2D::8287112579222004829::1701101570::1701151067::1::::<><>::
-Don Pepe DMG.png::CompressedTexture2D::8830128673257111122::1701101558::1701151067::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/::1701151067
-Don Pepe Punch1.png::CompressedTexture2D::2226196567157561977::1701101534::1701151067::1::::<><>::
-Don Pepe Punch2.png::CompressedTexture2D::2586328817207946586::1701101534::1701151067::1::::<><>::
-Don Pepe Punch3.png::CompressedTexture2D::5416900130263975617::1701101534::1701151067::1::::<><>::
-Don Pepe Punch4.png::CompressedTexture2D::3298784706270371846::1701101534::1701151067::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2_fixed/Walk/::1701151067
-Don Pepe Walk1.png::CompressedTexture2D::6269177250568584163::1701101546::1701151067::1::::<><>::
-Don Pepe Walk2.png::CompressedTexture2D::8256152015585463968::1701101548::1701151067::1::::<><>::
-Don Pepe Walk3.png::CompressedTexture2D::6960689130615198765::1701101548::1701151067::1::::<><>::
-Don Pepe Walk4.png::CompressedTexture2D::6444186788749422803::1701101548::1701151067::1::::<><>::
-Don Pepe Walk5.png::CompressedTexture2D::4538431541282006692::1701101548::1701151067::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2_New/::1701152485
+::res://Graphics/Characters/Mall_Enemy_2_New/::1701152532
 Don Pepe DEAD.png::CompressedTexture2D::9134754170805683825::1701151806::1701152532::1::::<><>::
 Don Pepe DMG.png::CompressedTexture2D::3259794524189208655::1701151806::1701152532::1::::<><>::
 Don Pepe Walk5.png::CompressedTexture2D::2329184966036735156::1701151698::1701152532::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2_New/Punch/::1701152485
+::res://Graphics/Characters/Mall_Enemy_2_New/Punch/::1701152532
 Don Pepe Punch1.png::CompressedTexture2D::2240853009371467051::1701151824::1701152532::1::::<><>::
 Don Pepe Punch2.png::CompressedTexture2D::6647588053293147875::1701151824::1701152532::1::::<><>::
 Don Pepe Punch3.png::CompressedTexture2D::5233530447716508977::1701151824::1701152532::1::::<><>::
 Don Pepe Punch4.png::CompressedTexture2D::8120158359390969493::1701151824::1701152532::1::::<><>::
-::res://Graphics/Characters/Mall_Enemy_2_New/Walk/::1701152485
+::res://Graphics/Characters/Mall_Enemy_2_New/Walk/::1701152532
 Don Pepe Walk1.png::CompressedTexture2D::7335422603723353608::1701152000::1701152532::1::::<><>::
 Don Pepe Walk2.png::CompressedTexture2D::1803849552218400132::1701152000::1701152532::1::::<><>::
 Don Pepe Walk3.png::CompressedTexture2D::8841109226388098821::1701152000::1701152532::1::::<><>::
@@ -219,7 +192,22 @@ Asphodelos Walkcycle2.png::CompressedTexture2D::301829247115590305::1700977644::
 Asphodelos Walkcycle3.png::CompressedTexture2D::1721219392038929980::1700977644::1701077681::1::::<><>::
 Asphodelos Walkcycle4.png::CompressedTexture2D::7293399643547542213::1700977644::1701077681::1::::<><>::
 Asphodelos Walkcycle5.png::CompressedTexture2D::1208449510706219018::1700977644::1701077681::1::::<><>::
-::res://Graphics/Stages/::1701146674
+::res://Graphics/PropsNew/::1701202781
+BP1.png::CompressedTexture2D::6861363408147476896::1700858308::1701202781::1::::<><>::
+BP2.png::CompressedTexture2D::7366336232725141109::1700858306::1701202781::1::::<><>::
+BP3.png::CompressedTexture2D::338427282439132511::1700858308::1701202781::1::::<><>::
+BP4.png::CompressedTexture2D::8181857081249939173::1700285160::1701202781::1::::<><>::
+BP5.png::CompressedTexture2D::5667270244995709790::1700449513::1701202781::1::::<><>::
+BP6.png::CompressedTexture2D::6620606753270439223::1700449517::1701202781::1::::<><>::
+Car.png::CompressedTexture2D::5874274048132915658::1701146385::1701202781::1::::<><>::
+FlowerPot.png::CompressedTexture2D::8938682302702996808::1701146385::1701202781::1::::<><>::
+OG1.png::CompressedTexture2D::8507038314880327126::1700858308::1701202781::1::::<><>::
+OG2.png::CompressedTexture2D::7597255932972410008::1700858308::1701202781::1::::<><>::
+OG3.png::CompressedTexture2D::1706695713840532187::1700858308::1701202781::1::::<><>::
+OG4.png::CompressedTexture2D::2688708977886458086::1700858308::1701202781::1::::<><>::
+OG5.png::CompressedTexture2D::7474758370064192527::1700858306::1701202781::1::::<><>::
+OG6.png::CompressedTexture2D::3522487098918184617::1700285018::1701202781::1::::<><>::
+::res://Graphics/Stages/::1701202781
 ::res://Graphics/Stages/Beach/::1701146227
 Stage1Beach.png::CompressedTexture2D::2979145224818579482::1700438995::1700773490::1::::<><>::
 ::res://Graphics/Stages/Beach/Background/::1700773490
@@ -252,59 +240,51 @@ OG2.png::CompressedTexture2D::6538304324467056821::1700284852::1701146218::1::::
 OG3.png::CompressedTexture2D::4846324496136616908::1700284902::1701146218::1::::<><>::
 OG4.png::CompressedTexture2D::1127768205165372850::1700284936::1701146218::1::::<><>::
 OG5.png::CompressedTexture2D::8117718015830875890::1700284988::1701146218::1::::<><>::
-::res://Graphics/Stages/PropsNew/::1701149832
-BP1.png::CompressedTexture2D::6861363408147476896::1700858308::1701146227::1::::<><>::
-BP2.png::CompressedTexture2D::7366336232725141109::1700858306::1701146227::1::::<><>::
-BP3.png::CompressedTexture2D::338427282439132511::1700858308::1701146227::1::::<><>::
-BP4.png::CompressedTexture2D::8181857081249939173::1700285160::1701149830::1::::<><>::
-BP5.png::CompressedTexture2D::5667270244995709790::1700449513::1701149824::1::::<><>::
-BP6.png::CompressedTexture2D::6620606753270439223::1700449517::1701149822::1::::<><>::
-Car.png::CompressedTexture2D::5874274048132915658::1701146385::1701149814::1::::<><>::
-FlowerPot.png::CompressedTexture2D::8938682302702996808::1701146385::1701149811::1::::<><>::
-OG1.png::CompressedTexture2D::8507038314880327126::1700858308::1701146227::1::::<><>::
-OG2.png::CompressedTexture2D::7597255932972410008::1700858308::1701146227::1::::<><>::
-OG3.png::CompressedTexture2D::1706695713840532187::1700858308::1701146227::1::::<><>::
-OG4.png::CompressedTexture2D::2688708977886458086::1700858308::1701146227::1::::<><>::
-OG5.png::CompressedTexture2D::7474758370064192527::1700858306::1701146227::1::::<><>::
-OG6.png::CompressedTexture2D::3522487098918184617::1700285018::1701149832::1::::<><>::
-::res://Scenes/::1701151806
+::res://Scenes/::1701253720
+generic_battle_area.tscn::PackedScene::8221446509660149106::1701253735::0::1::::<><>::
 globals.gd::GDScript::-1::1700883078::0::1::::<>Node<>::
-object_projectile.gd::GDScript::-1::1701076436::0::1::::<>Area2D<>::
-object_projectile.tscn::PackedScene::233138405068299124::1701076825::0::1::::<><>::uid://ckrhna2qh0qfm
-player.gd::GDScript::-1::1701076817::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1053008490608777984::1701151806::0::1::::<><>::uid://ddnl777go4kem::::res://Graphics/Characters/Player/Idle/FishMan Idle1.png<>res://Scenes/player.gd<>uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>uid://brdyujy6lh5wg::::res://Graphics/Characters/Player/Idle/FishMan Idle2.png<>uid://b6ifurrhw5i75::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy1.png<>uid://ckb2bhq04fi6::::res://Graphics/Characters/Player/FishMan Dead.png<>uid://bawh2h4k7j1hr::::res://Graphics/Characters/Player/Idle/FishMan Idle3.png<>uid://bhdj63j8v011a::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy2.png<>uid://dox46e4a3k6th::::res://Graphics/Characters/Player/Idle/FishMan Idle4.png<>uid://cd867w0g5vxg::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy3.png<>uid://br3im50kviyp7::::res://Graphics/Characters/Player/Idle/FishMan Idle5.png<>uid://mww2kdk5f1wc::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy4.png<>uid://bh2wryoinokyh::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy1.png<>uid://hbgic8s2bsn4::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight1.png<>uid://cg7tdidxplj2u::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy2.png<>uid://qdbimti7hom7::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight2.png<>uid://be1twfogh7xwt::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy3.png<>uid://dvla11uoah75n::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight3.png<>uid://bhvhfuixabff6::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight4.png<>uid://c0p3s6107ulf3::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy4.png<>uid://jdfabqp28ipq::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight1.png<>uid://cnfjxjegyk7yp::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy1.png<>uid://ce3gi6gtf7up8::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy2.png<>uid://cntbh4i1e21ce::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight2.png<>uid://baklttiengis0::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight3.png<>uid://gmeqtra43mh7::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy3.png<>uid://cq5304uy4jxxp::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight4.png<>uid://j08dsx5li2d::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy4.png<>uid://crf80wa2p8yj6::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight1.png<>uid://b0xtuprs23byx::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight2.png<>uid://bq4vs35cijht2::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight3.png<>uid://d3qus2kgt3bv6::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight4.png<>uid://b17tbeuo4s8mo::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight1.png<>uid://dpf7qehy48jpf::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight2.png<>uid://qvc4stihc82s::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight3.png<>uid://brf27aqmpoqls::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight4.png<>uid://cxrpplfpar21s::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle1.png<>uid://cpwqmem2yb13l::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight1.png<>uid://cbeubhs85v7bm::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle3.png<>uid://24go7ophptj8::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight2.png<>uid://dk6cr3o7uarbl::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle4.png<>uid://tcb2vvmukl1v::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight3.png<>uid://vwi8ofbfw6u5::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle5.png<>uid://bmvafschy7r36::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight4.png<>uid://b3upebph1nh06::::res://Graphics/Characters/Player/FishMan DMG.png<>uid://c58vv6tkg1jyt::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp1.png<>uid://bqassa8kas633::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp2.png<>uid://u31qg7xlvlmc::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp3.png<>uid://djum5aclm1f6o::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp4.png<>uid://dcto06vbfurr6::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp5.png
-::res://Scenes/DecorativeObjects/::1701151806
-decorative_umbrella.tscn::PackedScene::9017321575574285075::1701151806::0::1::::<><>::uid://b5tlnaxwwiu6i::::res://Graphics/SHADOW GEN BIG.png<>uid://c1lcoqnj1uxfr::::res://Graphics/Stages/PropsNew/BP6.png
-::res://Scenes/Enemies/::1701116103
-generic_enemy.gd::GDScript::-1::1701076760::0::1::::<>CharacterBody2D<>::
-generic_enemy.tscn::PackedScene::6268715531038672906::1701116103::0::1::::<><>::res://Scenes/Enemies/generic_enemy.gd<>uid://ckrhna2qh0qfm
-::res://Scenes/Enemies/BeachEnemies/::1701078877
-beach_enemy_1.tscn::PackedScene::4290987044318716121::1701078529::0::1::::<><>::uid://cvku3gic4jkpm
-beach_enemy_2.tscn::PackedScene::7112765293175428249::1701078583::0::1::::<><>::uid://cvku3gic4jkpm
+object_projectile.gd::GDScript::-1::1701234313::0::1::::<>Area2D<>::
+object_projectile.tscn::PackedScene::233138405068299124::1701232069::0::1::::<><>::uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>res://Scenes/object_projectile.gd
+player.gd::GDScript::-1::1701233644::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1053008490608777984::1701161303::0::1::::<><>::uid://ddnl777go4kem::::res://Graphics/Characters/Player/Idle/FishMan Idle1.png<>res://Scenes/player.gd<>uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>uid://brdyujy6lh5wg::::res://Graphics/Characters/Player/Idle/FishMan Idle2.png<>uid://b6ifurrhw5i75::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy1.png<>uid://ckb2bhq04fi6::::res://Graphics/Characters/Player/FishMan Dead.png<>uid://bawh2h4k7j1hr::::res://Graphics/Characters/Player/Idle/FishMan Idle3.png<>uid://bhdj63j8v011a::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy2.png<>uid://dox46e4a3k6th::::res://Graphics/Characters/Player/Idle/FishMan Idle4.png<>uid://cd867w0g5vxg::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy3.png<>uid://br3im50kviyp7::::res://Graphics/Characters/Player/Idle/FishMan Idle5.png<>uid://mww2kdk5f1wc::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy4.png<>uid://bh2wryoinokyh::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy1.png<>uid://hbgic8s2bsn4::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight1.png<>uid://cg7tdidxplj2u::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy2.png<>uid://qdbimti7hom7::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight2.png<>uid://be1twfogh7xwt::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy3.png<>uid://dvla11uoah75n::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight3.png<>uid://bhvhfuixabff6::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight4.png<>uid://c0p3s6107ulf3::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy4.png<>uid://jdfabqp28ipq::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight1.png<>uid://cnfjxjegyk7yp::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy1.png<>uid://ce3gi6gtf7up8::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy2.png<>uid://cntbh4i1e21ce::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight2.png<>uid://baklttiengis0::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight3.png<>uid://gmeqtra43mh7::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy3.png<>uid://cq5304uy4jxxp::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight4.png<>uid://j08dsx5li2d::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy4.png<>uid://crf80wa2p8yj6::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight1.png<>uid://b0xtuprs23byx::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight2.png<>uid://bq4vs35cijht2::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight3.png<>uid://d3qus2kgt3bv6::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight4.png<>uid://b17tbeuo4s8mo::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight1.png<>uid://dpf7qehy48jpf::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight2.png<>uid://qvc4stihc82s::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight3.png<>uid://brf27aqmpoqls::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight4.png<>uid://cxrpplfpar21s::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle1.png<>uid://cpwqmem2yb13l::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight1.png<>uid://cbeubhs85v7bm::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle3.png<>uid://24go7ophptj8::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight2.png<>uid://dk6cr3o7uarbl::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle4.png<>uid://tcb2vvmukl1v::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight3.png<>uid://vwi8ofbfw6u5::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle5.png<>uid://bmvafschy7r36::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight4.png<>uid://b3upebph1nh06::::res://Graphics/Characters/Player/FishMan DMG.png<>uid://c58vv6tkg1jyt::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp1.png<>uid://bqassa8kas633::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp2.png<>uid://u31qg7xlvlmc::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp3.png<>uid://djum5aclm1f6o::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp4.png<>uid://dcto06vbfurr6::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp5.png
+::res://Scenes/DecorativeObjects/::1701252498
+decorative_mat.tscn::PackedScene::7918239464981889755::1701252498::0::1::::<><>::uid://bqgk33e8cdus4::::res://Graphics/PropsNew/OG6.png
+decorative_towell.tscn::PackedScene::3825176658439754365::1701202781::0::1::::<><>::uid://cm0jd3s4fkwyw::::res://Graphics/PropsNew/BP5.png
+decorative_towell_green.tscn::PackedScene::1379707229346493436::1701202781::0::1::::<><>::uid://cm0jd3s4fkwyw::::res://Graphics/PropsNew/BP5.png
+decorative_towell_pink.tscn::PackedScene::4766828496043993296::1701202781::0::1::::<><>::uid://cm0jd3s4fkwyw::::res://Graphics/PropsNew/BP5.png
+decorative_towell_yellow.tscn::PackedScene::8227304832150525840::1701202781::0::1::::<><>::uid://cm0jd3s4fkwyw::::res://Graphics/PropsNew/BP5.png
+decorative_umbrella.tscn::PackedScene::9017321575574285075::1701202781::0::1::::<><>::uid://b5tlnaxwwiu6i::::res://Graphics/SHADOW GEN BIG.png<>uid://c1lcoqnj1uxfr::::res://Graphics/PropsNew/BP6.png
+::res://Scenes/Enemies/::1701252498
+generic_enemy.gd::GDScript::-1::1701233529::0::1::::<>CharacterBody2D<>::
+generic_enemy.tscn::PackedScene::6268715531038672906::1701252498::0::1::::<><>::res://Scenes/Enemies/generic_enemy.gd<>uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>uid://cnbfoxnq1mmem::::res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch1.png<>uid://cy1bpgjro5jty::::res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch2.png<>uid://cu51nks6y6nlr::::res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch3.png<>uid://bpeb8r8s03rv1::::res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch4.png<>uid://km1cjwwas3s3::::res://Graphics/Characters/Beach_Enemy_1/HavidDasselhoff Dead.png<>uid://deael83t3lesn::::res://Graphics/Characters/Beach_Enemy_1/HavidDasselhoff DMG.png<>uid://blup4m7g18inw::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle1.png<>uid://cvdnbn8kqrnjh::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle2.png<>uid://b7lx1ov8mwfub::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle3.png<>uid://cqbhd52652qub::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle4.png<>uid://dkhkt7ax6gbx2::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle5.png
+::res://Scenes/Enemies/BeachEnemies/::1701157909
+beach_enemy_1.tscn::PackedScene::4290987044318716121::1701157909::0::1::::<><>::uid://cvku3gic4jkpm::::res://Scenes/Enemies/generic_enemy.tscn<>uid://ds4gen4spf1s8::::res://Graphics/Characters/Beach_Enemy_2/Punch/RAVID punch1.png<>uid://ehckh4jmbnt3::::res://Graphics/Characters/Beach_Enemy_2/Punch/RAVID punch2.png<>uid://b7phovuv7v18a::::res://Graphics/Characters/Beach_Enemy_2/Punch/RAVID punch3.png<>uid://cxcuxss64whe4::::res://Graphics/Characters/Beach_Enemy_2/Punch/RAVID punch4.png<>uid://blpte6aah8cnt::::res://Graphics/Characters/Beach_Enemy_2/RAVID Dead.png<>uid://bn65y0vlnkjh6::::res://Graphics/Characters/Beach_Enemy_2/RAVID DMG.png<>uid://dl55q0kyo3th2::::res://Graphics/Characters/Beach_Enemy_2/Walk/RAVID Walk2.png<>uid://b0mvfero4mo1l::::res://Graphics/Characters/Beach_Enemy_2/Walk/RAVID Walk3.png<>uid://ccjdkyvps28yy::::res://Graphics/Characters/Beach_Enemy_2/Walk/RAVID Walk4.png<>uid://dbtmce7sf0lpd::::res://Graphics/Characters/Beach_Enemy_2/Walk/RAVID Walk5.png
+beach_enemy_2.tscn::PackedScene::7112765293175428249::1701157909::0::1::::<><>::uid://cvku3gic4jkpm::::res://Scenes/Enemies/generic_enemy.tscn
 beach_enemy_3.tscn::PackedScene::8707112407205501248::1701078877::0::1::::<><>::uid://cvku3gic4jkpm
-::res://Scenes/Enemies/MallEnemies/::1701151806
+::res://Scenes/Enemies/MallEnemies/::1701157909
 mall_enemy_1.tscn::PackedScene::4006545210302172547::1701116103::0::1::::<><>::uid://cvku3gic4jkpm
-mall_enemy_2.tscn::PackedScene::8291902155761721414::1701151806::0::1::::<><>::uid://cvku3gic4jkpm::::res://Scenes/Enemies/generic_enemy.tscn<>uid://br0e2wl2hm3gf::::res://Graphics/Characters/Mall_Enemy_2/Punch/Don Pepe Punch1.png<>uid://6yneq3mtukwv::::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/Don Pepe Punch1.png<>uid://bc33ptfqsjuc5::::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/Don Pepe Punch2.png<>uid://cjf8s3dwtks1f::::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/Don Pepe Punch3.png<>uid://bm87rcqwgvfbi::::res://Graphics/Characters/Mall_Enemy_2_fixed/Punch/Don Pepe Punch4.png<>uid://c1vmscriqsi5d::::res://Graphics/Characters/Mall_Enemy_2/Don Pepe DEAD.png<>uid://6pg6lswpgfyw::::res://Graphics/Characters/Mall_Enemy_2/Don Pepe DMG.png<>uid://7fmc0whuhlhl::::res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk2.png<>uid://dyw2q67nw2t44::::res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk3.png<>uid://bgnxaoanjyls1::::res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk4.png<>uid://c25adouloxmj1::::res://Graphics/Characters/Mall_Enemy_2/Walk/Don Pepe Walk5.png
+mall_enemy_2.tscn::PackedScene::8291902155761721414::1701157909::0::1::::<><>::uid://cvku3gic4jkpm::::res://Scenes/Enemies/generic_enemy.tscn<>uid://66qr0b1trwmd::::res://Graphics/Characters/Mall_Enemy_2_New/Punch/Don Pepe Punch1.png<>uid://c1ye2lo6qeset::::res://Graphics/Characters/Mall_Enemy_2_New/Punch/Don Pepe Punch2.png<>uid://cgtfqnaprwapt::::res://Graphics/Characters/Mall_Enemy_2_New/Punch/Don Pepe Punch3.png<>uid://dnxp27ang16np::::res://Graphics/Characters/Mall_Enemy_2_New/Punch/Don Pepe Punch4.png<>uid://d3e7ci8heeawf::::res://Graphics/Characters/Mall_Enemy_2_New/Don Pepe DEAD.png<>uid://bmpclsry3mqff::::res://Graphics/Characters/Mall_Enemy_2_New/Don Pepe DMG.png<>uid://dcrllrm7fjiy7::::res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk1.png<>uid://0x2eygysei2o::::res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk2.png<>uid://dx7x1orjxtdej::::res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk3.png<>uid://cc642su4e127t::::res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk4.png<>uid://dc0rkih670qrl::::res://Graphics/Characters/Mall_Enemy_2_New/Walk/Don Pepe Walk5.png
 ::res://Scenes/Enemies/StreetEnemies/::1701079517
 street_enemy_1.tscn::PackedScene::4397272107627802956::1701079115::0::1::::<><>::uid://cvku3gic4jkpm
 street_enemy_2.tscn::PackedScene::1521946160246809021::1701079358::0::1::::<><>::uid://cvku3gic4jkpm
 street_enemy_3.tscn::PackedScene::4183744873427855777::1701079517::0::1::::<><>::uid://cvku3gic4jkpm
-::res://Scenes/EnviromentalObjects/::1701150239
-enviromental_dumbell_rack.tscn::PackedScene::7327919759152618025::1701150220::0::1::::<><>::uid://deq3gcdc1exdn::::res://Graphics/Stages/PropsNew/OG5.png
-enviromental_flower_pot.tscn::PackedScene::4179330899419514003::1701150219::0::1::::<><>::uid://d0l716b1nu4oi::::res://Graphics/Stages/PropsNew/FlowerPot.png
-enviromental_gym_bench.tscn::PackedScene::6079079130758245720::1701150229::0::1::::<><>::uid://bekov5rmq3ixy::::res://Graphics/Stages/PropsNew/OG4.png
-enviromental_pull_up_bar.tscn::PackedScene::3922817431537993872::1701150239::0::1::::<><>::uid://dtg4xb7dh7ad7::::res://Graphics/Stages/PropsNew/OG1.png
-::res://Scenes/GroundObjects/::1701147816
-generic_ground_object.gd::GDScript::-1::1701065668::0::1::::<>StaticBody2D<>::
-generic_ground_object.tscn::PackedScene::5660308034076796522::1701142774::0::1::::<><>::res://Scenes/GroundObjects/generic_ground_object.gd<>uid://ckrhna2qh0qfm
-ground_barrel_blue.tscn::PackedScene::630475666408696786::1701146999::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://dc7kqmvts776x::::res://Graphics/Stages/PropsNew/BP2.png
-ground_barrel_yellow.tscn::PackedScene::8681357600664756861::1701146972::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://dc7kqmvts776x::::res://Graphics/Stages/PropsNew/BP2.png
-ground_cooler.tscn::PackedScene::5843037174947363957::1701142774::0::1::::<><>::uid://cmv5pf77chiow
-ground_gym_bench.tscn::PackedScene::3096186322752341586::1701147636::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://bekov5rmq3ixy::::res://Graphics/Stages/PropsNew/OG4.png
+::res://Scenes/EnviromentalObjects/::1701202781
+enviromental_dumbell_rack.tscn::PackedScene::7327919759152618025::1701202781::0::1::::<><>::uid://deq3gcdc1exdn::::res://Graphics/PropsNew/OG5.png
+enviromental_flower_pot.tscn::PackedScene::4179330899419514003::1701202781::0::1::::<><>::uid://d0l716b1nu4oi::::res://Graphics/PropsNew/FlowerPot.png
+enviromental_gym_bench.tscn::PackedScene::6079079130758245720::1701202781::0::1::::<><>::uid://bekov5rmq3ixy::::res://Graphics/PropsNew/OG4.png
+enviromental_pull_up_bar.tscn::PackedScene::3922817431537993872::1701202781::0::1::::<><>::uid://dtg4xb7dh7ad7::::res://Graphics/PropsNew/OG1.png
+::res://Scenes/GroundObjects/::1701252498
+generic_ground_object.gd::GDScript::-1::1701238841::0::1::::<>StaticBody2D<>::
+generic_ground_object.tscn::PackedScene::5660308034076796522::1701252498::0::1::::<><>::res://Scenes/GroundObjects/generic_ground_object.gd<>uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png
+ground_barrel_blue.tscn::PackedScene::630475666408696786::1701202781::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://dc7kqmvts776x::::res://Graphics/PropsNew/BP2.png
+ground_barrel_yellow.tscn::PackedScene::8681357600664756861::1701202781::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://dc7kqmvts776x::::res://Graphics/PropsNew/BP2.png
+ground_cooler.tscn::PackedScene::5843037174947363957::1701232068::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://e2633f0gokah::::res://Graphics/PropsNew/BP3.png
+ground_gym_bench.tscn::PackedScene::3096186322752341586::1701202781::0::1::::<><>::uid://cmv5pf77chiow::::res://Scenes/GroundObjects/generic_ground_object.tscn<>uid://bekov5rmq3ixy::::res://Graphics/PropsNew/OG4.png
 ground_trash_bin.tscn::PackedScene::2149922208842516687::1701147816::0::1::::<><>::uid://cmv5pf77chiow
 ground_weight_large.tscn::PackedScene::8579658651061414377::1701147366::0::1::::<><>::uid://cmv5pf77chiow
 ground_weight_small.tscn::PackedScene::2733842172905874347::1701147499::0::1::::<><>::uid://cmv5pf77chiow
-::res://Scenes/Stages/::1701151806
-level.gd::GDScript::-1::1700982509::0::1::::<>Node2D<>::
-level.tscn::PackedScene::8101763426211141965::1701151806::0::1::::<><>::res://Scenes/Stages/level.gd<>uid://pac5p1e37y0o::::res://Scenes/player.tscn
-level_beach.tscn::PackedScene::4832307969031537527::1701151806::0::1::::<><>::uid://dnos4idmp16j6::::res://Scenes/Stages/level.tscn<>uid://5ety0i4reyrp::::res://Graphics/Stages/Beach/Background/Beach Sky.png<>uid://b1t5ixxl713em::::res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png<>uid://k4wvvrs3b38v::::res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png<>uid://b7y7gcesehuq::::res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png<>uid://bi6il31h2xnm8::::res://Graphics/Stages/Beach/Background/Beach NoSky.png<>uid://cm0jd3s4fkwyw::::res://Graphics/Stages/PropsNew/BP5.png<>uid://d1qb77b0lwbgd::::res://Scenes/DecorativeObjects/decorative_umbrella.tscn
+::res://Scenes/Stages/::1701252498
+level.gd::GDScript::-1::1701232125::0::1::::<>Node2D<>::
+level.tscn::PackedScene::8101763426211141965::1701252498::0::1::::<><>::res://Scenes/Stages/level.gd<>uid://pac5p1e37y0o::::res://Scenes/player.tscn
+level_beach.gd::GDScript::-1::1701252498::0::1::::<>Node2D<>::
+level_beach.tscn::PackedScene::4832307969031537527::1701252498::0::1::::<><>::uid://dnos4idmp16j6::::res://Scenes/Stages/level.tscn<>res://Scenes/Stages/level_beach.gd<>uid://5ety0i4reyrp::::res://Graphics/Stages/Beach/Background/Beach Sky.png<>uid://b1t5ixxl713em::::res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png<>uid://k4wvvrs3b38v::::res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png<>uid://b7y7gcesehuq::::res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png<>uid://bi6il31h2xnm8::::res://Graphics/Stages/Beach/Background/Beach NoSky.png<>uid://buq7don4716nx::::res://Scenes/DecorativeObjects/decorative_towell.tscn<>uid://d1qb77b0lwbgd::::res://Scenes/DecorativeObjects/decorative_umbrella.tscn<>uid://i8n3vqmyqmmk::::res://Scenes/GroundObjects/ground_barrel_blue.tscn<>uid://cpin76xtwgler::::res://Scenes/GroundObjects/ground_cooler.tscn<>uid://be7j8mh3xfmqd::::res://Scenes/GroundObjects/ground_weight_small.tscn<>uid://dphmrj5qxtd81::::res://Scenes/DecorativeObjects/decorative_towell_yellow.tscn<>uid://twltuol14aau::::res://Scenes/DecorativeObjects/decorative_towell_green.tscn<>uid://b86c77bfhx6rk::::res://Scenes/DecorativeObjects/decorative_towell_pink.tscn<>uid://dotl8xkg0qf86::::res://Graphics/PropsNew/BP4.png

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://duibyvq6ublxh"]
 
 [ext_resource type="PackedScene" uid="uid://cmv5pf77chiow" path="res://Scenes/GroundObjects/generic_ground_object.tscn" id="1_63ncn"]
-[ext_resource type="Texture2D" uid="uid://dgifxvx3l1sps" path="res://Graphics/Stages/PropsNew/OG2.png" id="2_dlrea"]
+[ext_resource type="Texture2D" uid="uid://dgifxvx3l1sps" path="res://Graphics/PropsNew/OG2.png" id="2_dlrea"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hdow5"]
 size = Vector2(68, 12)
@@ -12,5 +12,5 @@ size = Vector2(68, 12)
 shape = SubResource("RectangleShape2D_hdow5")
 
 [node name="ObjectSprite" parent="." index="2"]
-position = Vector2(0, -69)
+position = Vector2(0, -66)
 texture = ExtResource("2_dlrea")

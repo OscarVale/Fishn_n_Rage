@@ -16,7 +16,7 @@ var idle_state : String = "stop"
 @onready var enemy_animation = $MidPoint/AnimatedSprite2D
 var current_animation : String = "idle"
 
-func _ready():
+func _enter_tree():
 	max_health = 40
 	health = max_health
 
@@ -89,12 +89,18 @@ func hit(damage : int, knockback : bool):
 	$AttackDelay.stop()
 	
 	var pos
-	if $MidPoint.scale.x < 0 : pos = 10
-	else : pos = -10
+	if $MidPoint.scale.x < 0 : pos = 5
+	else : pos = -5
 	
 	var tween = get_tree().create_tween()
-	if not knockback : tween.tween_property($".", "position", $".".position + Vector2(pos ,0), 0.2)
-	else : tween.tween_property($".", "position", $".".position + Vector2(pos*5 ,0), 0.2)
+	if not knockback : 
+		tween.tween_property($".", "modulate", Color.CRIMSON, 0)
+		tween.tween_property($".", "position", $".".position + Vector2(pos ,0), 0.2)
+		tween.tween_property($".", "modulate", Color.WHITE, 0)
+	else : 
+		tween.tween_property($".", "modulate", Color.CRIMSON, 0)
+		tween.tween_property($".", "position", $".".position + Vector2(pos*8 ,0), 0.2)
+		tween.tween_property($".", "modulate", Color.WHITE, 0)
 	
 	if health <= 0:
 		enemy_state = "defeated"

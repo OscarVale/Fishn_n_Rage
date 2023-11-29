@@ -1,13 +1,27 @@
-[gd_scene load_steps=11 format=3 uid="uid://ca32n2u5mokvv"]
+[gd_scene load_steps=26 format=3 uid="uid://ca32n2u5mokvv"]
 
 [ext_resource type="PackedScene" uid="uid://dnos4idmp16j6" path="res://Scenes/Stages/level.tscn" id="1_ridh1"]
+[ext_resource type="Script" path="res://Scenes/Stages/level_beach.gd" id="2_32yno"]
 [ext_resource type="Texture2D" uid="uid://5ety0i4reyrp" path="res://Graphics/Stages/Beach/Background/Beach Sky.png" id="2_j5unc"]
 [ext_resource type="Texture2D" uid="uid://b1t5ixxl713em" path="res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png" id="3_y22lw"]
 [ext_resource type="Texture2D" uid="uid://k4wvvrs3b38v" path="res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png" id="4_gp376"]
 [ext_resource type="Texture2D" uid="uid://b7y7gcesehuq" path="res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png" id="5_xxtcg"]
 [ext_resource type="Texture2D" uid="uid://bi6il31h2xnm8" path="res://Graphics/Stages/Beach/Background/Beach NoSky.png" id="6_uwxij"]
-[ext_resource type="Texture2D" uid="uid://cm0jd3s4fkwyw" path="res://Graphics/Stages/PropsNew/BP5.png" id="7_kgfgo"]
+[ext_resource type="PackedScene" uid="uid://buq7don4716nx" path="res://Scenes/DecorativeObjects/decorative_towell.tscn" id="8_pepvm"]
 [ext_resource type="PackedScene" uid="uid://d1qb77b0lwbgd" path="res://Scenes/DecorativeObjects/decorative_umbrella.tscn" id="8_yyj0w"]
+[ext_resource type="PackedScene" uid="uid://i8n3vqmyqmmk" path="res://Scenes/GroundObjects/ground_barrel_blue.tscn" id="10_kkfep"]
+[ext_resource type="PackedScene" uid="uid://cpin76xtwgler" path="res://Scenes/GroundObjects/ground_cooler.tscn" id="11_e6opc"]
+[ext_resource type="PackedScene" uid="uid://be7j8mh3xfmqd" path="res://Scenes/GroundObjects/ground_weight_small.tscn" id="12_mrxoo"]
+[ext_resource type="PackedScene" uid="uid://dk2winw088oop" path="res://Scenes/DecorativeObjects/decorative_mat.tscn" id="12_wwsgg"]
+[ext_resource type="PackedScene" uid="uid://dphmrj5qxtd81" path="res://Scenes/DecorativeObjects/decorative_towell_yellow.tscn" id="13_7i4c0"]
+[ext_resource type="PackedScene" uid="uid://twltuol14aau" path="res://Scenes/DecorativeObjects/decorative_towell_green.tscn" id="14_3jdnq"]
+[ext_resource type="PackedScene" uid="uid://b86c77bfhx6rk" path="res://Scenes/DecorativeObjects/decorative_towell_pink.tscn" id="15_j57mf"]
+[ext_resource type="PackedScene" uid="uid://duibyvq6ublxh" path="res://Scenes/GroundObjects/ground_weight_large.tscn" id="16_akxny"]
+[ext_resource type="Texture2D" uid="uid://dotl8xkg0qf86" path="res://Graphics/PropsNew/BP4.png" id="16_oaora"]
+[ext_resource type="PackedScene" uid="uid://dcnx1dubf188d" path="res://Scenes/EnviromentalObjects/enviromental_dumbell_rack.tscn" id="19_4ounj"]
+[ext_resource type="PackedScene" uid="uid://csu0ssfmfo4gy" path="res://Scenes/EnviromentalObjects/enviromental_gym_bench.tscn" id="20_83w2x"]
+[ext_resource type="PackedScene" uid="uid://bv5ih23uxnr8s" path="res://Scenes/EnviromentalObjects/enviromental_pull_up_bar.tscn" id="21_5pdm4"]
+[ext_resource type="Script" path="res://Scenes/Stages/first_area.gd" id="22_qiccn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oxgny"]
 size = Vector2(3396, 20)
@@ -15,9 +29,16 @@ size = Vector2(3396, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ds2h0"]
 size = Vector2(713, 91.5)
 
-[node name="Level" instance=ExtResource("1_ridh1")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vkpf"]
+size = Vector2(18, 192)
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
+[node name="Level" instance=ExtResource("1_ridh1")]
+script = ExtResource("2_32yno")
+
+[node name="Calculate" type="Timer" parent="." index="0"]
+wait_time = 0.5
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="1"]
 
 [node name="Skye" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
 metadata/_edit_group_ = true
@@ -84,6 +105,10 @@ texture_filter = 1
 position = Vector2(1503, 180)
 texture = ExtResource("6_uwxij")
 
+[node name="Barriers" parent="." index="2"]
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
 [node name="StaticBody2D" type="StaticBody2D" parent="Barriers" index="0"]
 collision_layer = 32
 collision_mask = 3
@@ -104,12 +129,245 @@ collision_mask = 3
 position = Vector2(771.5, 278.75)
 shape = SubResource("RectangleShape2D_ds2h0")
 
-[node name="GroundDecorations" type="Node2D" parent="." index="2"]
+[node name="GroundDecorations" type="Node2D" parent="." index="3"]
+visible = false
 
-[node name="Bp5" type="Sprite2D" parent="GroundDecorations" index="0"]
+[node name="Node2D" parent="GroundDecorations" index="0" instance=ExtResource("8_pepvm")]
+position = Vector2(1383, 167)
+
+[node name="Node2D3" parent="GroundDecorations" index="1" instance=ExtResource("8_pepvm")]
+position = Vector2(1538, 280)
+
+[node name="Node2D6" parent="GroundDecorations" index="2" instance=ExtResource("8_pepvm")]
+position = Vector2(2113, 158)
+
+[node name="Node2D9" parent="GroundDecorations" index="3" instance=ExtResource("8_pepvm")]
+position = Vector2(2506, 159)
+
+[node name="Node2D10" parent="GroundDecorations" index="4" instance=ExtResource("8_pepvm")]
+position = Vector2(2448, 289)
+
+[node name="Node2D2" parent="GroundDecorations" index="5" instance=ExtResource("13_7i4c0")]
+position = Vector2(1560, 144)
+
+[node name="Node2D11" parent="GroundDecorations" index="6" instance=ExtResource("13_7i4c0")]
+position = Vector2(1889, 181)
+
+[node name="Node2D15" parent="GroundDecorations" index="7" instance=ExtResource("13_7i4c0")]
+position = Vector2(2621, 206)
+
+[node name="Node2D4" parent="GroundDecorations" index="8" instance=ExtResource("14_3jdnq")]
+position = Vector2(1700, 234)
+
+[node name="Node2D7" parent="GroundDecorations" index="9" instance=ExtResource("14_3jdnq")]
+position = Vector2(2371, 159)
+
+[node name="Node2D5" parent="GroundDecorations" index="10" instance=ExtResource("15_j57mf")]
+position = Vector2(1244, 288)
+
+[node name="Node2D8" parent="GroundDecorations" index="11" instance=ExtResource("15_j57mf")]
+position = Vector2(2360, 230)
+
+[node name="Node2D12" parent="GroundDecorations" index="12" instance=ExtResource("12_wwsgg")]
+position = Vector2(2793, 274)
+
+[node name="Node2D13" parent="GroundDecorations" index="13" instance=ExtResource("12_wwsgg")]
+position = Vector2(2945, 197)
+
+[node name="Node2D14" parent="GroundDecorations" index="14" instance=ExtResource("12_wwsgg")]
+position = Vector2(3149, 215)
+
+[node name="Marker2D" type="Marker2D" parent="YSortingLayer/Player/Camera2D" index="0"]
+position = Vector2(320, -98)
+
+[node name="Projectiles" parent="YSortingLayer" index="1"]
+y_sort_enabled = true
+
+[node name="GroundObjects" type="Node2D" parent="YSortingLayer" index="2"]
+y_sort_enabled = true
+position = Vector2(0, 2)
+
+[node name="Generic Ground Object" parent="YSortingLayer/GroundObjects" index="0" instance=ExtResource("10_kkfep")]
+position = Vector2(1273, 150.5)
+
+[node name="Generic Ground Object3" parent="YSortingLayer/GroundObjects" index="1" instance=ExtResource("10_kkfep")]
+position = Vector2(2040, 290)
+
+[node name="Generic Ground Object12" parent="YSortingLayer/GroundObjects" index="2" instance=ExtResource("10_kkfep")]
+position = Vector2(2720, 153)
+
+[node name="Generic Ground Object5" parent="YSortingLayer/GroundObjects" index="3" instance=ExtResource("10_kkfep")]
+position = Vector2(2187, 290)
+
+[node name="Generic Ground Object2" parent="YSortingLayer/GroundObjects" index="4" instance=ExtResource("11_e6opc")]
+position = Vector2(1526, 258)
+
+[node name="Generic Ground Object6" parent="YSortingLayer/GroundObjects" index="5" instance=ExtResource("11_e6opc")]
+position = Vector2(2219, 165)
+
+[node name="Generic Ground Object7" parent="YSortingLayer/GroundObjects" index="6" instance=ExtResource("11_e6opc")]
+position = Vector2(2482, 267)
+
+[node name="Generic Ground Object8" parent="YSortingLayer/GroundObjects" index="7" instance=ExtResource("11_e6opc")]
+position = Vector2(2858, 150)
+
+[node name="Generic Ground Object14" parent="YSortingLayer/GroundObjects" index="8" instance=ExtResource("11_e6opc")]
+position = Vector2(2817, 169)
+
+[node name="Generic Ground Object13" parent="YSortingLayer/GroundObjects" index="9" instance=ExtResource("11_e6opc")]
+position = Vector2(3033, 315)
+
+[node name="Generic Ground Object4" parent="YSortingLayer/GroundObjects" index="10" instance=ExtResource("11_e6opc")]
+position = Vector2(1213, 282)
+
+[node name="Generic Ground Object9" parent="YSortingLayer/GroundObjects" index="11" instance=ExtResource("16_akxny")]
+position = Vector2(2945, 198)
+
+[node name="Generic Ground Object10" parent="YSortingLayer/GroundObjects" index="12" instance=ExtResource("12_mrxoo")]
+position = Vector2(3149, 217)
+
+[node name="Generic Ground Object11" parent="YSortingLayer/GroundObjects" index="13" instance=ExtResource("12_mrxoo")]
+position = Vector2(2793, 274)
+
+[node name="Enemies" type="Node2D" parent="YSortingLayer" index="3"]
+y_sort_enabled = true
+
+[node name="Enviromental" type="Node2D" parent="YSortingLayer" index="4"]
+y_sort_enabled = true
+
+[node name="StaticBody2D" parent="YSortingLayer/Enviromental" index="0" instance=ExtResource("19_4ounj")]
+position = Vector2(2956, 321)
+
+[node name="StaticBody2D5" parent="YSortingLayer/Enviromental" index="1" instance=ExtResource("19_4ounj")]
+position = Vector2(2679, 313)
+
+[node name="StaticBody2D2" parent="YSortingLayer/Enviromental" index="2" instance=ExtResource("20_83w2x")]
+position = Vector2(3106, 272)
+
+[node name="StaticBody2D3" parent="YSortingLayer/Enviromental" index="3" instance=ExtResource("21_5pdm4")]
+position = Vector2(3011, 153)
+
+[node name="StaticBody2D4" parent="YSortingLayer/Enviromental" index="4" instance=ExtResource("21_5pdm4")]
+position = Vector2(3127, 153)
+
+[node name="Bp4" type="Sprite2D" parent="YSortingLayer/Enviromental" index="5"]
 texture_filter = 1
-position = Vector2(1391, 281)
-texture = ExtResource("7_kgfgo")
+position = Vector2(1232, 286)
+texture = ExtResource("16_oaora")
 
-[node name="Node2D" parent="YSortingLayer" index="2" instance=ExtResource("8_yyj0w")]
-position = Vector2(1450, 141)
+[node name="Bp6" type="Sprite2D" parent="YSortingLayer/Enviromental" index="6"]
+texture_filter = 1
+position = Vector2(1882, 158)
+texture = ExtResource("16_oaora")
+
+[node name="Bp7" type="Sprite2D" parent="YSortingLayer/Enviromental" index="7"]
+texture_filter = 1
+position = Vector2(2220, 290)
+texture = ExtResource("16_oaora")
+
+[node name="Bp9" type="Sprite2D" parent="YSortingLayer/Enviromental" index="8"]
+texture_filter = 1
+position = Vector2(2896, 154)
+texture = ExtResource("16_oaora")
+
+[node name="Bp10" type="Sprite2D" parent="YSortingLayer/Enviromental" index="9"]
+texture_filter = 1
+position = Vector2(2885, 161)
+texture = ExtResource("16_oaora")
+
+[node name="Bp12" type="Sprite2D" parent="YSortingLayer/Enviromental" index="10"]
+texture_filter = 1
+position = Vector2(3148, 272)
+texture = ExtResource("16_oaora")
+
+[node name="Bp11" type="Sprite2D" parent="YSortingLayer/Enviromental" index="11"]
+texture_filter = 1
+position = Vector2(2694, 155)
+rotation = 1.5708
+texture = ExtResource("16_oaora")
+
+[node name="Bp8" type="Sprite2D" parent="YSortingLayer/Enviromental" index="12"]
+texture_filter = 1
+position = Vector2(2168, 297)
+texture = ExtResource("16_oaora")
+
+[node name="Bp5" type="Sprite2D" parent="YSortingLayer/Enviromental" index="13"]
+texture_filter = 1
+position = Vector2(1294, 157.5)
+rotation = 1.5708
+texture = ExtResource("16_oaora")
+
+[node name="Node2D" parent="YSortingLayer/Enviromental" index="14" instance=ExtResource("8_yyj0w")]
+position = Vector2(1430, 147)
+
+[node name="Node2D2" parent="YSortingLayer/Enviromental" index="15" instance=ExtResource("8_yyj0w")]
+position = Vector2(1612, 281)
+
+[node name="Node2D3" parent="YSortingLayer/Enviromental" index="16" instance=ExtResource("8_yyj0w")]
+position = Vector2(2286, 160)
+
+[node name="Node2D5" parent="YSortingLayer/Enviromental" index="17" instance=ExtResource("8_yyj0w")]
+position = Vector2(2565, 206)
+
+[node name="Node2D4" parent="YSortingLayer/Enviromental" index="18" instance=ExtResource("8_yyj0w")]
+position = Vector2(1913, 163)
+
+[node name="AreaTriggers" type="Node2D" parent="." index="5"]
+
+[node name="FirstArea" type="Area2D" parent="AreaTriggers" index="0"]
+position = Vector2(1112, 199)
+collision_layer = 0
+script = ExtResource("22_qiccn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaTriggers/FirstArea" index="0"]
+position = Vector2(307, 26)
+shape = SubResource("RectangleShape2D_8vkpf")
+debug_color = Color(0.643137, 0.521569, 0.0313726, 0.419608)
+
+[node name="SpawnPositions" type="Node2D" parent="AreaTriggers/FirstArea" index="1"]
+position = Vector2(-1395, -224)
+
+[node name="EnemyPosition" type="Marker2D" parent="AreaTriggers/FirstArea/SpawnPositions" index="0"]
+position = Vector2(2034, 180)
+
+[node name="EnemyPosition2" type="Marker2D" parent="AreaTriggers/FirstArea/SpawnPositions" index="1"]
+position = Vector2(2068, 246)
+
+[node name="EnemyPosition3" type="Marker2D" parent="AreaTriggers/FirstArea/SpawnPositions" index="2"]
+position = Vector2(2034, 320)
+
+[node name="EnemyPosition4" type="Marker2D" parent="AreaTriggers/FirstArea/SpawnPositions" index="3"]
+position = Vector2(1267, 216)
+
+[node name="SecondArea" type="Area2D" parent="AreaTriggers" index="1"]
+visible = false
+position = Vector2(2207, 199)
+collision_layer = 0
+script = ExtResource("22_qiccn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaTriggers/SecondArea" index="0"]
+position = Vector2(0, 26)
+shape = SubResource("RectangleShape2D_8vkpf")
+debug_color = Color(0.643137, 0.521569, 0.0313726, 0.419608)
+
+[node name="SpawnPositions" type="Node2D" parent="AreaTriggers/SecondArea" index="1"]
+position = Vector2(-1395, -224)
+
+[node name="EnemyPosition" type="Marker2D" parent="AreaTriggers/SecondArea/SpawnPositions" index="0"]
+position = Vector2(1727, 180)
+
+[node name="EnemyPosition2" type="Marker2D" parent="AreaTriggers/SecondArea/SpawnPositions" index="1"]
+position = Vector2(1761, 246)
+
+[node name="EnemyPosition3" type="Marker2D" parent="AreaTriggers/SecondArea/SpawnPositions" index="2"]
+position = Vector2(1727, 320)
+
+[node name="EnemyPosition4" type="Marker2D" parent="AreaTriggers/SecondArea/SpawnPositions" index="3"]
+position = Vector2(960, 216)
+
+[connection signal="timeout" from="Calculate" to="AreaTriggers/FirstArea" method="_on_calculate_timeout"]
+[connection signal="battle_update" from="AreaTriggers/FirstArea" to="." method="_on_first_area_battle_update"]
+[connection signal="body_entered" from="AreaTriggers/FirstArea" to="AreaTriggers/FirstArea" method="_on_body_entered"]
+[connection signal="spawn_enemies" from="AreaTriggers/FirstArea" to="." method="_on_first_area_spawn_enemies"]
+[connection signal="battle_update" from="AreaTriggers/SecondArea" to="." method="_on_second_area_battle_update"]
+[connection signal="spawn_enemies" from="AreaTriggers/SecondArea" to="." method="_on_second_area_spawn_enemies"]

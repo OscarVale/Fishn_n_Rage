@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpesa1n6twi7s"]
+
+[ext_resource type="Script" path="res://Scenes/Stages/fight_area.gd" id="1_yeko3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x18xw"]
+size = Vector2(20, 260)
+
+[node name="Area1" type="Node2D"]
+script = ExtResource("1_yeko3")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_x18xw")
+
+[node name="SpawnPositions" type="Node2D" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

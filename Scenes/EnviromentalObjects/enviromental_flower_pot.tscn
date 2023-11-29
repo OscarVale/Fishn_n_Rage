@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0sq77rt52c24"]
 
-[ext_resource type="Texture2D" uid="uid://d0l716b1nu4oi" path="res://Graphics/Stages/PropsNew/FlowerPot.png" id="1_vh5ot"]
+[ext_resource type="Texture2D" uid="uid://d0l716b1nu4oi" path="res://Graphics/PropsNew/FlowerPot.png" id="1_vh5ot"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2oo62"]
 size = Vector2(76, 12)

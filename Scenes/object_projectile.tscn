@@ -3,15 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://ckrhna2qh0qfm" path="res://Graphics/SHADOW GEN.png" id="1_frsjm"]
 [ext_resource type="Script" path="res://Scenes/object_projectile.gd" id="1_tk61d"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q878p"]
-size = Vector2(92, 50)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ucblc"]
+radius = 24.0
+height = 90.0
 
 [node name="ObjectProjectile" type="Area2D"]
 collision_mask = 7
 script = ExtResource("1_tk61d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_q878p")
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ucblc")
 
 [node name="Shadow" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 0.396078)

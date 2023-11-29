@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkd20bitoqvb3"]
 
 [ext_resource type="PackedScene" uid="uid://cmv5pf77chiow" path="res://Scenes/GroundObjects/generic_ground_object.tscn" id="1_db3mv"]
-[ext_resource type="Texture2D" uid="uid://bekov5rmq3ixy" path="res://Graphics/Stages/PropsNew/OG4.png" id="2_hw7l6"]
+[ext_resource type="Texture2D" uid="uid://bekov5rmq3ixy" path="res://Graphics/PropsNew/OG4.png" id="2_hw7l6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mixid"]
 size = Vector2(72, 12)

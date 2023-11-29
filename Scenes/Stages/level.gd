@@ -8,6 +8,7 @@ func _ready():
 	# Conecta la senal de cada uno de los objetos de suelo
 	for ground_object in get_tree().get_nodes_in_group('ground_objects_group'):
 		ground_object.connect("got_picked_up", _on_object_got_picked_up)
+	
 
 
 func _on_object_got_picked_up(sprite : Sprite2D):

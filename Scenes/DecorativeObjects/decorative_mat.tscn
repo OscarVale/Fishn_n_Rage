@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk2winw088oop"]
+
+[ext_resource type="Texture2D" uid="uid://bqgk33e8cdus4" path="res://Graphics/PropsNew/OG6.png" id="1_c88q7"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.196078)
+z_index = -2
+texture_filter = 1
+position = Vector2(1, 1)
+texture = ExtResource("1_c88q7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -2
+texture_filter = 1
+texture = ExtResource("1_c88q7")
