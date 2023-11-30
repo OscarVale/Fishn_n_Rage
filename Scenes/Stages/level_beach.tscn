@@ -21,7 +21,8 @@
 [ext_resource type="PackedScene" uid="uid://dcnx1dubf188d" path="res://Scenes/EnviromentalObjects/enviromental_dumbell_rack.tscn" id="19_4ounj"]
 [ext_resource type="PackedScene" uid="uid://csu0ssfmfo4gy" path="res://Scenes/EnviromentalObjects/enviromental_gym_bench.tscn" id="20_83w2x"]
 [ext_resource type="PackedScene" uid="uid://bv5ih23uxnr8s" path="res://Scenes/EnviromentalObjects/enviromental_pull_up_bar.tscn" id="21_5pdm4"]
-[ext_resource type="Script" path="res://Scenes/Stages/first_area.gd" id="22_qiccn"]
+[ext_resource type="PackedScene" uid="uid://cryxy5uhgjyig" path="res://Scenes/BattleAreaTriggers/beach_area_2.tscn" id="23_psmls"]
+[ext_resource type="PackedScene" uid="uid://bajhxwatbtbfp" path="res://Scenes/BattleAreaTriggers/beach_area_1.tscn" id="23_vp6ew"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oxgny"]
 size = Vector2(3396, 20)
@@ -29,16 +30,10 @@ size = Vector2(3396, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ds2h0"]
 size = Vector2(713, 91.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vkpf"]
-size = Vector2(18, 192)
-
 [node name="Level" instance=ExtResource("1_ridh1")]
 script = ExtResource("2_32yno")
 
-[node name="Calculate" type="Timer" parent="." index="0"]
-wait_time = 0.5
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="1"]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
 
 [node name="Skye" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
 metadata/_edit_group_ = true
@@ -105,7 +100,7 @@ texture_filter = 1
 position = Vector2(1503, 180)
 texture = ExtResource("6_uwxij")
 
-[node name="Barriers" parent="." index="2"]
+[node name="Barriers" parent="." index="1"]
 metadata/_edit_lock_ = true
 metadata/_edit_group_ = true
 
@@ -129,8 +124,7 @@ collision_mask = 3
 position = Vector2(771.5, 278.75)
 shape = SubResource("RectangleShape2D_ds2h0")
 
-[node name="GroundDecorations" type="Node2D" parent="." index="3"]
-visible = false
+[node name="GroundDecorations" type="Node2D" parent="." index="2"]
 
 [node name="Node2D" parent="GroundDecorations" index="0" instance=ExtResource("8_pepvm")]
 position = Vector2(1383, 167)
@@ -139,34 +133,34 @@ position = Vector2(1383, 167)
 position = Vector2(1538, 280)
 
 [node name="Node2D6" parent="GroundDecorations" index="2" instance=ExtResource("8_pepvm")]
-position = Vector2(2113, 158)
+position = Vector2(2050, 156)
 
 [node name="Node2D9" parent="GroundDecorations" index="3" instance=ExtResource("8_pepvm")]
-position = Vector2(2506, 159)
+position = Vector2(2441, 159)
 
 [node name="Node2D10" parent="GroundDecorations" index="4" instance=ExtResource("8_pepvm")]
-position = Vector2(2448, 289)
+position = Vector2(2383, 289)
 
 [node name="Node2D2" parent="GroundDecorations" index="5" instance=ExtResource("13_7i4c0")]
 position = Vector2(1560, 144)
 
 [node name="Node2D11" parent="GroundDecorations" index="6" instance=ExtResource("13_7i4c0")]
-position = Vector2(1889, 181)
+position = Vector2(1877.5, 181)
 
 [node name="Node2D15" parent="GroundDecorations" index="7" instance=ExtResource("13_7i4c0")]
-position = Vector2(2621, 206)
+position = Vector2(2556, 206)
 
 [node name="Node2D4" parent="GroundDecorations" index="8" instance=ExtResource("14_3jdnq")]
 position = Vector2(1700, 234)
 
 [node name="Node2D7" parent="GroundDecorations" index="9" instance=ExtResource("14_3jdnq")]
-position = Vector2(2371, 159)
+position = Vector2(2306, 159)
 
 [node name="Node2D5" parent="GroundDecorations" index="10" instance=ExtResource("15_j57mf")]
 position = Vector2(1244, 288)
 
 [node name="Node2D8" parent="GroundDecorations" index="11" instance=ExtResource("15_j57mf")]
-position = Vector2(2360, 230)
+position = Vector2(2229, 230)
 
 [node name="Node2D12" parent="GroundDecorations" index="12" instance=ExtResource("12_wwsgg")]
 position = Vector2(2793, 274)
@@ -191,42 +185,39 @@ position = Vector2(0, 2)
 position = Vector2(1273, 150.5)
 
 [node name="Generic Ground Object3" parent="YSortingLayer/GroundObjects" index="1" instance=ExtResource("10_kkfep")]
-position = Vector2(2040, 290)
+position = Vector2(1901, 302)
 
 [node name="Generic Ground Object12" parent="YSortingLayer/GroundObjects" index="2" instance=ExtResource("10_kkfep")]
 position = Vector2(2720, 153)
 
 [node name="Generic Ground Object5" parent="YSortingLayer/GroundObjects" index="3" instance=ExtResource("10_kkfep")]
-position = Vector2(2187, 290)
+position = Vector2(2130, 291)
 
 [node name="Generic Ground Object2" parent="YSortingLayer/GroundObjects" index="4" instance=ExtResource("11_e6opc")]
 position = Vector2(1526, 258)
 
 [node name="Generic Ground Object6" parent="YSortingLayer/GroundObjects" index="5" instance=ExtResource("11_e6opc")]
-position = Vector2(2219, 165)
+position = Vector2(1936, 157)
 
 [node name="Generic Ground Object7" parent="YSortingLayer/GroundObjects" index="6" instance=ExtResource("11_e6opc")]
-position = Vector2(2482, 267)
+position = Vector2(2269, 211)
 
 [node name="Generic Ground Object8" parent="YSortingLayer/GroundObjects" index="7" instance=ExtResource("11_e6opc")]
 position = Vector2(2858, 150)
 
-[node name="Generic Ground Object14" parent="YSortingLayer/GroundObjects" index="8" instance=ExtResource("11_e6opc")]
-position = Vector2(2817, 169)
-
-[node name="Generic Ground Object13" parent="YSortingLayer/GroundObjects" index="9" instance=ExtResource("11_e6opc")]
+[node name="Generic Ground Object13" parent="YSortingLayer/GroundObjects" index="8" instance=ExtResource("11_e6opc")]
 position = Vector2(3033, 315)
 
-[node name="Generic Ground Object4" parent="YSortingLayer/GroundObjects" index="10" instance=ExtResource("11_e6opc")]
+[node name="Generic Ground Object4" parent="YSortingLayer/GroundObjects" index="9" instance=ExtResource("11_e6opc")]
 position = Vector2(1213, 282)
 
-[node name="Generic Ground Object9" parent="YSortingLayer/GroundObjects" index="11" instance=ExtResource("16_akxny")]
+[node name="Generic Ground Object9" parent="YSortingLayer/GroundObjects" index="10" instance=ExtResource("16_akxny")]
 position = Vector2(2945, 198)
 
-[node name="Generic Ground Object10" parent="YSortingLayer/GroundObjects" index="12" instance=ExtResource("12_mrxoo")]
+[node name="Generic Ground Object10" parent="YSortingLayer/GroundObjects" index="11" instance=ExtResource("12_mrxoo")]
 position = Vector2(3149, 217)
 
-[node name="Generic Ground Object11" parent="YSortingLayer/GroundObjects" index="13" instance=ExtResource("12_mrxoo")]
+[node name="Generic Ground Object11" parent="YSortingLayer/GroundObjects" index="12" instance=ExtResource("12_mrxoo")]
 position = Vector2(2793, 274)
 
 [node name="Enemies" type="Node2D" parent="YSortingLayer" index="3"]
@@ -257,12 +248,12 @@ texture = ExtResource("16_oaora")
 
 [node name="Bp6" type="Sprite2D" parent="YSortingLayer/Enviromental" index="6"]
 texture_filter = 1
-position = Vector2(1882, 158)
+position = Vector2(1870.5, 158)
 texture = ExtResource("16_oaora")
 
 [node name="Bp7" type="Sprite2D" parent="YSortingLayer/Enviromental" index="7"]
 texture_filter = 1
-position = Vector2(2220, 290)
+position = Vector2(2155, 290)
 texture = ExtResource("16_oaora")
 
 [node name="Bp9" type="Sprite2D" parent="YSortingLayer/Enviromental" index="8"]
@@ -288,7 +279,7 @@ texture = ExtResource("16_oaora")
 
 [node name="Bp8" type="Sprite2D" parent="YSortingLayer/Enviromental" index="12"]
 texture_filter = 1
-position = Vector2(2168, 297)
+position = Vector2(2103, 297)
 texture = ExtResource("16_oaora")
 
 [node name="Bp5" type="Sprite2D" parent="YSortingLayer/Enviromental" index="13"]
@@ -304,70 +295,23 @@ position = Vector2(1430, 147)
 position = Vector2(1612, 281)
 
 [node name="Node2D3" parent="YSortingLayer/Enviromental" index="16" instance=ExtResource("8_yyj0w")]
-position = Vector2(2286, 160)
+position = Vector2(2221, 205)
 
 [node name="Node2D5" parent="YSortingLayer/Enviromental" index="17" instance=ExtResource("8_yyj0w")]
-position = Vector2(2565, 206)
+position = Vector2(2500, 206)
 
 [node name="Node2D4" parent="YSortingLayer/Enviromental" index="18" instance=ExtResource("8_yyj0w")]
-position = Vector2(1913, 163)
+position = Vector2(1901.5, 163)
 
-[node name="AreaTriggers" type="Node2D" parent="." index="5"]
+[node name="AreaTriggers" type="Node2D" parent="." index="4"]
 
-[node name="FirstArea" type="Area2D" parent="AreaTriggers" index="0"]
-position = Vector2(1112, 199)
-collision_layer = 0
-script = ExtResource("22_qiccn")
+[node name="Area1" parent="." index="5" instance=ExtResource("23_vp6ew")]
+position = Vector2(1520, 222)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaTriggers/FirstArea" index="0"]
-position = Vector2(307, 26)
-shape = SubResource("RectangleShape2D_8vkpf")
-debug_color = Color(0.643137, 0.521569, 0.0313726, 0.419608)
+[node name="Area2" parent="." index="6" instance=ExtResource("23_vp6ew")]
+position = Vector2(2161, 226)
+waves_count = 2
 
-[node name="SpawnPositions" type="Node2D" parent="AreaTriggers/FirstArea" index="1"]
-position = Vector2(-1395, -224)
-
-[node name="EnemyPosition" type="Marker2D" parent="AreaTriggers/FirstArea/SpawnPositions" index="0"]
-position = Vector2(2034, 180)
-
-[node name="EnemyPosition2" type="Marker2D" parent="AreaTriggers/FirstArea/SpawnPositions" index="1"]
-position = Vector2(2068, 246)
-
-[node name="EnemyPosition3" type="Marker2D" parent="AreaTriggers/FirstArea/SpawnPositions" index="2"]
-position = Vector2(2034, 320)
-
-[node name="EnemyPosition4" type="Marker2D" parent="AreaTriggers/FirstArea/SpawnPositions" index="3"]
-position = Vector2(1267, 216)
-
-[node name="SecondArea" type="Area2D" parent="AreaTriggers" index="1"]
-visible = false
-position = Vector2(2207, 199)
-collision_layer = 0
-script = ExtResource("22_qiccn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaTriggers/SecondArea" index="0"]
-position = Vector2(0, 26)
-shape = SubResource("RectangleShape2D_8vkpf")
-debug_color = Color(0.643137, 0.521569, 0.0313726, 0.419608)
-
-[node name="SpawnPositions" type="Node2D" parent="AreaTriggers/SecondArea" index="1"]
-position = Vector2(-1395, -224)
-
-[node name="EnemyPosition" type="Marker2D" parent="AreaTriggers/SecondArea/SpawnPositions" index="0"]
-position = Vector2(1727, 180)
-
-[node name="EnemyPosition2" type="Marker2D" parent="AreaTriggers/SecondArea/SpawnPositions" index="1"]
-position = Vector2(1761, 246)
-
-[node name="EnemyPosition3" type="Marker2D" parent="AreaTriggers/SecondArea/SpawnPositions" index="2"]
-position = Vector2(1727, 320)
-
-[node name="EnemyPosition4" type="Marker2D" parent="AreaTriggers/SecondArea/SpawnPositions" index="3"]
-position = Vector2(960, 216)
-
-[connection signal="timeout" from="Calculate" to="AreaTriggers/FirstArea" method="_on_calculate_timeout"]
-[connection signal="battle_update" from="AreaTriggers/FirstArea" to="." method="_on_first_area_battle_update"]
-[connection signal="body_entered" from="AreaTriggers/FirstArea" to="AreaTriggers/FirstArea" method="_on_body_entered"]
-[connection signal="spawn_enemies" from="AreaTriggers/FirstArea" to="." method="_on_first_area_spawn_enemies"]
-[connection signal="battle_update" from="AreaTriggers/SecondArea" to="." method="_on_second_area_battle_update"]
-[connection signal="spawn_enemies" from="AreaTriggers/SecondArea" to="." method="_on_second_area_spawn_enemies"]
+[node name="Area3" parent="." index="7" instance=ExtResource("23_psmls")]
+position = Vector2(2928, 221)
+waves_count = 4

@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://cryxy5uhgjyig"]
+
+[ext_resource type="PackedScene" uid="uid://dpesa1n6twi7s" path="res://Scenes/BattleAreaTriggers/generic_battle_area.tscn" id="1_bh3xb"]
+
+[node name="Area1" instance=ExtResource("1_bh3xb")]
+
+[node name="Marker2D" type="Marker2D" parent="SpawnPositions" index="0"]
+position = Vector2(324, 85)
+
+[node name="Marker2D2" type="Marker2D" parent="SpawnPositions" index="1"]
+position = Vector2(-386, 73)
+
+[node name="Marker2D3" type="Marker2D" parent="SpawnPositions" index="2"]
+position = Vector2(320, -94)
+
+[node name="Marker2D5" type="Marker2D" parent="SpawnPositions" index="3"]
+position = Vector2(365, -4)
+
+[node name="Marker2D4" type="Marker2D" parent="SpawnPositions" index="4"]
+position = Vector2(-384, -84)
+
+[node name="Calculate" parent="." index="2"]
+wait_time = 0.8

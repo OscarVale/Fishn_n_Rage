@@ -178,7 +178,7 @@ func attack():
 			if check_hurtbox_collision():
 				attack_marker = attack_marker + 1
 				var pos
-				if $MidPoint.scale.x < 0 : pos = -10
+				if $MidPoint.scale.x < 0 : pos = -5
 				else : pos = 5
 				var tween = get_tree().create_tween()
 				tween.tween_property($".", "position", $".".position + Vector2(pos ,0), 0.2)

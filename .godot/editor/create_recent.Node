@@ -1,8 +1,9 @@
-Node2D
 Timer
+Marker2D
+Node
+Node2D
 CollisionShape2D
 Area2D
-Marker2D
 Sprite2D
 StaticBody2D
 ParallaxLayer
@@ -13,5 +14,4 @@ NavigationRegion2D
 AnimatedSprite2D
 CharacterBody2D
 Camera2D
-Node
 AudioStreamPlayer2D

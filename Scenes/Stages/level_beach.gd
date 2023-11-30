@@ -13,6 +13,10 @@ func _ready():
 	# Conecta la senal de cada uno de los objetos de suelo
 	for ground_object in get_tree().get_nodes_in_group('ground_objects_group'):
 		ground_object.connect("got_picked_up", _on_object_got_picked_up)
+	for trigger_area in get_tree().get_nodes_in_group('battle_trigger_group'):
+		trigger_area.connect("spawn_enemies", _on_area_spawn_enemies)
+		trigger_area.connect("get_enemy_tree", _on_area_get_enemy_tree)
+		trigger_area.connect("battle_update", _on_area_battle_update)
 
 func summon_enemies(enemy_positions : Array):
 	for i in enemy_positions.size():
@@ -49,13 +53,17 @@ func free_camera():
 	tween.tween_property($YSortingLayer/Player/Camera2D, "limit_right", $YSortingLayer/Player/Camera2D.limit_right + 300, 0.8)
 	tween.tween_property($YSortingLayer/Player/Camera2D, "limit_right", $YSortingLayer/Player/Camera2D.limit_right + 10000000, 0)
 
-func _on_first_area_battle_update(flag):
+# Senales
+func _on_area_spawn_enemies(children : Array):
+	summon_enemies(children)
+func _on_area_get_enemy_tree():
+	Globals.enemy_tree = $YSortingLayer/Enemies.get_children()
+func _on_area_battle_update(flag : bool):
+	print("area activada")
 	if flag:
 		fix_camera($YSortingLayer/Player/Camera2D/Marker2D.global_position.x)
-		$Calculate.start()
+		print("batalla iniciada")
 	else:
 		free_camera()
-		$Calculate.stop()
+		print("batalla finalizada")
 
-func _on_first_area_spawn_enemies(children):
-	summon_enemies(children)
