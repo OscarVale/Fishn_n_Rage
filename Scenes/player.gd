@@ -28,10 +28,12 @@ var picked_sprite : Sprite2D
 var player_is_stunned : bool = false
 var player_is_defeated : bool = false
 
+signal update_health_ui
 
 func _ready():
 	max_health = 100
 	health = max_health
+	Globals.player_health = max_health
 
 
 func _process(delta):
@@ -229,6 +231,8 @@ func drop():
 func hit(damage, _knockback):
 	health -= damage
 	player_is_stunned = true
+	Globals.player_health = health
+	update_health_ui.emit()
 	$Timers/StunTimer.start()
 	reset_player_state()
 	var tween = get_tree().create_tween()

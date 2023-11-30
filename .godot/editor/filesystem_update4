@@ -1,7 +1,9 @@
-res://Scenes/BattleAreaTriggers/generic_battle_area.tscn
-res://Scenes/BattleAreaTriggers/beach_area_1.tscn
 res://Scenes/Stages/level_beach.tscn
-res://Scenes/player.gd
+res://Scenes/Stages/level_mall.tscn
+res://Scenes/Stages/level.tscn
 res://Scenes/Stages/level_beach.gd
-res://Scenes/BattleAreaTriggers/fight_area.gd
-res://Scenes/BattleAreaTriggers/beach_area_2.tscn
+res://Scenes/Stages/level_mall.gd
+res://Scenes/UserInterface/ui.tscn
+res://Scenes/globals.gd
+res://Scenes/player.gd
+res://Scenes/UserInterface/ui_script.gd

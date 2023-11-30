@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://cncppggkw00iq"]
+
+[ext_resource type="Script" path="res://Scenes/UserInterface/ui_script.gd" id="1_j4ckm"]
+[ext_resource type="Texture2D" uid="uid://dmmi62wx82xno" path="res://Graphics/UI/BAR Outline.png" id="1_js6qo"]
+[ext_resource type="Texture2D" uid="uid://b00vmww8l6ye3" path="res://Graphics/UI/BAR Life.png" id="2_yce0d"]
+[ext_resource type="Texture2D" uid="uid://dx7vna0y378c8" path="res://Graphics/UI/Arrow GO.png" id="3_eufv4"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_j4ckm")
+
+[node name="HealthBar" type="Control" parent="."]
+layout_mode = 3
+anchor_top = 0.8
+anchor_right = 0.43
+anchor_bottom = 1.0
+grow_vertical = 0
+size_flags_horizontal = 0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="HealthBar"]
+texture_filter = 1
+offset_right = 264.0
+offset_bottom = 74.0
+value = 100.0
+texture_under = ExtResource("1_js6qo")
+texture_progress = ExtResource("2_yce0d")
+
+[node name="Arrow" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchor_left = 0.8
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Arrow"]
+texture_filter = 1
+layout_mode = 1
+offset_right = 87.0
+offset_bottom = 68.0
+size_flags_horizontal = 4
+texture = ExtResource("3_eufv4")

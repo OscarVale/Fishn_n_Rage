@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://ca32n2u5mokvv"]
+[gd_scene load_steps=29 format=3 uid="uid://ca32n2u5mokvv"]
 
 [ext_resource type="PackedScene" uid="uid://dnos4idmp16j6" path="res://Scenes/Stages/level.tscn" id="1_ridh1"]
 [ext_resource type="Script" path="res://Scenes/Stages/level_beach.gd" id="2_32yno"]
@@ -23,12 +23,19 @@
 [ext_resource type="PackedScene" uid="uid://bv5ih23uxnr8s" path="res://Scenes/EnviromentalObjects/enviromental_pull_up_bar.tscn" id="21_5pdm4"]
 [ext_resource type="PackedScene" uid="uid://cryxy5uhgjyig" path="res://Scenes/BattleAreaTriggers/beach_area_2.tscn" id="23_psmls"]
 [ext_resource type="PackedScene" uid="uid://bajhxwatbtbfp" path="res://Scenes/BattleAreaTriggers/beach_area_1.tscn" id="23_vp6ew"]
+[ext_resource type="PackedScene" uid="uid://cncppggkw00iq" path="res://Scenes/UserInterface/ui.tscn" id="24_4daks"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oxgny"]
 size = Vector2(3396, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ds2h0"]
 size = Vector2(713, 91.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3p5w"]
+size = Vector2(20, 202)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dvx4"]
+size = Vector2(20, 202)
 
 [node name="Level" instance=ExtResource("1_ridh1")]
 script = ExtResource("2_32yno")
@@ -102,7 +109,6 @@ texture = ExtResource("6_uwxij")
 
 [node name="Barriers" parent="." index="1"]
 metadata/_edit_lock_ = true
-metadata/_edit_group_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Barriers" index="0"]
 collision_layer = 32
@@ -124,7 +130,37 @@ collision_mask = 3
 position = Vector2(771.5, 278.75)
 shape = SubResource("RectangleShape2D_ds2h0")
 
-[node name="GroundDecorations" type="Node2D" parent="." index="2"]
+[node name="LimitBarriers" type="Node2D" parent="Barriers" index="2"]
+position = Vector2(320, 180)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Barriers/LimitBarriers" index="0"]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/LimitBarriers/StaticBody2D" index="0"]
+position = Vector2(-296, 43)
+shape = SubResource("RectangleShape2D_d3p5w")
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Barriers/LimitBarriers/StaticBody2D" index="1"]
+position = Vector2(297, 43)
+shape = SubResource("RectangleShape2D_3dvx4")
+disabled = true
+
+[node name="AreaTriggers" type="Node2D" parent="." index="2"]
+
+[node name="Area1" parent="AreaTriggers" index="0" instance=ExtResource("23_vp6ew")]
+position = Vector2(1520, 222)
+waves_count = 2
+
+[node name="Area2" parent="AreaTriggers" index="1" instance=ExtResource("23_vp6ew")]
+position = Vector2(2161, 226)
+waves_count = 2
+
+[node name="Area3" parent="AreaTriggers" index="2" instance=ExtResource("23_psmls")]
+position = Vector2(2928, 221)
+waves_count = 4
+
+[node name="GroundDecorations" type="Node2D" parent="." index="3"]
 
 [node name="Node2D" parent="GroundDecorations" index="0" instance=ExtResource("8_pepvm")]
 position = Vector2(1383, 167)
@@ -170,6 +206,9 @@ position = Vector2(2945, 197)
 
 [node name="Node2D14" parent="GroundDecorations" index="14" instance=ExtResource("12_wwsgg")]
 position = Vector2(3149, 215)
+
+[node name="Player" parent="YSortingLayer" index="0"]
+collision_mask = 100
 
 [node name="Marker2D" type="Marker2D" parent="YSortingLayer/Player/Camera2D" index="0"]
 position = Vector2(320, -98)
@@ -303,15 +342,6 @@ position = Vector2(2500, 206)
 [node name="Node2D4" parent="YSortingLayer/Enviromental" index="18" instance=ExtResource("8_yyj0w")]
 position = Vector2(1901.5, 163)
 
-[node name="AreaTriggers" type="Node2D" parent="." index="4"]
+[node name="UI" parent="." index="5" instance=ExtResource("24_4daks")]
 
-[node name="Area1" parent="." index="5" instance=ExtResource("23_vp6ew")]
-position = Vector2(1520, 222)
-
-[node name="Area2" parent="." index="6" instance=ExtResource("23_vp6ew")]
-position = Vector2(2161, 226)
-waves_count = 2
-
-[node name="Area3" parent="." index="7" instance=ExtResource("23_psmls")]
-position = Vector2(2928, 221)
-waves_count = 4
+[connection signal="update_health_ui" from="YSortingLayer/Player" to="." method="_on_player_update_health_ui"]

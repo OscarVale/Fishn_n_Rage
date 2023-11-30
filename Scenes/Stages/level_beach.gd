@@ -6,6 +6,7 @@ var enemy_2 : PackedScene = preload("res://Scenes/Enemies/BeachEnemies/beach_ene
 var enemy_3 : PackedScene = preload("res://Scenes/Enemies/BeachEnemies/beach_enemy_3.tscn")
 var rounds : int = 0
 
+@onready var player_camera : Camera2D = $YSortingLayer/Player/Camera2D
 
 signal send_sprite(sprite : Sprite2D)
 
@@ -45,13 +46,19 @@ func _on_player_toss_object(sprite, direction, pos):
 
 # funcion para congelar la camara durante combates
 func fix_camera(pos):
-	$YSortingLayer/Player/Camera2D.limit_right = (pos)
-	$YSortingLayer/Player/Camera2D.limit_left = (pos - 640)
+	player_camera.limit_right = (pos)
+	player_camera.limit_left = (pos - 640)
+	var value = player_camera.get_screen_center_position()
+	$Barriers/LimitBarriers/StaticBody2D.global_position.x = value.x
+	$Barriers/LimitBarriers/StaticBody2D/CollisionShape2D.call_deferred("set_disabled", false)
+	$Barriers/LimitBarriers/StaticBody2D/CollisionShape2D2.call_deferred("set_disabled", false)
 
 func free_camera():
 	var tween = get_tree().create_tween()
-	tween.tween_property($YSortingLayer/Player/Camera2D, "limit_right", $YSortingLayer/Player/Camera2D.limit_right + 300, 0.8)
-	tween.tween_property($YSortingLayer/Player/Camera2D, "limit_right", $YSortingLayer/Player/Camera2D.limit_right + 10000000, 0)
+	tween.tween_property(player_camera, "limit_right", player_camera.limit_right + 300, 0.8)
+	tween.tween_property(player_camera, "limit_right", player_camera.limit_right + 10000000, 0)
+	$Barriers/LimitBarriers/StaticBody2D/CollisionShape2D.disabled = true
+	$Barriers/LimitBarriers/StaticBody2D/CollisionShape2D2.disabled = true
 
 # Senales
 func _on_area_spawn_enemies(children : Array):
@@ -59,11 +66,12 @@ func _on_area_spawn_enemies(children : Array):
 func _on_area_get_enemy_tree():
 	Globals.enemy_tree = $YSortingLayer/Enemies.get_children()
 func _on_area_battle_update(flag : bool):
-	print("area activada")
 	if flag:
 		fix_camera($YSortingLayer/Player/Camera2D/Marker2D.global_position.x)
-		print("batalla iniciada")
 	else:
 		free_camera()
-		print("batalla finalizada")
+		$UI.stage_clear()
 
+
+func _on_player_update_health_ui():
+	$UI.update_player_health()
