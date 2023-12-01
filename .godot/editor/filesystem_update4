@@ -21,3 +21,4 @@ res://Scenes/Items/health_pack.tscn
 res://Scenes/UserInterface/ui.tscn
 res://Scenes/Stages/level_mall.tscn
 res://Scenes/Stages/level_mall.gd
+res://Scenes/GroundObjects/ground_cooler.tscn

@@ -80,7 +80,7 @@ waves_count = 2
 
 [node name="Area2" parent="AreaTriggers" index="1" instance=ExtResource("4_0yne8")]
 position = Vector2(1777, 267)
-waves_count = 3
+waves_count = 2
 
 [node name="Area3" parent="AreaTriggers" index="2" instance=ExtResource("5_kabij")]
 position = Vector2(2359, 267)

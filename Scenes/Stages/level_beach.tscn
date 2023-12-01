@@ -161,7 +161,7 @@ waves_count = 2
 
 [node name="Area3" parent="AreaTriggers" index="2" instance=ExtResource("23_psmls")]
 position = Vector2(2490, 221)
-waves_count = 4
+waves_count = 3
 end_level = true
 
 [node name="GroundDecorations" type="Node2D" parent="." index="3"]
@@ -203,10 +203,10 @@ position = Vector2(806, 288)
 position = Vector2(1791, 230)
 
 [node name="Node2D12" parent="GroundDecorations" index="12" instance=ExtResource("12_wwsgg")]
-position = Vector2(2355, 274)
+position = Vector2(2346, 247)
 
 [node name="Node2D13" parent="GroundDecorations" index="13" instance=ExtResource("12_wwsgg")]
-position = Vector2(2507, 197)
+position = Vector2(2498, 210)
 
 [node name="Node2D14" parent="GroundDecorations" index="14" instance=ExtResource("12_wwsgg")]
 position = Vector2(2711, 215)
@@ -233,7 +233,7 @@ position = Vector2(835, 150.5)
 position = Vector2(1463, 302)
 
 [node name="Generic Ground Object12" parent="YSortingLayer/GroundObjects" index="2" instance=ExtResource("10_kkfep")]
-position = Vector2(2282, 153)
+position = Vector2(2287, 164)
 
 [node name="Generic Ground Object5" parent="YSortingLayer/GroundObjects" index="3" instance=ExtResource("10_kkfep")]
 position = Vector2(1692, 291)
@@ -248,22 +248,19 @@ position = Vector2(1498, 157)
 position = Vector2(1831, 211)
 
 [node name="Generic Ground Object8" parent="YSortingLayer/GroundObjects" index="7" instance=ExtResource("11_e6opc")]
-position = Vector2(2420, 150)
+position = Vector2(2418, 133)
 
-[node name="Generic Ground Object13" parent="YSortingLayer/GroundObjects" index="8" instance=ExtResource("11_e6opc")]
-position = Vector2(2595, 315)
-
-[node name="Generic Ground Object4" parent="YSortingLayer/GroundObjects" index="9" instance=ExtResource("11_e6opc")]
+[node name="Generic Ground Object4" parent="YSortingLayer/GroundObjects" index="8" instance=ExtResource("11_e6opc")]
 position = Vector2(775, 282)
 
-[node name="Generic Ground Object9" parent="YSortingLayer/GroundObjects" index="10" instance=ExtResource("16_akxny")]
-position = Vector2(2507, 198)
+[node name="Generic Ground Object9" parent="YSortingLayer/GroundObjects" index="9" instance=ExtResource("16_akxny")]
+position = Vector2(2498, 211)
 
-[node name="Generic Ground Object10" parent="YSortingLayer/GroundObjects" index="11" instance=ExtResource("12_mrxoo")]
+[node name="Generic Ground Object10" parent="YSortingLayer/GroundObjects" index="10" instance=ExtResource("12_mrxoo")]
 position = Vector2(2711, 217)
 
-[node name="Generic Ground Object11" parent="YSortingLayer/GroundObjects" index="12" instance=ExtResource("12_mrxoo")]
-position = Vector2(2355, 274)
+[node name="Generic Ground Object11" parent="YSortingLayer/GroundObjects" index="11" instance=ExtResource("12_mrxoo")]
+position = Vector2(2346, 247)
 
 [node name="Enemies" type="Node2D" parent="YSortingLayer" index="3"]
 y_sort_enabled = true
@@ -275,16 +272,16 @@ y_sort_enabled = true
 position = Vector2(2518, 321)
 
 [node name="StaticBody2D5" parent="YSortingLayer/Enviromental" index="1" instance=ExtResource("19_4ounj")]
-position = Vector2(2241, 313)
+position = Vector2(2227, 320)
 
 [node name="StaticBody2D2" parent="YSortingLayer/Enviromental" index="2" instance=ExtResource("20_83w2x")]
-position = Vector2(2668, 272)
+position = Vector2(2617, 272)
 
 [node name="StaticBody2D3" parent="YSortingLayer/Enviromental" index="3" instance=ExtResource("21_5pdm4")]
-position = Vector2(2573, 153)
+position = Vector2(2559, 153)
 
 [node name="StaticBody2D4" parent="YSortingLayer/Enviromental" index="4" instance=ExtResource("21_5pdm4")]
-position = Vector2(2689, 153)
+position = Vector2(2637, 153)
 
 [node name="Bp4" type="Sprite2D" parent="YSortingLayer/Enviromental" index="5"]
 texture_filter = 1
@@ -303,49 +300,44 @@ texture = ExtResource("16_oaora")
 
 [node name="Bp9" type="Sprite2D" parent="YSortingLayer/Enviromental" index="8"]
 texture_filter = 1
-position = Vector2(2458, 154)
+position = Vector2(2443, 138)
 texture = ExtResource("16_oaora")
 
 [node name="Bp10" type="Sprite2D" parent="YSortingLayer/Enviromental" index="9"]
 texture_filter = 1
-position = Vector2(2447, 161)
+position = Vector2(2437, 145)
 texture = ExtResource("16_oaora")
 
-[node name="Bp12" type="Sprite2D" parent="YSortingLayer/Enviromental" index="10"]
-texture_filter = 1
-position = Vector2(2710, 272)
-texture = ExtResource("16_oaora")
-
-[node name="Bp11" type="Sprite2D" parent="YSortingLayer/Enviromental" index="11"]
+[node name="Bp11" type="Sprite2D" parent="YSortingLayer/Enviromental" index="10"]
 texture_filter = 1
 position = Vector2(2256, 155)
 rotation = 1.5708
 texture = ExtResource("16_oaora")
 
-[node name="Bp8" type="Sprite2D" parent="YSortingLayer/Enviromental" index="12"]
+[node name="Bp8" type="Sprite2D" parent="YSortingLayer/Enviromental" index="11"]
 texture_filter = 1
 position = Vector2(1665, 297)
 texture = ExtResource("16_oaora")
 
-[node name="Bp5" type="Sprite2D" parent="YSortingLayer/Enviromental" index="13"]
+[node name="Bp5" type="Sprite2D" parent="YSortingLayer/Enviromental" index="12"]
 texture_filter = 1
 position = Vector2(856, 157.5)
 rotation = 1.5708
 texture = ExtResource("16_oaora")
 
-[node name="Node2D" parent="YSortingLayer/Enviromental" index="14" instance=ExtResource("8_yyj0w")]
+[node name="Node2D" parent="YSortingLayer/Enviromental" index="13" instance=ExtResource("8_yyj0w")]
 position = Vector2(992, 147)
 
-[node name="Node2D2" parent="YSortingLayer/Enviromental" index="15" instance=ExtResource("8_yyj0w")]
+[node name="Node2D2" parent="YSortingLayer/Enviromental" index="14" instance=ExtResource("8_yyj0w")]
 position = Vector2(1174, 281)
 
-[node name="Node2D3" parent="YSortingLayer/Enviromental" index="16" instance=ExtResource("8_yyj0w")]
+[node name="Node2D3" parent="YSortingLayer/Enviromental" index="15" instance=ExtResource("8_yyj0w")]
 position = Vector2(1783, 205)
 
-[node name="Node2D5" parent="YSortingLayer/Enviromental" index="17" instance=ExtResource("8_yyj0w")]
+[node name="Node2D5" parent="YSortingLayer/Enviromental" index="16" instance=ExtResource("8_yyj0w")]
 position = Vector2(2062, 206)
 
-[node name="Node2D4" parent="YSortingLayer/Enviromental" index="18" instance=ExtResource("8_yyj0w")]
+[node name="Node2D4" parent="YSortingLayer/Enviromental" index="17" instance=ExtResource("8_yyj0w")]
 position = Vector2(1463.5, 163)
 
 [node name="Items" type="Node2D" parent="YSortingLayer" index="5"]
@@ -353,6 +345,11 @@ y_sort_enabled = true
 
 [node name="HealthPack" parent="YSortingLayer/Items" index="0" instance=ExtResource("26_3b0s5")]
 position = Vector2(2222, 217)
+
+[node name="Bp12" type="Sprite2D" parent="YSortingLayer/Items" index="1"]
+texture_filter = 1
+position = Vector2(2679, 272)
+texture = ExtResource("16_oaora")
 
 [node name="UI" parent="." index="5" instance=ExtResource("24_4daks")]
 
