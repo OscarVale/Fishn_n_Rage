@@ -1,0 +1,103 @@
+[gd_scene load_steps=9 format=3 uid="uid://cxygukvt28qvd"]
+
+[ext_resource type="Script" path="res://Scenes/Stages/takagi_arena.gd" id="1_ge4pg"]
+[ext_resource type="Texture2D" uid="uid://cfgl1ehirmg7j" path="res://Graphics/Stages/Mall/Stage3MallCorrected.png" id="1_tu6vg"]
+[ext_resource type="PackedScene" uid="uid://pac5p1e37y0o" path="res://Scenes/player.tscn" id="2_uw3hh"]
+[ext_resource type="PackedScene" uid="uid://cx6miwbbfpdoh" path="res://Scenes/Enemies/takagi.tscn" id="3_fdu3y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rom3d"]
+size = Vector2(548, 131)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qtrf8"]
+size = Vector2(568, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5v02"]
+size = Vector2(20, 162)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1w60m"]
+size = Vector2(20, 162)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_ge4pg")
+
+[node name="Stage3MallCorrected" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1173, 180)
+texture = ExtResource("1_tu6vg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(316, 269)
+shape = SubResource("RectangleShape2D_rom3d")
+debug_color = Color(0, 0.6, 0.701961, 0)
+metadata/_edit_lock_ = true
+
+[node name="Barriers" type="Node2D" parent="."]
+visible = false
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Barriers"]
+position = Vector2(319, 349)
+collision_layer = 32
+collision_mask = 3
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D"]
+shape = SubResource("RectangleShape2D_qtrf8")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Barriers"]
+position = Vector2(319, 189)
+collision_layer = 32
+collision_mask = 3
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D4"]
+shape = SubResource("RectangleShape2D_qtrf8")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Barriers"]
+position = Vector2(613, 278)
+collision_layer = 64
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D2"]
+shape = SubResource("RectangleShape2D_p5v02")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Barriers"]
+position = Vector2(25, 278)
+collision_layer = 64
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D3"]
+shape = SubResource("RectangleShape2D_1w60m")
+
+[node name="ArenaPositions" type="Node2D" parent="."]
+
+[node name="KeyPosition1" type="Marker2D" parent="ArenaPositions"]
+position = Vector2(86, 225)
+
+[node name="KeyPosition2" type="Marker2D" parent="ArenaPositions"]
+position = Vector2(542, 225)
+
+[node name="KeyPosition3" type="Marker2D" parent="ArenaPositions"]
+position = Vector2(86, 268)
+
+[node name="KeyPosition4" type="Marker2D" parent="ArenaPositions"]
+position = Vector2(542, 268)
+
+[node name="KeyPosition5" type="Marker2D" parent="ArenaPositions"]
+position = Vector2(86, 316)
+
+[node name="KeyPosition6" type="Marker2D" parent="ArenaPositions"]
+position = Vector2(542, 316)
+
+[node name="Sort" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Player" parent="Sort" instance=ExtResource("2_uw3hh")]
+position = Vector2(146, 280)
+collision_mask = 100
+
+[node name="Takagi" parent="Sort" instance=ExtResource("3_fdu3y")]
+position = Vector2(468, 273)
+
+[connection signal="get_jump_position" from="Sort/Takagi" to="." method="_on_takagi_get_jump_position"]

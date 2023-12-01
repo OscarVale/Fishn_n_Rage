@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://pac5p1e37y0o"]
+[gd_scene load_steps=55 format=3 uid="uid://pac5p1e37y0o"]
 
 [ext_resource type="Texture2D" uid="uid://ddnl777go4kem" path="res://Graphics/Characters/Player/Idle/FishMan Idle1.png" id="1_ii475"]
 [ext_resource type="Script" path="res://Scenes/player.gd" id="1_n3pgc"]
@@ -50,6 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://u31qg7xlvlmc" path="res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp3.png" id="47_skulk"]
 [ext_resource type="Texture2D" uid="uid://djum5aclm1f6o" path="res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp4.png" id="48_e2kdq"]
 [ext_resource type="Texture2D" uid="uid://dcto06vbfurr6" path="res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp5.png" id="49_5s1hm"]
+[ext_resource type="AudioStream" uid="uid://o1gnk7n610d" path="res://Audio/SFX/Golpe.wav" id="51_1a6fh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_demgx"]
 radius = 9.0
@@ -332,6 +333,15 @@ wait_time = 0.6
 one_shot = true
 
 [node name="Timer" type="Timer" parent="Timers"]
+
+[node name="Punch" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("51_1a6fh")
+bus = &"Hits"
+
+[node name="PunchLow" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("51_1a6fh")
+pitch_scale = 0.78
+bus = &"Hits"
 
 [connection signal="timeout" from="Timers/RunTimer" to="." method="_on_run_timer_timeout"]
 [connection signal="timeout" from="Timers/AttackCooldown" to="." method="_on_attack_cooldown_timeout"]

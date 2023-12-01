@@ -1,0 +1,99 @@
+[gd_scene load_steps=9 format=3 uid="uid://b6pvypnebde36"]
+
+[ext_resource type="Script" path="res://Scenes/cutscene.gd" id="1_kkk0d"]
+[ext_resource type="PackedScene" uid="uid://dtvgy87s0i4m3" path="res://Scenes/animation_dummy.tscn" id="2_82kbo"]
+[ext_resource type="Texture2D" uid="uid://5ety0i4reyrp" path="res://Graphics/Stages/Beach/Background/Beach Sky.png" id="3_egnuj"]
+[ext_resource type="Texture2D" uid="uid://b1t5ixxl713em" path="res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png" id="4_kmdyc"]
+[ext_resource type="Texture2D" uid="uid://k4wvvrs3b38v" path="res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png" id="5_hjn3l"]
+[ext_resource type="Texture2D" uid="uid://b7y7gcesehuq" path="res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png" id="6_rmdvf"]
+[ext_resource type="Texture2D" uid="uid://bi6il31h2xnm8" path="res://Graphics/Stages/Beach/Background/Beach NoSky.png" id="7_e2xqo"]
+[ext_resource type="Texture2D" uid="uid://ddnl777go4kem" path="res://Graphics/Characters/Player/Idle/FishMan Idle1.png" id="8_xb0qc"]
+
+[node name="Cutscene" type="Node2D"]
+script = ExtResource("1_kkk0d")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Skye" type="ParallaxLayer" parent="ParallaxBackground"]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="BGSkye" type="Sprite2D" parent="ParallaxBackground/Skye"]
+texture_filter = 1
+position = Vector2(1503, 180)
+texture = ExtResource("3_egnuj")
+
+[node name="CloudsFar" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.04, 0.04)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/CloudsFar"]
+modulate = Color(0.9408, 0.96824, 0.98, 1)
+texture_filter = 1
+position = Vector2(1849, 190)
+texture = ExtResource("4_kmdyc")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/CloudsFar"]
+modulate = Color(0.9408, 0.96824, 0.98, 1)
+texture_filter = 1
+position = Vector2(1328, 190)
+texture = ExtResource("4_kmdyc")
+
+[node name="Clouds" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.05, 0.05)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Clouds"]
+texture_filter = 1
+position = Vector2(1649, 180)
+texture = ExtResource("4_kmdyc")
+
+[node name="Mountains" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.07, 0.07)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Mountains"]
+texture_filter = 1
+position = Vector2(1503, 180)
+texture = ExtResource("5_hjn3l")
+
+[node name="CitySkyLine" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.15, 0.15)
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/CitySkyLine"]
+texture_filter = 1
+position = Vector2(395, 180)
+texture = ExtResource("6_rmdvf")
+
+[node name="Ground" type="ParallaxLayer" parent="ParallaxBackground"]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="BGGround" type="Sprite2D" parent="ParallaxBackground/Ground"]
+texture_filter = 1
+position = Vector2(1503, 180)
+texture = ExtResource("7_e2xqo")
+
+[node name="Jump_point" type="Marker2D" parent="."]
+position = Vector2(488, 284)
+
+[node name="Dummies" type="Node2D" parent="."]
+
+[node name="AnimationDummy" parent="Dummies" instance=ExtResource("2_82kbo")]
+position = Vector2(137, 268)
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Dummies/AnimationDummy"]
+limit_left = 0
+limit_top = 0
+limit_bottom = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Dummies"]
+visible = false
+position = Vector2(139, 186)
+texture = ExtResource("8_xb0qc")

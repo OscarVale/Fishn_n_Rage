@@ -19,5 +19,3 @@ func stage_clear():
 	tween.tween_property($Arrow, "visible", false, 0.7)
 	tween.tween_property($Arrow, "visible", true, 0.4)
 	tween.tween_property($Arrow, "visible", false, 0.7)
-	tween.tween_property($Arrow, "visible", true, 0.4)
-	tween.tween_property($Arrow, "visible", false, 0.7)

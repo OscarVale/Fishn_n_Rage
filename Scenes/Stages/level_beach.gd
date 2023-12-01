@@ -56,7 +56,7 @@ func fix_camera(pos):
 func free_camera():
 	var tween = get_tree().create_tween()
 	tween.tween_property(player_camera, "limit_right", player_camera.limit_right + 300, 0.8)
-	tween.tween_property(player_camera, "limit_right", player_camera.limit_right + 10000000, 0)
+	tween.tween_property(player_camera, "limit_right", player_camera.limit_right + 2800, 0)
 	$Barriers/LimitBarriers/StaticBody2D/CollisionShape2D.disabled = true
 	$Barriers/LimitBarriers/StaticBody2D/CollisionShape2D2.disabled = true
 
@@ -65,13 +65,20 @@ func _on_area_spawn_enemies(children : Array):
 	summon_enemies(children)
 func _on_area_get_enemy_tree():
 	Globals.enemy_tree = $YSortingLayer/Enemies.get_children()
-func _on_area_battle_update(flag : bool):
+func _on_area_battle_update(flag : bool, end : bool):
 	if flag:
 		fix_camera($YSortingLayer/Player/Camera2D/Marker2D.global_position.x)
 	else:
 		free_camera()
-		$UI.stage_clear()
+		if not end:
+			$UI.stage_clear()
+		else:
+			TransitionLayer.change_scene("res://Scenes/Stages/level_mall.tscn")
 
 
 func _on_player_update_health_ui():
 	$UI.update_player_health()
+
+
+func _on_health_pack_heal_player():
+	$YSortingLayer/Player.heal()

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dk60xk8ekolw"]
+[gd_scene load_steps=5 format=3 uid="uid://dk60xk8ekolw"]
 
 [ext_resource type="Texture2D" uid="uid://ckrhna2qh0qfm" path="res://Graphics/SHADOW GEN.png" id="1_frsjm"]
 [ext_resource type="Script" path="res://Scenes/object_projectile.gd" id="1_tk61d"]
+[ext_resource type="AudioStream" uid="uid://6loyemjfkd3w" path="res://Audio/SFX/Objeto rompiéndose.wav" id="3_xeh2d"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ucblc"]
 radius = 24.0
@@ -24,6 +25,12 @@ texture = ExtResource("1_frsjm")
 [node name="Sprite_Position" type="Marker2D" parent="."]
 
 [node name="Lifetime" type="Timer" parent="."]
+wait_time = 2.5
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_xeh2d")
+pitch_scale = 1.19
+bus = &"Hits"
 
 [connection signal="timeout" from="Lifetime" to="." method="_on_lifetime_timeout"]

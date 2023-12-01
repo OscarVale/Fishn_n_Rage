@@ -1,0 +1,123 @@
+[gd_scene load_steps=11 format=3 uid="uid://c2scau5cadwpc"]
+
+[ext_resource type="Texture2D" uid="uid://b64lem6dl8dtg" path="res://Graphics/UI/BUTTON Start.png" id="1_6x4v7"]
+[ext_resource type="Script" path="res://Scenes/Menus/main_menu.gd" id="1_nqvy4"]
+[ext_resource type="Texture2D" uid="uid://maqylmmk47ac" path="res://Graphics/UI/BUTTON Blank.png" id="2_8ckwm"]
+[ext_resource type="Texture2D" uid="uid://cu0albti42bog" path="res://Graphics/UI/BUTTON Exit.png" id="3_2afqp"]
+[ext_resource type="Texture2D" uid="uid://bk7kigexrhk04" path="res://Graphics/UI/Control 1.png" id="4_62qsr"]
+[ext_resource type="Texture2D" uid="uid://dxybrdlo7sogg" path="res://Graphics/UI/Control 2.png" id="5_tdfqc"]
+[ext_resource type="Texture2D" uid="uid://ck6k680j8bdxm" path="res://Graphics/UI/Control 3.png" id="6_lyo3n"]
+[ext_resource type="Texture2D" uid="uid://dq710gudhkx3c" path="res://Graphics/UI/Control 4.png" id="7_tyukr"]
+[ext_resource type="AudioStream" uid="uid://d3f2ktdb3376l" path="res://Audio/Menu/Selección Menu.wav" id="9_n00q7"]
+[ext_resource type="AudioStream" uid="uid://biok64scw6uss" path="res://Audio/Menu/Selección Menu 2.wav" id="10_ro4yl"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nqvy4")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.133333, 0.203922, 0.278431, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.596
+anchor_top = 0.9
+anchor_right = 0.6
+anchor_bottom = 1.0
+offset_left = -128.5
+offset_top = -159.0
+offset_right = 128.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="StartButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_6x4v7")
+texture_pressed = ExtResource("2_8ckwm")
+
+[node name="ExitButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_2afqp")
+texture_pressed = ExtResource("2_8ckwm")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.312
+offset_bottom = 1.68
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("4_62qsr")
+stretch_mode = 3
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("5_tdfqc")
+stretch_mode = 3
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("6_lyo3n")
+stretch_mode = 3
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("7_tyukr")
+stretch_mode = 3
+
+[node name="Credits" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Credits"]
+texture_filter = 1
+layout_mode = 2
+text = "Coding stuff
+ - R4M3N
+Art stuff
+ - Chance
+Music and sound
+ - Franco Trincavelli"
+
+[node name="SelectSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_n00q7")
+max_polyphony = 2
+bus = &"SFX"
+
+[node name="HoverSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ro4yl")
+volume_db = 3.328
+max_polyphony = 2
+
+[connection signal="mouse_entered" from="VBoxContainer/StartButton" to="." method="_on_start_button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

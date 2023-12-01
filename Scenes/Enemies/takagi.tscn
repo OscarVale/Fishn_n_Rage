@@ -1,0 +1,208 @@
+[gd_scene load_steps=30 format=3 uid="uid://cx6miwbbfpdoh"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/takagi.gd" id="1_uhtx0"]
+[ext_resource type="Texture2D" uid="uid://ckrhna2qh0qfm" path="res://Graphics/SHADOW GEN.png" id="1_xd0ji"]
+[ext_resource type="Texture2D" uid="uid://bck7raraihvgo" path="res://Graphics/Takagi/Tornado/Takagi Tornado1.png" id="2_kg2i8"]
+[ext_resource type="Texture2D" uid="uid://bcey030yrhi3n" path="res://Graphics/Takagi/Tornado/Takagi Tornado2.png" id="3_dt3e5"]
+[ext_resource type="Texture2D" uid="uid://dn747y40qvgk2" path="res://Graphics/Takagi/Tornado/Takagi Tornado3.png" id="4_u8c0v"]
+[ext_resource type="Texture2D" uid="uid://c5qcadf1c7xm0" path="res://Graphics/Takagi/Tornado/Takagi Tornado4.png" id="5_2s4rq"]
+[ext_resource type="Texture2D" uid="uid://bxrbgyi0n5ybe" path="res://Graphics/Takagi/Dash/Takagi Dash3.png" id="6_0chyw"]
+[ext_resource type="Texture2D" uid="uid://bi16n4kgqte6b" path="res://Graphics/Takagi/Dash/Takagi Dash4.png" id="7_1jao8"]
+[ext_resource type="Texture2D" uid="uid://ckxt5oc2h3p5a" path="res://Graphics/Takagi/Dash/Takagi Dash5.png" id="8_lmgl8"]
+[ext_resource type="Texture2D" uid="uid://bjbyb0iwl4ojn" path="res://Graphics/Takagi/Dash/Takagi Dash1.png" id="9_s4j4e"]
+[ext_resource type="Texture2D" uid="uid://4rhv826pslhp" path="res://Graphics/Takagi/Dash/Takagi Dash2.png" id="10_38nd0"]
+[ext_resource type="Texture2D" uid="uid://v2ke5llqea23" path="res://Graphics/Takagi/Melee/Takagi Melee2.png" id="11_2sffu"]
+[ext_resource type="Texture2D" uid="uid://dvsxsrp14rti6" path="res://Graphics/Takagi/Melee/Takagi Melee3.png" id="12_uyirt"]
+[ext_resource type="Texture2D" uid="uid://bsgdpeylrp2th" path="res://Graphics/Takagi/Melee/Takagi Melee4.png" id="13_8dcw6"]
+[ext_resource type="Texture2D" uid="uid://d3ue52kq5k5sg" path="res://Graphics/Takagi/Melee/Takagi Melee5.png" id="14_6n7ye"]
+[ext_resource type="Texture2D" uid="uid://rquchxse7uyl" path="res://Graphics/Takagi/Takagi DMG.png" id="15_xmkn7"]
+[ext_resource type="Texture2D" uid="uid://bpfx87yngappt" path="res://Graphics/Takagi/Takagi Dead.png" id="16_pvgha"]
+[ext_resource type="Texture2D" uid="uid://cdbtg5bvcmmmq" path="res://Graphics/Takagi/Walk/Takagi Walk1.png" id="17_qu1pp"]
+[ext_resource type="Texture2D" uid="uid://emwj5h250p11" path="res://Graphics/Takagi/Sheath/Takagi Sheath1.png" id="18_itq78"]
+[ext_resource type="Texture2D" uid="uid://cj4gtgndg2877" path="res://Graphics/Takagi/Sheath/Takagi Sheath2.png" id="19_8k5p5"]
+[ext_resource type="Texture2D" uid="uid://q7x3jf3w268n" path="res://Graphics/Takagi/Takagi Jump.png" id="19_j7dmk"]
+[ext_resource type="Texture2D" uid="uid://c6q1uvdkklnd" path="res://Graphics/Takagi/Sheath/Takagi Sheath3.png" id="20_vf20w"]
+[ext_resource type="Texture2D" uid="uid://djweb748kktuk" path="res://Graphics/Takagi/Walk/Takagi Walk2.png" id="21_6a6hv"]
+[ext_resource type="Texture2D" uid="uid://bkwivm2giio7q" path="res://Graphics/Takagi/Walk/Takagi Walk3.png" id="22_cjrju"]
+[ext_resource type="Texture2D" uid="uid://d2jyukmbrxyay" path="res://Graphics/Takagi/Walk/Takagi Walk4.png" id="23_jj58v"]
+[ext_resource type="Texture2D" uid="uid://chj00cc3kofqv" path="res://Graphics/Takagi/Walk/Takagi Walk5.png" id="24_hxfs1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x3wjt"]
+height = 40.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_45d4b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_kg2i8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dt3e5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_u8c0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2s4rq")
+}],
+"loop": true,
+"name": &"attach_tornado",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_0chyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1jao8")
+}, {
+"duration": 20.0,
+"texture": ExtResource("8_lmgl8")
+}],
+"loop": true,
+"name": &"attack_dash_go",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_s4j4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_38nd0")
+}, {
+"duration": 10.0,
+"texture": ExtResource("6_0chyw")
+}],
+"loop": true,
+"name": &"attack_dash_ready",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("11_2sffu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uyirt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8dcw6")
+}, {
+"duration": 8.0,
+"texture": ExtResource("14_6n7ye")
+}],
+"loop": true,
+"name": &"attack_melee",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("15_xmkn7")
+}],
+"loop": true,
+"name": &"damage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("16_pvgha")
+}],
+"loop": true,
+"name": &"defeated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("17_qu1pp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("19_j7dmk")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_itq78")
+}, {
+"duration": 2.0,
+"texture": ExtResource("19_8k5p5")
+}, {
+"duration": 6.0,
+"texture": ExtResource("20_vf20w")
+}],
+"loop": true,
+"name": &"sheath",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_6a6hv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_cjrju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_jj58v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_hxfs1")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbpv1"]
+size = Vector2(20, 28)
+
+[node name="Takagi" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 32
+script = ExtResource("1_uhtx0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_x3wjt")
+
+[node name="MidPoint" type="Marker2D" parent="."]
+
+[node name="ShadowGen" type="Sprite2D" parent="MidPoint"]
+modulate = Color(0, 0, 0, 0.392157)
+texture_filter = 1
+position = Vector2(-1, 0)
+scale = Vector2(1.4359, 1.86667)
+texture = ExtResource("1_xd0ji")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MidPoint"]
+texture_filter = 1
+position = Vector2(0, -86)
+scale = Vector2(-1, 1)
+sprite_frames = SubResource("SpriteFrames_45d4b")
+animation = &"attack_melee"
+
+[node name="HurtBox" type="Area2D" parent="MidPoint"]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MidPoint/HurtBox"]
+position = Vector2(34, 0)
+shape = SubResource("RectangleShape2D_xbpv1")
+debug_color = Color(0.941176, 0.243137, 0, 0.419608)
+
+[node name="Calculate" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[node name="TakeAction" type="Timer" parent="."]
+wait_time = 6.0
+autostart = true
+
+[connection signal="body_entered" from="MidPoint/HurtBox" to="." method="_on_hurt_box_body_entered"]
+[connection signal="timeout" from="Calculate" to="." method="_on_calculate_timeout"]
+[connection signal="timeout" from="TakeAction" to="." method="_on_take_action_timeout"]

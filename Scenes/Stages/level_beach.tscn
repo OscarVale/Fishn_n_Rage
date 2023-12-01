@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://ca32n2u5mokvv"]
+[gd_scene load_steps=31 format=3 uid="uid://ca32n2u5mokvv"]
 
 [ext_resource type="PackedScene" uid="uid://dnos4idmp16j6" path="res://Scenes/Stages/level.tscn" id="1_ridh1"]
 [ext_resource type="Script" path="res://Scenes/Stages/level_beach.gd" id="2_32yno"]
@@ -24,6 +24,8 @@
 [ext_resource type="PackedScene" uid="uid://cryxy5uhgjyig" path="res://Scenes/BattleAreaTriggers/beach_area_2.tscn" id="23_psmls"]
 [ext_resource type="PackedScene" uid="uid://bajhxwatbtbfp" path="res://Scenes/BattleAreaTriggers/beach_area_1.tscn" id="23_vp6ew"]
 [ext_resource type="PackedScene" uid="uid://cncppggkw00iq" path="res://Scenes/UserInterface/ui.tscn" id="24_4daks"]
+[ext_resource type="AudioStream" uid="uid://bxmi3jjleyqxu" path="res://Audio/Music/Tema 1 (playa).wav" id="25_4b8sk"]
+[ext_resource type="PackedScene" uid="uid://xf0dr0qwjvx2" path="res://Scenes/Items/health_pack.tscn" id="26_3b0s5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oxgny"]
 size = Vector2(3396, 20)
@@ -99,8 +101,8 @@ position = Vector2(395, 180)
 texture = ExtResource("5_xxtcg")
 
 [node name="Ground" type="ParallaxLayer" parent="ParallaxBackground" index="5"]
+position = Vector2(-456, 0)
 metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
 
 [node name="BGGround" type="Sprite2D" parent="ParallaxBackground/Ground" index="0"]
 texture_filter = 1
@@ -108,7 +110,7 @@ position = Vector2(1503, 180)
 texture = ExtResource("6_uwxij")
 
 [node name="Barriers" parent="." index="1"]
-metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Barriers" index="0"]
 collision_layer = 32
@@ -127,7 +129,7 @@ collision_layer = 32
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D2" index="0"]
-position = Vector2(771.5, 278.75)
+position = Vector2(320, 278.75)
 shape = SubResource("RectangleShape2D_ds2h0")
 
 [node name="LimitBarriers" type="Node2D" parent="Barriers" index="2"]
@@ -147,68 +149,72 @@ shape = SubResource("RectangleShape2D_3dvx4")
 disabled = true
 
 [node name="AreaTriggers" type="Node2D" parent="." index="2"]
+metadata/_edit_group_ = true
 
 [node name="Area1" parent="AreaTriggers" index="0" instance=ExtResource("23_vp6ew")]
-position = Vector2(1520, 222)
+position = Vector2(1082, 222)
 waves_count = 2
 
 [node name="Area2" parent="AreaTriggers" index="1" instance=ExtResource("23_vp6ew")]
-position = Vector2(2161, 226)
+position = Vector2(1723, 226)
 waves_count = 2
 
 [node name="Area3" parent="AreaTriggers" index="2" instance=ExtResource("23_psmls")]
-position = Vector2(2928, 221)
+position = Vector2(2490, 221)
 waves_count = 4
+end_level = true
 
 [node name="GroundDecorations" type="Node2D" parent="." index="3"]
 
 [node name="Node2D" parent="GroundDecorations" index="0" instance=ExtResource("8_pepvm")]
-position = Vector2(1383, 167)
+position = Vector2(945, 167)
 
 [node name="Node2D3" parent="GroundDecorations" index="1" instance=ExtResource("8_pepvm")]
-position = Vector2(1538, 280)
+position = Vector2(1100, 280)
 
 [node name="Node2D6" parent="GroundDecorations" index="2" instance=ExtResource("8_pepvm")]
-position = Vector2(2050, 156)
+position = Vector2(1612, 156)
 
 [node name="Node2D9" parent="GroundDecorations" index="3" instance=ExtResource("8_pepvm")]
-position = Vector2(2441, 159)
+position = Vector2(2003, 159)
 
 [node name="Node2D10" parent="GroundDecorations" index="4" instance=ExtResource("8_pepvm")]
-position = Vector2(2383, 289)
+position = Vector2(1945, 289)
 
 [node name="Node2D2" parent="GroundDecorations" index="5" instance=ExtResource("13_7i4c0")]
-position = Vector2(1560, 144)
+position = Vector2(1122, 144)
 
 [node name="Node2D11" parent="GroundDecorations" index="6" instance=ExtResource("13_7i4c0")]
-position = Vector2(1877.5, 181)
+position = Vector2(1439.5, 181)
 
 [node name="Node2D15" parent="GroundDecorations" index="7" instance=ExtResource("13_7i4c0")]
-position = Vector2(2556, 206)
+position = Vector2(2118, 206)
 
 [node name="Node2D4" parent="GroundDecorations" index="8" instance=ExtResource("14_3jdnq")]
-position = Vector2(1700, 234)
+position = Vector2(1262, 234)
 
 [node name="Node2D7" parent="GroundDecorations" index="9" instance=ExtResource("14_3jdnq")]
-position = Vector2(2306, 159)
+position = Vector2(1868, 159)
 
 [node name="Node2D5" parent="GroundDecorations" index="10" instance=ExtResource("15_j57mf")]
-position = Vector2(1244, 288)
+position = Vector2(806, 288)
 
 [node name="Node2D8" parent="GroundDecorations" index="11" instance=ExtResource("15_j57mf")]
-position = Vector2(2229, 230)
+position = Vector2(1791, 230)
 
 [node name="Node2D12" parent="GroundDecorations" index="12" instance=ExtResource("12_wwsgg")]
-position = Vector2(2793, 274)
+position = Vector2(2355, 274)
 
 [node name="Node2D13" parent="GroundDecorations" index="13" instance=ExtResource("12_wwsgg")]
-position = Vector2(2945, 197)
+position = Vector2(2507, 197)
 
 [node name="Node2D14" parent="GroundDecorations" index="14" instance=ExtResource("12_wwsgg")]
-position = Vector2(3149, 215)
+position = Vector2(2711, 215)
 
 [node name="Player" parent="YSortingLayer" index="0"]
+position = Vector2(175, 196)
 collision_mask = 100
+metadata/_edit_group_ = true
 
 [node name="Marker2D" type="Marker2D" parent="YSortingLayer/Player/Camera2D" index="0"]
 position = Vector2(320, -98)
@@ -221,43 +227,43 @@ y_sort_enabled = true
 position = Vector2(0, 2)
 
 [node name="Generic Ground Object" parent="YSortingLayer/GroundObjects" index="0" instance=ExtResource("10_kkfep")]
-position = Vector2(1273, 150.5)
+position = Vector2(835, 150.5)
 
 [node name="Generic Ground Object3" parent="YSortingLayer/GroundObjects" index="1" instance=ExtResource("10_kkfep")]
-position = Vector2(1901, 302)
+position = Vector2(1463, 302)
 
 [node name="Generic Ground Object12" parent="YSortingLayer/GroundObjects" index="2" instance=ExtResource("10_kkfep")]
-position = Vector2(2720, 153)
+position = Vector2(2282, 153)
 
 [node name="Generic Ground Object5" parent="YSortingLayer/GroundObjects" index="3" instance=ExtResource("10_kkfep")]
-position = Vector2(2130, 291)
+position = Vector2(1692, 291)
 
 [node name="Generic Ground Object2" parent="YSortingLayer/GroundObjects" index="4" instance=ExtResource("11_e6opc")]
-position = Vector2(1526, 258)
+position = Vector2(1088, 258)
 
 [node name="Generic Ground Object6" parent="YSortingLayer/GroundObjects" index="5" instance=ExtResource("11_e6opc")]
-position = Vector2(1936, 157)
+position = Vector2(1498, 157)
 
 [node name="Generic Ground Object7" parent="YSortingLayer/GroundObjects" index="6" instance=ExtResource("11_e6opc")]
-position = Vector2(2269, 211)
+position = Vector2(1831, 211)
 
 [node name="Generic Ground Object8" parent="YSortingLayer/GroundObjects" index="7" instance=ExtResource("11_e6opc")]
-position = Vector2(2858, 150)
+position = Vector2(2420, 150)
 
 [node name="Generic Ground Object13" parent="YSortingLayer/GroundObjects" index="8" instance=ExtResource("11_e6opc")]
-position = Vector2(3033, 315)
+position = Vector2(2595, 315)
 
 [node name="Generic Ground Object4" parent="YSortingLayer/GroundObjects" index="9" instance=ExtResource("11_e6opc")]
-position = Vector2(1213, 282)
+position = Vector2(775, 282)
 
 [node name="Generic Ground Object9" parent="YSortingLayer/GroundObjects" index="10" instance=ExtResource("16_akxny")]
-position = Vector2(2945, 198)
+position = Vector2(2507, 198)
 
 [node name="Generic Ground Object10" parent="YSortingLayer/GroundObjects" index="11" instance=ExtResource("12_mrxoo")]
-position = Vector2(3149, 217)
+position = Vector2(2711, 217)
 
 [node name="Generic Ground Object11" parent="YSortingLayer/GroundObjects" index="12" instance=ExtResource("12_mrxoo")]
-position = Vector2(2793, 274)
+position = Vector2(2355, 274)
 
 [node name="Enemies" type="Node2D" parent="YSortingLayer" index="3"]
 y_sort_enabled = true
@@ -266,82 +272,97 @@ y_sort_enabled = true
 y_sort_enabled = true
 
 [node name="StaticBody2D" parent="YSortingLayer/Enviromental" index="0" instance=ExtResource("19_4ounj")]
-position = Vector2(2956, 321)
+position = Vector2(2518, 321)
 
 [node name="StaticBody2D5" parent="YSortingLayer/Enviromental" index="1" instance=ExtResource("19_4ounj")]
-position = Vector2(2679, 313)
+position = Vector2(2241, 313)
 
 [node name="StaticBody2D2" parent="YSortingLayer/Enviromental" index="2" instance=ExtResource("20_83w2x")]
-position = Vector2(3106, 272)
+position = Vector2(2668, 272)
 
 [node name="StaticBody2D3" parent="YSortingLayer/Enviromental" index="3" instance=ExtResource("21_5pdm4")]
-position = Vector2(3011, 153)
+position = Vector2(2573, 153)
 
 [node name="StaticBody2D4" parent="YSortingLayer/Enviromental" index="4" instance=ExtResource("21_5pdm4")]
-position = Vector2(3127, 153)
+position = Vector2(2689, 153)
 
 [node name="Bp4" type="Sprite2D" parent="YSortingLayer/Enviromental" index="5"]
 texture_filter = 1
-position = Vector2(1232, 286)
+position = Vector2(794, 286)
 texture = ExtResource("16_oaora")
 
 [node name="Bp6" type="Sprite2D" parent="YSortingLayer/Enviromental" index="6"]
 texture_filter = 1
-position = Vector2(1870.5, 158)
+position = Vector2(1432.5, 158)
 texture = ExtResource("16_oaora")
 
 [node name="Bp7" type="Sprite2D" parent="YSortingLayer/Enviromental" index="7"]
 texture_filter = 1
-position = Vector2(2155, 290)
+position = Vector2(1717, 290)
 texture = ExtResource("16_oaora")
 
 [node name="Bp9" type="Sprite2D" parent="YSortingLayer/Enviromental" index="8"]
 texture_filter = 1
-position = Vector2(2896, 154)
+position = Vector2(2458, 154)
 texture = ExtResource("16_oaora")
 
 [node name="Bp10" type="Sprite2D" parent="YSortingLayer/Enviromental" index="9"]
 texture_filter = 1
-position = Vector2(2885, 161)
+position = Vector2(2447, 161)
 texture = ExtResource("16_oaora")
 
 [node name="Bp12" type="Sprite2D" parent="YSortingLayer/Enviromental" index="10"]
 texture_filter = 1
-position = Vector2(3148, 272)
+position = Vector2(2710, 272)
 texture = ExtResource("16_oaora")
 
 [node name="Bp11" type="Sprite2D" parent="YSortingLayer/Enviromental" index="11"]
 texture_filter = 1
-position = Vector2(2694, 155)
+position = Vector2(2256, 155)
 rotation = 1.5708
 texture = ExtResource("16_oaora")
 
 [node name="Bp8" type="Sprite2D" parent="YSortingLayer/Enviromental" index="12"]
 texture_filter = 1
-position = Vector2(2103, 297)
+position = Vector2(1665, 297)
 texture = ExtResource("16_oaora")
 
 [node name="Bp5" type="Sprite2D" parent="YSortingLayer/Enviromental" index="13"]
 texture_filter = 1
-position = Vector2(1294, 157.5)
+position = Vector2(856, 157.5)
 rotation = 1.5708
 texture = ExtResource("16_oaora")
 
 [node name="Node2D" parent="YSortingLayer/Enviromental" index="14" instance=ExtResource("8_yyj0w")]
-position = Vector2(1430, 147)
+position = Vector2(992, 147)
 
 [node name="Node2D2" parent="YSortingLayer/Enviromental" index="15" instance=ExtResource("8_yyj0w")]
-position = Vector2(1612, 281)
+position = Vector2(1174, 281)
 
 [node name="Node2D3" parent="YSortingLayer/Enviromental" index="16" instance=ExtResource("8_yyj0w")]
-position = Vector2(2221, 205)
+position = Vector2(1783, 205)
 
 [node name="Node2D5" parent="YSortingLayer/Enviromental" index="17" instance=ExtResource("8_yyj0w")]
-position = Vector2(2500, 206)
+position = Vector2(2062, 206)
 
 [node name="Node2D4" parent="YSortingLayer/Enviromental" index="18" instance=ExtResource("8_yyj0w")]
-position = Vector2(1901.5, 163)
+position = Vector2(1463.5, 163)
+
+[node name="Items" type="Node2D" parent="YSortingLayer" index="5"]
+y_sort_enabled = true
+
+[node name="HealthPack" parent="YSortingLayer/Items" index="0" instance=ExtResource("26_3b0s5")]
+position = Vector2(2222, 217)
 
 [node name="UI" parent="." index="5" instance=ExtResource("24_4daks")]
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="6"]
+stream = ExtResource("25_4b8sk")
+autoplay = true
+bus = &"Music"
+
+[node name="Marker2D" type="Marker2D" parent="." index="7"]
+position = Vector2(2800, 82)
+
 [connection signal="update_health_ui" from="YSortingLayer/Player" to="." method="_on_player_update_health_ui"]
+[connection signal="heal_player" from="YSortingLayer/Items/HealthPack" to="." method="_on_health_pack_heal_player"]

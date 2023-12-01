@@ -13,6 +13,7 @@ var player_body : CharacterBody2D
 var enemy_state : String = "approach"
 var idle_state : String = "stop"
 
+@onready var enemy_sound = $AudioStreamPlayer
 @onready var enemy_animation = $MidPoint/AnimatedSprite2D
 var current_animation : String = "idle"
 
@@ -87,6 +88,7 @@ func hit(damage : int, knockback : bool):
 	health = health - damage
 	$CalculateTimer.stop()
 	$AttackDelay.stop()
+	#enemy_sound.play()
 	
 	var pos
 	if $MidPoint.scale.x < 0 : pos = 5

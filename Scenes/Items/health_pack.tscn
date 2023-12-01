@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://xf0dr0qwjvx2"]
+
+[ext_resource type="Script" path="res://Scenes/Items/generic_health_item.gd" id="1_lbqn3"]
+[ext_resource type="Texture2D" uid="uid://ckrhna2qh0qfm" path="res://Graphics/SHADOW GEN.png" id="1_mu3xd"]
+[ext_resource type="Texture2D" uid="uid://deogmr730rfvg" path="res://Graphics/Fish Food.png" id="2_v7a23"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_abbaj"]
+height = 44.0
+
+[node name="HealthPack" type="Area2D"]
+script = ExtResource("1_lbqn3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_abbaj")
+
+[node name="ShadowGen" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.396078)
+texture_filter = 1
+position = Vector2(0, 1)
+scale = Vector2(2.10256, 1.73333)
+texture = ExtResource("1_mu3xd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -66)
+texture = ExtResource("2_v7a23")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

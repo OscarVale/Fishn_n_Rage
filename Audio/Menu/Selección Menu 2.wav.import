@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://biok64scw6uss"
+path="res://.godot/imported/Selección Menu 2.wav-35ffcf11396d15051405d35af694aa15.sample"
+
+[deps]
+
+source_file="res://Audio/Menu/Selección Menu 2.wav"
+dest_files=["res://.godot/imported/Selección Menu 2.wav-35ffcf11396d15051405d35af694aa15.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

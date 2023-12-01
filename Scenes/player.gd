@@ -178,6 +178,7 @@ func attack():
 		if attack_marker != 5:
 			hit_bodies_in_hurtbox(damage, false)
 			if check_hurtbox_collision():
+				$Punch.play()
 				attack_marker = attack_marker + 1
 				var pos
 				if $MidPoint.scale.x < 0 : pos = -5
@@ -187,6 +188,8 @@ func attack():
 			else:
 				attack_marker = 5
 	elif Input.is_action_just_pressed("secondary action"):
+		if check_hurtbox_collision():
+			$Punch.play()
 		damage = attack_table(heavy_attack[attack_marker])
 		current_animation = heavy_attack[attack_marker]
 		hit_bodies_in_hurtbox(damage, true)
@@ -230,6 +233,7 @@ func drop():
 
 func hit(damage, _knockback):
 	health -= damage
+	$PunchLow.play()
 	player_is_stunned = true
 	Globals.player_health = health
 	update_health_ui.emit()
@@ -244,7 +248,10 @@ func hit(damage, _knockback):
 	if health <= 0:
 		player_is_defeated = true
 		$CollisionShape2D.disabled = true
-
+		tween.tween_interval(0.8)
+		tween.tween_callback(restart_level)
+func restart_level():
+	TransitionLayer.change_scene("res://Scenes/Stages/level_beach.tscn")
 func reset_player_state():
 	$Timers/RunTimer.stop()
 	$Timers/AttackCooldown.stop()
@@ -252,6 +259,10 @@ func reset_player_state():
 	can_run = false
 	is_player_running = false
 	attack_marker = 0
+func heal():
+	health = 100
+	Globals.player_health = health
+	update_health_ui.emit()
 
 func _on_run_timer_timeout():
 	pass

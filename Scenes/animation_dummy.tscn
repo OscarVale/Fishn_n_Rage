@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://dtvgy87s0i4m3"]
+
+[ext_resource type="Texture2D" uid="uid://ba6krlba2x8mh" path="res://Graphics/Characters/Player/Swim/bubbles/Bubbles1.png" id="1_1tpht"]
+[ext_resource type="Texture2D" uid="uid://bru3sg5tkfg23" path="res://Graphics/Characters/Player/Swim/bubbles/Bubbles2.png" id="2_gb2x3"]
+[ext_resource type="Texture2D" uid="uid://cmnel3uy32ai8" path="res://Graphics/Characters/Player/Swim/bubbles/Bubbles3.png" id="3_rucw7"]
+[ext_resource type="Texture2D" uid="uid://dm8uoa051jqx4" path="res://Graphics/Characters/Player/Swim/trail/Trail1.png" id="4_ifb30"]
+[ext_resource type="Texture2D" uid="uid://bf20j3cvkojcx" path="res://Graphics/Characters/Player/Swim/trail/Trail2.png" id="5_241ib"]
+[ext_resource type="Texture2D" uid="uid://inkoksba8j31" path="res://Graphics/Characters/Player/Swim/trail/Trail3.png" id="6_ppqq8"]
+[ext_resource type="Texture2D" uid="uid://cj3vpa4k72hq3" path="res://Graphics/Characters/Player/Swim/trail/Trail4.png" id="7_wi7wy"]
+[ext_resource type="Texture2D" uid="uid://ddnl777go4kem" path="res://Graphics/Characters/Player/Idle/FishMan Idle1.png" id="8_dea1d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3g4ws"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1tpht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gb2x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rucw7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ku1d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ifb30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_241ib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ppqq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wi7wy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimationDummy" type="Node2D"]
+texture_filter = 1
+
+[node name="Bubbles" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_3g4ws")
+autoplay = "default"
+frame_progress = 0.68342
+
+[node name="Trail" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.376471)
+texture_filter = 1
+position = Vector2(-7, 7)
+sprite_frames = SubResource("SpriteFrames_7ku1d")
+autoplay = "default"
+frame = 2
+frame_progress = 0.843077
+
+[node name="Fish" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-18, -87)
+texture = ExtResource("8_dea1d")

@@ -1,8 +1,11 @@
+res://Scenes/Items
 res://Scenes/UserInterface
+res://Scenes/Menus
+res://Scenes
 res://Scenes/Stages
+res://Scenes/Enemies
 res://Scenes/BattleAreaTriggers
 res://
-res://Scenes
 res://Scenes/DecorativeObjects
 res://Scenes/EnviromentalObjects
 res://Scenes/GroundObjects

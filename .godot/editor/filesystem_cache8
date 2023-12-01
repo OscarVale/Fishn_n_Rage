@@ -1,14 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701319025
-::res://Audio/::1700773473
-::res://Audio/Music/::1700773491
-Tema 1 (playa).wav::AudioStreamWAV::4026072845707520642::1700718341::1700773491::1::::<><>::
-::res://Graphics/::1701323186
+::res://::1701414470
+default_bus_layout.tres::AudioBusLayout::290815860220559837::1701414470::0::1::::<><>::
+::res://Audio/::1701399112
+::res://Audio/Menu/::1701399145
+Selección Menu 2.wav::AudioStreamWAV::2977496801998059486::1701349716::1701399145::1::::<><>::
+Selección Menu.wav::AudioStreamWAV::9136529781120309673::1701349606::1701399145::1::::<><>::
+::res://Audio/Music/::1701399145
+Tema 1 (playa).wav::AudioStreamWAV::4026072845707520642::1700718341::1701398696::1::::<><>::
+Tema 2 Master.wav::AudioStreamWAV::5714754385752835551::1701359666::1701418710::1::::<><>::
+::res://Audio/SFX/::1701399122
+Claxon.wav::AudioStreamWAV::2664757513933774857::1701349364::1701399122::1::::<><>::
+Golpe.wav::AudioStreamWAV::30491344856345605::1701345284::1701399122::1::::<><>::
+Impacto.wav::AudioStreamWAV::6823487119069783995::1701345188::1701399122::1::::<><>::
+Objeto rompiéndose.wav::AudioStreamWAV::2199455434073160986::1701347850::1701399122::1::::<><>::
+::res://Graphics/::1701366536
 Fish Food.png::CompressedTexture2D::7469305389308695804::1701242864::1701323186::1::::<><>::
 icon.svg::CompressedTexture2D::7494936576367291055::1700772032::1700875989::1::::<><>::
 SHADOW GEN BIG.png::CompressedTexture2D::4532000308962221974::1701151266::1701151500::1::::<><>::
 SHADOW GEN.png::CompressedTexture2D::5510272502302712686::1700773067::1700773490::1::::<><>::
-::res://Graphics/Characters/::1701152853
+::res://Graphics/Characters/::1701366536
 ::res://Graphics/Characters/Beach_Enemy_1/::1700986541
 HavidDasselhoff Dead.png::CompressedTexture2D::728243690524947264::1700898532::1700986541::1::::<><>::
 HavidDasselhoff DMG.png::CompressedTexture2D::7440281714761658873::1700898546::1700986541::1::::<><>::
@@ -203,7 +213,7 @@ Asphodelos Walkcycle2.png::CompressedTexture2D::301829247115590305::1700977644::
 Asphodelos Walkcycle3.png::CompressedTexture2D::1721219392038929980::1700977644::1701077681::1::::<><>::
 Asphodelos Walkcycle4.png::CompressedTexture2D::7293399643547542213::1700977644::1701077681::1::::<><>::
 Asphodelos Walkcycle5.png::CompressedTexture2D::1208449510706219018::1700977644::1701077681::1::::<><>::
-::res://Graphics/PropsNew/::1701330363
+::res://Graphics/PropsNew/::1701330382
 BP1.png::CompressedTexture2D::6861363408147476896::1700858308::1701202781::1::::<><>::
 BP2.png::CompressedTexture2D::7366336232725141109::1700858306::1701202781::1::::<><>::
 BP3.png::CompressedTexture2D::338427282439132511::1700858308::1701202781::1::::<><>::
@@ -242,7 +252,7 @@ Stage2 Street FULL.png::CompressedTexture2D::6110039158807944426::1700385580::17
 9.png::CompressedTexture2D::6275588689015639202::1700462610::1700773490::1::::<><>::
 10.png::CompressedTexture2D::1485461765977115719::1700462636::1700773490::1::::<><>::
 Pavement correted.png::CompressedTexture2D::2329225652374521623::1701146385::1701146471::1::::<><>::
-::res://Graphics/Stages/Mall/::1701330334
+::res://Graphics/Stages/Mall/::1701330382
 Stage3MallCorrected.png::CompressedTexture2D::5136886390956393361::1701330307::1701330382::1::::<><>::
 ::res://Graphics/Stages/Props/::1701149832
 BP1.png::CompressedTexture2D::3422402791258229654::1700285080::1701146218::1::::<><>::
@@ -253,29 +263,68 @@ OG2.png::CompressedTexture2D::6538304324467056821::1700284852::1701146218::1::::
 OG3.png::CompressedTexture2D::4846324496136616908::1700284902::1701146218::1::::<><>::
 OG4.png::CompressedTexture2D::1127768205165372850::1700284936::1701146218::1::::<><>::
 OG5.png::CompressedTexture2D::8117718015830875890::1700284988::1701146218::1::::<><>::
-::res://Graphics/UI/::1701323186
+::res://Graphics/Takagi/::1701378004
+Takagi Dead.png::CompressedTexture2D::3451032367487582925::1701160420::1701366537::1::::<><>::
+Takagi DMG.png::CompressedTexture2D::1227458701373063243::1701160430::1701366537::1::::<><>::
+Takagi Jump.png::CompressedTexture2D::1190528561138259555::1701377955::1701378004::1::::<><>::
+::res://Graphics/Takagi/Dash/::1701366537
+Takagi Dash1.png::CompressedTexture2D::3021644974267376591::1701160470::1701366537::1::::<><>::
+Takagi Dash2.png::CompressedTexture2D::2071035184352861001::1701160470::1701366537::1::::<><>::
+Takagi Dash3.png::CompressedTexture2D::4035931215016361574::1701160470::1701366537::1::::<><>::
+Takagi Dash4.png::CompressedTexture2D::3003512235419383047::1701160470::1701366537::1::::<><>::
+Takagi Dash5.png::CompressedTexture2D::5523418428443351016::1701160470::1701366537::1::::<><>::
+::res://Graphics/Takagi/Melee/::1701366537
+Takagi Melee1.png::CompressedTexture2D::4914235476461638086::1701160480::1701366537::1::::<><>::
+Takagi Melee2.png::CompressedTexture2D::1530319822076260338::1701160480::1701366537::1::::<><>::
+Takagi Melee3.png::CompressedTexture2D::8671816119464759891::1701160480::1701366537::1::::<><>::
+Takagi Melee4.png::CompressedTexture2D::3662415321280750817::1701160480::1701366537::1::::<><>::
+Takagi Melee5.png::CompressedTexture2D::9166135104159601426::1701160480::1701366537::1::::<><>::
+::res://Graphics/Takagi/Sheath/::1701366537
+Takagi Sheath1.png::CompressedTexture2D::306881341368835730::1701160460::1701366537::1::::<><>::
+Takagi Sheath2.png::CompressedTexture2D::5464806482405001916::1701160460::1701366537::1::::<><>::
+Takagi Sheath3.png::CompressedTexture2D::205392383235679993::1701160460::1701366537::1::::<><>::
+Takagi Sheath4.png::CompressedTexture2D::3321527027171964399::1701160460::1701366537::1::::<><>::
+::res://Graphics/Takagi/Tornado/::1701366537
+Takagi Tornado1.png::CompressedTexture2D::2549415477047339046::1701160446::1701366537::1::::<><>::
+Takagi Tornado2.png::CompressedTexture2D::2536559245046790125::1701160446::1701366537::1::::<><>::
+Takagi Tornado3.png::CompressedTexture2D::8139596351216652303::1701160446::1701366537::1::::<><>::
+Takagi Tornado4.png::CompressedTexture2D::6911658321057013933::1701160446::1701366537::1::::<><>::
+::res://Graphics/Takagi/Walk/::1701366537
+Takagi Walk1.png::CompressedTexture2D::4986638191882962488::1701160494::1701366537::1::::<><>::
+Takagi Walk2.png::CompressedTexture2D::7836624335235561166::1701160494::1701366537::1::::<><>::
+Takagi Walk3.png::CompressedTexture2D::3134249340550430408::1701160494::1701366537::1::::<><>::
+Takagi Walk4.png::CompressedTexture2D::9074433696637447904::1701160494::1701366537::1::::<><>::
+Takagi Walk5.png::CompressedTexture2D::5284305351728171737::1701160494::1701366537::1::::<><>::
+::res://Graphics/UI/::1701407503
 Arrow GO.png::CompressedTexture2D::8840963854802094185::1701323063::1701323186::1::::<><>::
 Arrow.png::CompressedTexture2D::3370164440689730274::1701323069::1701323186::1::::<><>::
+BAR Life new.png::CompressedTexture2D::6823904612661772095::1701364811::1701364847::1::::<><>::
 BAR Life.png::CompressedTexture2D::4194048895885074892::1701243078::1701323186::1::::<><>::
 BAR Outline.png::CompressedTexture2D::8026843256543945708::1701243066::1701323186::1::::<><>::
 BUTTON Blank.png::CompressedTexture2D::843281051448639370::1701243174::1701323186::1::::<><>::
+BUTTON Exit.png::CompressedTexture2D::6228247410009232078::1701407477::1701407503::1::::<><>::
 BUTTON Start.png::CompressedTexture2D::4622817499757334896::1701243226::1701323186::1::::<><>::
 BUTTON Story.png::CompressedTexture2D::8559378968344438260::1701243192::1701323186::1::::<><>::
 Control 1.png::CompressedTexture2D::3154990986869580095::1701243000::1701323186::1::::<><>::
 Control 2.png::CompressedTexture2D::8823241771583113882::1701245718::1701323186::1::::<><>::
 Control 3.png::CompressedTexture2D::5539389816024822046::1701245852::1701323186::1::::<><>::
 Control 4.png::CompressedTexture2D::8349967270259554998::1701245788::1701323186::1::::<><>::
-::res://Scenes/::1701320741
-globals.gd::GDScript::-1::1701305981::0::1::::<>Node<>::
-object_projectile.gd::GDScript::-1::1701234313::0::1::::<>Area2D<>::
-object_projectile.tscn::PackedScene::233138405068299124::1701232069::0::1::::<><>::uid://ckrhna2qh0qfm
-player.gd::GDScript::-1::1701315560::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1053008490608777984::1701161303::0::1::::<><>::uid://ddnl777go4kem
-::res://Scenes/BattleAreaTriggers/::1701316670
-beach_area_1.tscn::PackedScene::2405467332067877573::1701316670::0::1::::<><>::uid://dpesa1n6twi7s
-beach_area_2.tscn::PackedScene::6017037732140573822::1701316670::0::1::::<><>::uid://dpesa1n6twi7s
-fight_area.gd::GDScript::-1::1701315998::0::1::::<>Node2D<>::
+::res://Scenes/::1701418042
+animation_dummy.tscn::PackedScene::8536610957603380536::1701415120::0::1::::<><>::uid://ba6krlba2x8mh::::res://Graphics/Characters/Player/Swim/bubbles/Bubbles1.png<>uid://bru3sg5tkfg23::::res://Graphics/Characters/Player/Swim/bubbles/Bubbles2.png<>uid://cmnel3uy32ai8::::res://Graphics/Characters/Player/Swim/bubbles/Bubbles3.png<>uid://dm8uoa051jqx4::::res://Graphics/Characters/Player/Swim/trail/Trail1.png<>uid://bf20j3cvkojcx::::res://Graphics/Characters/Player/Swim/trail/Trail2.png<>uid://inkoksba8j31::::res://Graphics/Characters/Player/Swim/trail/Trail3.png<>uid://cj3vpa4k72hq3::::res://Graphics/Characters/Player/Swim/trail/Trail4.png<>uid://ddnl777go4kem::::res://Graphics/Characters/Player/Idle/FishMan Idle1.png
+cutscene.gd::GDScript::-1::1701391251::0::1::::<>Node2D<>::
+cutscene.tscn::PackedScene::4594559226800725967::1701415120::0::1::::<><>::res://Scenes/cutscene.gd<>uid://dtvgy87s0i4m3::::res://Scenes/animation_dummy.tscn<>uid://5ety0i4reyrp::::res://Graphics/Stages/Beach/Background/Beach Sky.png<>uid://b1t5ixxl713em::::res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png<>uid://k4wvvrs3b38v::::res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png<>uid://b7y7gcesehuq::::res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png<>uid://bi6il31h2xnm8::::res://Graphics/Stages/Beach/Background/Beach NoSky.png<>uid://ddnl777go4kem::::res://Graphics/Characters/Player/Idle/FishMan Idle1.png
+globals.gd::GDScript::-1::1701333457::0::1::::<>Node<>::
+object_projectile.gd::GDScript::-1::1701414544::0::1::::<>Area2D<>::
+object_projectile.tscn::PackedScene::233138405068299124::1701415120::0::1::::<><>::uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>res://Scenes/object_projectile.gd<>uid://6loyemjfkd3w::::res://Audio/SFX/Objeto rompiéndose.wav
+player.gd::GDScript::-1::1701418042::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1053008490608777984::1701415120::0::1::::<><>::uid://ddnl777go4kem::::res://Graphics/Characters/Player/Idle/FishMan Idle1.png<>res://Scenes/player.gd<>uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>uid://brdyujy6lh5wg::::res://Graphics/Characters/Player/Idle/FishMan Idle2.png<>uid://b6ifurrhw5i75::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy1.png<>uid://ckb2bhq04fi6::::res://Graphics/Characters/Player/FishMan Dead.png<>uid://bawh2h4k7j1hr::::res://Graphics/Characters/Player/Idle/FishMan Idle3.png<>uid://bhdj63j8v011a::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy2.png<>uid://dox46e4a3k6th::::res://Graphics/Characters/Player/Idle/FishMan Idle4.png<>uid://cd867w0g5vxg::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy3.png<>uid://br3im50kviyp7::::res://Graphics/Characters/Player/Idle/FishMan Idle5.png<>uid://mww2kdk5f1wc::::res://Graphics/Characters/Player/Attacks/Heavy 1/FishMan Heavy4.png<>uid://bh2wryoinokyh::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy1.png<>uid://hbgic8s2bsn4::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight1.png<>uid://cg7tdidxplj2u::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy2.png<>uid://qdbimti7hom7::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight2.png<>uid://be1twfogh7xwt::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy3.png<>uid://dvla11uoah75n::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight3.png<>uid://bhvhfuixabff6::::res://Graphics/Characters/Player/Attacks/Punch 1/FishMan 1PunchLight4.png<>uid://c0p3s6107ulf3::::res://Graphics/Characters/Player/Attacks/Heavy 2/FishMan 2Heavy4.png<>uid://jdfabqp28ipq::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight1.png<>uid://cnfjxjegyk7yp::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy1.png<>uid://ce3gi6gtf7up8::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy2.png<>uid://cntbh4i1e21ce::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight2.png<>uid://baklttiengis0::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight3.png<>uid://gmeqtra43mh7::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy3.png<>uid://cq5304uy4jxxp::::res://Graphics/Characters/Player/Attacks/Punch 2/FishMan 2PunchLight4.png<>uid://j08dsx5li2d::::res://Graphics/Characters/Player/Attacks/Heavy 3/FishMan 3Heavy4.png<>uid://crf80wa2p8yj6::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight1.png<>uid://b0xtuprs23byx::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight2.png<>uid://bq4vs35cijht2::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight3.png<>uid://d3qus2kgt3bv6::::res://Graphics/Characters/Player/Attacks/Punch 3/FishMan 3PunchLight4.png<>uid://b17tbeuo4s8mo::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight1.png<>uid://dpf7qehy48jpf::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight2.png<>uid://qvc4stihc82s::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight3.png<>uid://brf27aqmpoqls::::res://Graphics/Characters/Player/Attacks/Punch 4/FishMan 4PunchLight4.png<>uid://cxrpplfpar21s::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle1.png<>uid://cpwqmem2yb13l::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight1.png<>uid://cbeubhs85v7bm::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle3.png<>uid://24go7ophptj8::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight2.png<>uid://dk6cr3o7uarbl::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle4.png<>uid://tcb2vvmukl1v::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight3.png<>uid://vwi8ofbfw6u5::::res://Graphics/Characters/Player/Walk Cycle/FishMan WalkCycle5.png<>uid://bmvafschy7r36::::res://Graphics/Characters/Player/Attacks/Punch 5/FishMan 5PunchLight4.png<>uid://b3upebph1nh06::::res://Graphics/Characters/Player/FishMan DMG.png<>uid://c58vv6tkg1jyt::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp1.png<>uid://bqassa8kas633::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp2.png<>uid://u31qg7xlvlmc::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp3.png<>uid://djum5aclm1f6o::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp4.png<>uid://dcto06vbfurr6::::res://Graphics/Characters/Player/Walk Cycle Object/FishMan WalkHandsUp5.png<>uid://o1gnk7n610d::::res://Audio/SFX/Golpe.wav
+::res://Scenes/BattleAreaTriggers/::1701418408
+beach_area_1.tscn::PackedScene::2405467332067877573::1701418408::0::1::::<><>::uid://dpesa1n6twi7s::::res://Scenes/BattleAreaTriggers/generic_battle_area.tscn
+beach_area_2.tscn::PackedScene::6017037732140573822::1701418408::0::1::::<><>::uid://dpesa1n6twi7s::::res://Scenes/BattleAreaTriggers/generic_battle_area.tscn
+fight_area.gd::GDScript::-1::1701415992::0::1::::<>Node2D<>::
 generic_battle_area.tscn::PackedScene::8221446509660149106::1701316315::0::1::::<><>::res://Scenes/BattleAreaTriggers/fight_area.gd
+mall_area_1.tscn::PackedScene::2827152396922729857::1701376025::0::1::::<><>::uid://dpesa1n6twi7s
+mall_area_2.tscn::PackedScene::5073509359803275756::1701376025::0::1::::<><>::uid://dpesa1n6twi7s
 ::res://Scenes/DecorativeObjects/::1701252498
 decorative_mat.tscn::PackedScene::7918239464981889755::1701252498::0::1::::<><>::uid://bqgk33e8cdus4
 decorative_towell.tscn::PackedScene::3825176658439754365::1701202781::0::1::::<><>::uid://cm0jd3s4fkwyw
@@ -283,9 +332,11 @@ decorative_towell_green.tscn::PackedScene::1379707229346493436::1701202781::0::1
 decorative_towell_pink.tscn::PackedScene::4766828496043993296::1701202781::0::1::::<><>::uid://cm0jd3s4fkwyw
 decorative_towell_yellow.tscn::PackedScene::8227304832150525840::1701202781::0::1::::<><>::uid://cm0jd3s4fkwyw
 decorative_umbrella.tscn::PackedScene::9017321575574285075::1701202781::0::1::::<><>::uid://b5tlnaxwwiu6i
-::res://Scenes/Enemies/::1701300466
-generic_enemy.gd::GDScript::-1::1701300466::0::1::::<>CharacterBody2D<>::
-generic_enemy.tscn::PackedScene::6268715531038672906::1701252498::0::1::::<><>::res://Scenes/Enemies/generic_enemy.gd<>uid://ckrhna2qh0qfm
+::res://Scenes/Enemies/::1701415120
+generic_enemy.gd::GDScript::-1::1701413325::0::1::::<>CharacterBody2D<>::
+generic_enemy.tscn::PackedScene::6268715531038672906::1701415120::0::1::::<><>::res://Scenes/Enemies/generic_enemy.gd<>uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>uid://cnbfoxnq1mmem::::res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch1.png<>uid://cy1bpgjro5jty::::res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch2.png<>uid://cu51nks6y6nlr::::res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch3.png<>uid://bpeb8r8s03rv1::::res://Graphics/Characters/Beach_Enemy_1/Attack/HavidDasselhoff Punch4.png<>uid://km1cjwwas3s3::::res://Graphics/Characters/Beach_Enemy_1/HavidDasselhoff Dead.png<>uid://deael83t3lesn::::res://Graphics/Characters/Beach_Enemy_1/HavidDasselhoff DMG.png<>uid://blup4m7g18inw::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle1.png<>uid://cvdnbn8kqrnjh::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle2.png<>uid://b7lx1ov8mwfub::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle3.png<>uid://cqbhd52652qub::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle4.png<>uid://dkhkt7ax6gbx2::::res://Graphics/Characters/Beach_Enemy_1/Walk Cycle/HavidDasselhoff Walk Cycle5.png<>uid://o1gnk7n610d::::res://Audio/SFX/Golpe.wav
+takagi.gd::GDScript::-1::1701387931::0::1::::<>CharacterBody2D<>::
+takagi.tscn::PackedScene::6451924528812454935::1701388896::0::1::::<><>::res://Scenes/Enemies/takagi.gd<>uid://ckrhna2qh0qfm
 ::res://Scenes/Enemies/BeachEnemies/::1701157909
 beach_enemy_1.tscn::PackedScene::4290987044318716121::1701157909::0::1::::<><>::uid://cvku3gic4jkpm
 beach_enemy_2.tscn::PackedScene::7112765293175428249::1701157909::0::1::::<><>::uid://cvku3gic4jkpm
@@ -297,28 +348,39 @@ mall_enemy_2.tscn::PackedScene::8291902155761721414::1701157909::0::1::::<><>::u
 street_enemy_1.tscn::PackedScene::4397272107627802956::1701079115::0::1::::<><>::uid://cvku3gic4jkpm
 street_enemy_2.tscn::PackedScene::1521946160246809021::1701079358::0::1::::<><>::uid://cvku3gic4jkpm
 street_enemy_3.tscn::PackedScene::4183744873427855777::1701079517::0::1::::<><>::uid://cvku3gic4jkpm
-::res://Scenes/EnviromentalObjects/::1701202781
+::res://Scenes/EnviromentalObjects/::1701339641
 enviromental_dumbell_rack.tscn::PackedScene::7327919759152618025::1701202781::0::1::::<><>::uid://deq3gcdc1exdn
 enviromental_flower_pot.tscn::PackedScene::4179330899419514003::1701202781::0::1::::<><>::uid://d0l716b1nu4oi
 enviromental_gym_bench.tscn::PackedScene::6079079130758245720::1701202781::0::1::::<><>::uid://bekov5rmq3ixy
+enviromental_park_bench.tscn::PackedScene::4468827268920276296::1701339641::0::1::::<><>::uid://c8win1tu7fcju
 enviromental_pull_up_bar.tscn::PackedScene::3922817431537993872::1701202781::0::1::::<><>::uid://dtg4xb7dh7ad7
-::res://Scenes/GroundObjects/::1701297800
+::res://Scenes/GroundObjects/::1701339641
 generic_ground_object.gd::GDScript::-1::1701238841::0::1::::<>StaticBody2D<>::
 generic_ground_object.tscn::PackedScene::5660308034076796522::1701252498::0::1::::<><>::res://Scenes/GroundObjects/generic_ground_object.gd<>uid://ckrhna2qh0qfm
 ground_barrel_blue.tscn::PackedScene::630475666408696786::1701202781::0::1::::<><>::uid://cmv5pf77chiow
-ground_barrel_yellow.tscn::PackedScene::8681357600664756861::1701202781::0::1::::<><>::uid://cmv5pf77chiow
+ground_barrel_yellow.tscn::PackedScene::8681357600664756861::1701339641::0::1::::<><>::uid://cmv5pf77chiow
 ground_cooler.tscn::PackedScene::5843037174947363957::1701232068::0::1::::<><>::uid://cmv5pf77chiow
 ground_gym_bench.tscn::PackedScene::3096186322752341586::1701202781::0::1::::<><>::uid://cmv5pf77chiow
 ground_trash_bin.tscn::PackedScene::2149922208842516687::1701147816::0::1::::<><>::uid://cmv5pf77chiow
 ground_weight_large.tscn::PackedScene::8579658651061414377::1701297800::0::1::::<><>::uid://cmv5pf77chiow
 ground_weight_small.tscn::PackedScene::2733842172905874347::1701297800::0::1::::<><>::uid://cmv5pf77chiow
-::res://Scenes/Stages/::1701324587
-first_area.gd::GDScript::-1::1701302456::0::1::::<>Area2D<>::
+::res://Scenes/Items/::1701418408
+health_pack.tscn::PackedScene::1626189506919727845::1701418408::0::1::::<><>::res://Scenes/Items/generic_health_item.gd<>uid://ckrhna2qh0qfm::::res://Graphics/SHADOW GEN.png<>uid://deogmr730rfvg::::res://Graphics/Fish Food.png
+generic_health_item.gd::GDScript::-1::1701418042::0::1::::<>Area2D<>::
+::res://Scenes/Menus/::1701415120
+main_menu.tscn::PackedScene::6705221476073835440::1701415120::0::1::::<><>::uid://b64lem6dl8dtg::::res://Graphics/UI/BUTTON Start.png<>res://Scenes/Menus/main_menu.gd<>uid://maqylmmk47ac::::res://Graphics/UI/BUTTON Blank.png<>uid://cu0albti42bog::::res://Graphics/UI/BUTTON Exit.png<>uid://bk7kigexrhk04::::res://Graphics/UI/Control 1.png<>uid://dxybrdlo7sogg::::res://Graphics/UI/Control 2.png<>uid://ck6k680j8bdxm::::res://Graphics/UI/Control 3.png<>uid://dq710gudhkx3c::::res://Graphics/UI/Control 4.png<>uid://d3f2ktdb3376l::::res://Audio/Menu/Selección Menu.wav<>uid://biok64scw6uss::::res://Audio/Menu/Selección Menu 2.wav
+main_menu.gd::GDScript::-1::1701411486::0::1::::<>Control<>::
+::res://Scenes/Stages/::1701418409
+arena_test.tscn::PackedScene::6437130413568142821::1701388891::0::1::::<><>::res://Scenes/Stages/takagi_arena.gd<>uid://cfgl1ehirmg7j
 level.gd::GDScript::-1::1701232125::0::1::::<>Node2D<>::
-level.tscn::PackedScene::8101763426211141965::1701324587::0::1::::<><>::res://Scenes/Stages/level.gd<>uid://pac5p1e37y0o::::res://Scenes/player.tscn
-level_beach.gd::GDScript::-1::1701319237::0::1::::<>Node2D<>::
-level_beach.tscn::PackedScene::4832307969031537527::1701324587::0::1::::<><>::uid://dnos4idmp16j6::::res://Scenes/Stages/level.tscn<>res://Scenes/Stages/level_beach.gd<>uid://5ety0i4reyrp::::res://Graphics/Stages/Beach/Background/Beach Sky.png<>uid://b1t5ixxl713em::::res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png<>uid://k4wvvrs3b38v::::res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png<>uid://b7y7gcesehuq::::res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png<>uid://bi6il31h2xnm8::::res://Graphics/Stages/Beach/Background/Beach NoSky.png<>uid://buq7don4716nx::::res://Scenes/DecorativeObjects/decorative_towell.tscn<>uid://d1qb77b0lwbgd::::res://Scenes/DecorativeObjects/decorative_umbrella.tscn<>uid://i8n3vqmyqmmk::::res://Scenes/GroundObjects/ground_barrel_blue.tscn<>uid://cpin76xtwgler::::res://Scenes/GroundObjects/ground_cooler.tscn<>uid://be7j8mh3xfmqd::::res://Scenes/GroundObjects/ground_weight_small.tscn<>uid://dk2winw088oop::::res://Scenes/DecorativeObjects/decorative_mat.tscn<>uid://dphmrj5qxtd81::::res://Scenes/DecorativeObjects/decorative_towell_yellow.tscn<>uid://twltuol14aau::::res://Scenes/DecorativeObjects/decorative_towell_green.tscn<>uid://b86c77bfhx6rk::::res://Scenes/DecorativeObjects/decorative_towell_pink.tscn<>uid://duibyvq6ublxh::::res://Scenes/GroundObjects/ground_weight_large.tscn<>uid://dotl8xkg0qf86::::res://Graphics/PropsNew/BP4.png<>uid://dcnx1dubf188d::::res://Scenes/EnviromentalObjects/enviromental_dumbell_rack.tscn<>uid://csu0ssfmfo4gy::::res://Scenes/EnviromentalObjects/enviromental_gym_bench.tscn<>uid://bv5ih23uxnr8s::::res://Scenes/EnviromentalObjects/enviromental_pull_up_bar.tscn<>uid://cryxy5uhgjyig::::res://Scenes/BattleAreaTriggers/beach_area_2.tscn<>uid://bajhxwatbtbfp::::res://Scenes/BattleAreaTriggers/beach_area_1.tscn<>uid://cncppggkw00iq::::res://Scenes/UserInterface/ui.tscn
-level_mall.gd::GDScript::-1::1701319536::0::1::::<>Node2D<>::
-level_mall.tscn::PackedScene::88638479314745626::1701324587::0::1::::<><>::uid://dnos4idmp16j6::::res://Scenes/Stages/level.tscn<>res://Scenes/Stages/level_mall.gd<>uid://bajhxwatbtbfp::::res://Scenes/BattleAreaTriggers/beach_area_1.tscn<>uid://cryxy5uhgjyig::::res://Scenes/BattleAreaTriggers/beach_area_2.tscn
-::res://Scenes/UserInterface/::1701324587
-ui.tscn::PackedScene::5690362956882505836::1701324587::0::1::::<><>::uid://dmmi62wx82xno::::res://Graphics/UI/BAR Outline.png<>uid://b00vmww8l6ye3::::res://Graphics/UI/BAR Life.png
+level.tscn::PackedScene::8101763426211141965::1701336934::0::1::::<><>::res://Scenes/Stages/level.gd<>uid://pac5p1e37y0o
+level_beach.gd::GDScript::-1::1701417849::0::1::::<>Node2D<>::
+level_beach.tscn::PackedScene::4832307969031537527::1701418408::0::1::::<><>::uid://dnos4idmp16j6::::res://Scenes/Stages/level.tscn<>res://Scenes/Stages/level_beach.gd<>uid://5ety0i4reyrp::::res://Graphics/Stages/Beach/Background/Beach Sky.png<>uid://b1t5ixxl713em::::res://Graphics/Stages/Beach/Background/Stage1Beach Clouds.png<>uid://k4wvvrs3b38v::::res://Graphics/Stages/Beach/Background/Stage1Beach MountainLine.png<>uid://b7y7gcesehuq::::res://Graphics/Stages/Beach/Background/Stage1Beach CityLine.png<>uid://bi6il31h2xnm8::::res://Graphics/Stages/Beach/Background/Beach NoSky.png<>uid://buq7don4716nx::::res://Scenes/DecorativeObjects/decorative_towell.tscn<>uid://d1qb77b0lwbgd::::res://Scenes/DecorativeObjects/decorative_umbrella.tscn<>uid://i8n3vqmyqmmk::::res://Scenes/GroundObjects/ground_barrel_blue.tscn<>uid://cpin76xtwgler::::res://Scenes/GroundObjects/ground_cooler.tscn<>uid://be7j8mh3xfmqd::::res://Scenes/GroundObjects/ground_weight_small.tscn<>uid://dk2winw088oop::::res://Scenes/DecorativeObjects/decorative_mat.tscn<>uid://dphmrj5qxtd81::::res://Scenes/DecorativeObjects/decorative_towell_yellow.tscn<>uid://twltuol14aau::::res://Scenes/DecorativeObjects/decorative_towell_green.tscn<>uid://b86c77bfhx6rk::::res://Scenes/DecorativeObjects/decorative_towell_pink.tscn<>uid://duibyvq6ublxh::::res://Scenes/GroundObjects/ground_weight_large.tscn<>uid://dotl8xkg0qf86::::res://Graphics/PropsNew/BP4.png<>uid://dcnx1dubf188d::::res://Scenes/EnviromentalObjects/enviromental_dumbell_rack.tscn<>uid://csu0ssfmfo4gy::::res://Scenes/EnviromentalObjects/enviromental_gym_bench.tscn<>uid://bv5ih23uxnr8s::::res://Scenes/EnviromentalObjects/enviromental_pull_up_bar.tscn<>uid://cryxy5uhgjyig::::res://Scenes/BattleAreaTriggers/beach_area_2.tscn<>uid://bajhxwatbtbfp::::res://Scenes/BattleAreaTriggers/beach_area_1.tscn<>uid://cncppggkw00iq::::res://Scenes/UserInterface/ui.tscn<>uid://bxmi3jjleyqxu::::res://Audio/Music/Tema 1 (playa).wav<>uid://xf0dr0qwjvx2::::res://Scenes/Items/health_pack.tscn
+level_mall.gd::GDScript::-1::1701418642::0::1::::<>Node2D<>::
+level_mall.tscn::PackedScene::4218605310671027084::1701418691::0::1::::<><>::uid://dnos4idmp16j6::::res://Scenes/Stages/level.tscn<>res://Scenes/Stages/level_mall.gd<>uid://cfgl1ehirmg7j::::res://Graphics/Stages/Mall/Stage3MallCorrected.png<>uid://bgjq10xkplqo4::::res://Scenes/BattleAreaTriggers/mall_area_1.tscn<>uid://cejv7tltte2ps::::res://Scenes/BattleAreaTriggers/mall_area_2.tscn<>uid://dvxkxrfw1p342::::res://Scenes/GroundObjects/ground_barrel_yellow.tscn<>uid://b0sq77rt52c24::::res://Scenes/EnviromentalObjects/enviromental_flower_pot.tscn<>uid://b4wy6xv13udcy::::res://Scenes/EnviromentalObjects/enviromental_park_bench.tscn<>uid://xf0dr0qwjvx2::::res://Scenes/Items/health_pack.tscn<>uid://cnojf1jyhuqj4::::res://Audio/Music/Tema 2 Master.wav<>uid://cncppggkw00iq::::res://Scenes/UserInterface/ui.tscn
+takagi_arena.gd::GDScript::-1::1701379280::0::1::::<>Area2D<>::
+::res://Scenes/UserInterface/::1701418409
+transition_layer.gd::GDScript::-1::1701410937::0::1::::<>CanvasLayer<>::
+transition_layer.tscn::PackedScene::3642098645675843247::1701415120::0::1::::<><>::res://Scenes/UserInterface/transition_layer.gd
+ui.tscn::PackedScene::5690362956882505836::1701418409::0::1::::<><>::res://Scenes/UserInterface/ui_script.gd<>uid://dmmi62wx82xno::::res://Graphics/UI/BAR Outline.png<>uid://dx7vna0y378c8::::res://Graphics/UI/Arrow GO.png<>uid://c4hsyhb48sia6::::res://Graphics/UI/BAR Life new.png
+ui_script.gd::GDScript::-1::1701338425::0::1::::<>CanvasLayer<>::

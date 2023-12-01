@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgjq10xkplqo4"]
+
+[ext_resource type="PackedScene" uid="uid://dpesa1n6twi7s" path="res://Scenes/BattleAreaTriggers/generic_battle_area.tscn" id="1_tahti"]
+
+[node name="Area1" instance=ExtResource("1_tahti")]
+metadata/_edit_vertical_guides_ = []
+
+[node name="Marker2D" type="Marker2D" parent="SpawnPositions" index="0"]
+position = Vector2(311, -44)
+
+[node name="Marker2D2" type="Marker2D" parent="SpawnPositions" index="1"]
+position = Vector2(311, 53)
+
+[node name="Marker2D3" type="Marker2D" parent="SpawnPositions" index="2"]
+position = Vector2(-386, 49)
+
+[node name="Marker2D4" type="Marker2D" parent="SpawnPositions" index="3"]
+position = Vector2(-385, -48)

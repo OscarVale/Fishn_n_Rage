@@ -1,0 +1,157 @@
+[gd_scene load_steps=16 format=3 uid="uid://b1dr2v75uohpc"]
+
+[ext_resource type="PackedScene" uid="uid://dnos4idmp16j6" path="res://Scenes/Stages/level.tscn" id="1_omoqq"]
+[ext_resource type="Script" path="res://Scenes/Stages/level_mall.gd" id="2_1q6vc"]
+[ext_resource type="Texture2D" uid="uid://cfgl1ehirmg7j" path="res://Graphics/Stages/Mall/Stage3MallCorrected.png" id="3_infry"]
+[ext_resource type="PackedScene" uid="uid://bgjq10xkplqo4" path="res://Scenes/BattleAreaTriggers/mall_area_1.tscn" id="4_0yne8"]
+[ext_resource type="PackedScene" uid="uid://cejv7tltte2ps" path="res://Scenes/BattleAreaTriggers/mall_area_2.tscn" id="5_kabij"]
+[ext_resource type="PackedScene" uid="uid://dvxkxrfw1p342" path="res://Scenes/GroundObjects/ground_barrel_yellow.tscn" id="6_l0y2r"]
+[ext_resource type="PackedScene" uid="uid://b0sq77rt52c24" path="res://Scenes/EnviromentalObjects/enviromental_flower_pot.tscn" id="7_qhg4j"]
+[ext_resource type="PackedScene" uid="uid://b4wy6xv13udcy" path="res://Scenes/EnviromentalObjects/enviromental_park_bench.tscn" id="9_v2afs"]
+[ext_resource type="PackedScene" uid="uid://xf0dr0qwjvx2" path="res://Scenes/Items/health_pack.tscn" id="10_1qoeo"]
+[ext_resource type="AudioStream" uid="uid://cnojf1jyhuqj4" path="res://Audio/Music/Tema 2 Master.wav" id="11_35k5y"]
+[ext_resource type="PackedScene" uid="uid://cncppggkw00iq" path="res://Scenes/UserInterface/ui.tscn" id="24_nnw1q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oxgny"]
+size = Vector2(3767, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3p5w"]
+size = Vector2(20, 202)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dvx4"]
+size = Vector2(20, 202)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xq0gj"]
+size = Vector2(34, 134)
+
+[node name="Level" instance=ExtResource("1_omoqq")]
+script = ExtResource("2_1q6vc")
+
+[node name="BG" type="Sprite2D" parent="." index="0"]
+texture_filter = 1
+position = Vector2(1859, 180)
+texture = ExtResource("3_infry")
+metadata/_edit_lock_ = true
+
+[node name="Barriers" parent="." index="1"]
+metadata/_edit_lock_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Barriers" index="0"]
+collision_layer = 32
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D" index="0"]
+position = Vector2(1852.5, 188)
+shape = SubResource("RectangleShape2D_oxgny")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Barriers/StaticBody2D" index="1"]
+position = Vector2(1849, 345)
+shape = SubResource("RectangleShape2D_oxgny")
+
+[node name="LimitBarriers" type="Node2D" parent="Barriers" index="1"]
+position = Vector2(320, 180)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Barriers/LimitBarriers" index="0"]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/LimitBarriers/StaticBody2D" index="0"]
+position = Vector2(-296, 43)
+shape = SubResource("RectangleShape2D_d3p5w")
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Barriers/LimitBarriers/StaticBody2D" index="1"]
+position = Vector2(297, 43)
+shape = SubResource("RectangleShape2D_3dvx4")
+disabled = true
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Barriers" index="2"]
+collision_layer = 32
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D2" index="0"]
+position = Vector2(21, 267)
+shape = SubResource("RectangleShape2D_xq0gj")
+
+[node name="AreaTriggers" type="Node2D" parent="." index="2"]
+
+[node name="Area1" parent="AreaTriggers" index="0" instance=ExtResource("4_0yne8")]
+position = Vector2(824, 266)
+waves_count = 2
+
+[node name="Area2" parent="AreaTriggers" index="1" instance=ExtResource("4_0yne8")]
+position = Vector2(1777, 267)
+waves_count = 3
+
+[node name="Area3" parent="AreaTriggers" index="2" instance=ExtResource("5_kabij")]
+position = Vector2(2359, 267)
+waves_count = 3
+end_level = true
+
+[node name="GroundDecorations" type="Node2D" parent="." index="3"]
+
+[node name="Player" parent="YSortingLayer" index="0"]
+position = Vector2(327, 250)
+collision_mask = 100
+
+[node name="Camera2D" parent="YSortingLayer/Player" index="6"]
+limit_left = 0
+
+[node name="Marker2D" type="Marker2D" parent="YSortingLayer/Player/Camera2D" index="0"]
+position = Vector2(320, -98)
+
+[node name="Projectiles" parent="YSortingLayer" index="1"]
+y_sort_enabled = true
+
+[node name="GroundObjects" type="Node2D" parent="YSortingLayer" index="2"]
+y_sort_enabled = true
+position = Vector2(0, 2)
+
+[node name="Generic Ground Object" parent="YSortingLayer/GroundObjects" index="0" instance=ExtResource("6_l0y2r")]
+position = Vector2(512, 205)
+
+[node name="Generic Ground Object2" parent="YSortingLayer/GroundObjects" index="1" instance=ExtResource("6_l0y2r")]
+position = Vector2(1553, 207)
+
+[node name="Generic Ground Object3" parent="YSortingLayer/GroundObjects" index="2" instance=ExtResource("6_l0y2r")]
+position = Vector2(1935, 207)
+
+[node name="Enemies" type="Node2D" parent="YSortingLayer" index="3"]
+y_sort_enabled = true
+
+[node name="Enviromental" type="Node2D" parent="YSortingLayer" index="4"]
+y_sort_enabled = true
+
+[node name="StaticBody2D" parent="YSortingLayer/Enviromental" index="0" instance=ExtResource("7_qhg4j")]
+position = Vector2(704, 270)
+
+[node name="StaticBody2D3" parent="YSortingLayer/Enviromental" index="1" instance=ExtResource("7_qhg4j")]
+position = Vector2(887, 270)
+
+[node name="StaticBody2D2" parent="YSortingLayer/Enviromental" index="2" instance=ExtResource("9_v2afs")]
+position = Vector2(793, 270)
+
+[node name="StaticBody2D6" parent="YSortingLayer/Enviromental" index="3" instance=ExtResource("9_v2afs")]
+position = Vector2(1637, 210)
+
+[node name="StaticBody2D7" parent="YSortingLayer/Enviromental" index="4" instance=ExtResource("9_v2afs")]
+position = Vector2(1745, 210)
+
+[node name="StaticBody2D5" parent="YSortingLayer/Enviromental" index="5" instance=ExtResource("9_v2afs")]
+position = Vector2(1852, 210)
+
+[node name="Decoration" type="Node2D" parent="YSortingLayer" index="5"]
+
+[node name="Items" type="Node2D" parent="YSortingLayer" index="6"]
+
+[node name="HealthPack" parent="YSortingLayer/Items" index="0" instance=ExtResource("10_1qoeo")]
+position = Vector2(2237, 271)
+
+[node name="UI" parent="." index="5" instance=ExtResource("24_nnw1q")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="6"]
+stream = ExtResource("11_35k5y")
+autoplay = true
+bus = &"Music"
+
+[connection signal="update_health_ui" from="YSortingLayer/Player" to="." method="_on_player_update_health_ui"]
+[connection signal="heal_player" from="YSortingLayer/Items/HealthPack" to="." method="_on_health_pack_heal_player"]

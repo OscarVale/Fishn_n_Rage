@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Project Fishman"
-run/main_scene="res://Scenes/Stages/level_beach.tscn"
+run/main_scene="res://Scenes/Menus/main_menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://Graphics/icon.svg"
 
 [autoload]
 
 Globals="*res://Scenes/globals.gd"
+TransitionLayer="*res://Scenes/UserInterface/transition_layer.tscn"
 
 [display]
 

@@ -1,15 +1,16 @@
 extends Node2D
 
 @export var waves_count : int = 1
+@export var end_level : bool = false
 
 signal spawn_enemies(children : Array)
 signal get_enemy_tree()
 # Para comenzar la batalla, mandar true.
 # Para terminar la batalla, mandar false
-signal battle_update(flag : bool)
+signal battle_update(flag : bool, ends_level : bool)
 
 func finish_battle():
-	battle_update.emit(false)
+	battle_update.emit(false, end_level)
 	$Calculate.stop()
 
 func call_enemies_spawn():
@@ -34,5 +35,5 @@ func _on_area_2d_body_entered(_body):
 	$Area2D.set_deferred("monitoring", false)  
 	$Calculate.start()
 	get_enemy_tree.emit()
-	battle_update.emit(true)
+	battle_update.emit(true, end_level)
 	call_enemies_spawn()
